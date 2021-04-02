@@ -21,3 +21,8 @@ DB MySQL<br>
 仮想環境　Docker<br>
 サーバー　AWS<br>
 バージョン管理　Git/Github<br>
+
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
