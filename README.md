@@ -11,13 +11,14 @@ devlopブランチをターゲットにpull requestsを出す<br>
 誰かがレビュー<br>
 ↓<br>
 レビュー戻りがなければdevlopにマージ<br>
-
+<br>
+<br>
 
 # 技術選定
 フロント　React/TypeScript<br>
-バック　 Ruby/Ruby on Rails
-DB MySQL
-仮想環境　Docker
-サーバー　AWS
-バージョン管理　Git/Github
+バック　 Ruby/Ruby on Rails<br>
+DB MySQL<br>
+仮想環境　Docker<br>
+サーバー　AWS<br>
+バージョン管理　Git/Github<br>
 
