@@ -17,6 +17,7 @@ devlopブランチをターゲットにpull requestsを出す<br>
 # 技術選定
 |  | 技術 |
 | --- | --- |
+| OS | Linux |
 | フロントエンド | React/TypeScript |
 | バックエンド | Ruby/Ruby on Rails |
 | DB | MySQL |
