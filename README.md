@@ -15,7 +15,7 @@ devlopブランチをターゲットにpull requestsを出す<br>
 <br>
 
 # 技術選定
-|  |  |
+|  | 技術 |
 | --- | --- |
 | フロントエンド | React/TypeScript |
 | バックエンド | Ruby/Ruby on Rails |
