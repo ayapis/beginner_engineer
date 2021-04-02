@@ -15,13 +15,11 @@ devlopブランチをターゲットにpull requestsを出す<br>
 <br>
 
 # 技術選定
-フロント　React/TypeScript<br>
-バック　 Ruby/Ruby on Rails<br>
-DB MySQL<br>
-仮想環境　Docker<br>
-サーバー　AWS<br>
-バージョン管理　Git/Github<br>
-
-
-| フロント | React/TypeScript |
-| git diff | Show file differences that haven't been staged |
+|  |  |
+| --- | --- |
+| フロントエンド | React/TypeScript |
+| バックエンド | Ruby/Ruby on Rails |
+| DB | MySQL |
+| 仮想環境 | Docker |
+| サーバー | AWS |
+| バージョン管理 | Git/Github |
