@@ -4,7 +4,8 @@ devlopからブランチを切る。ブランチ名は自由<br>
 ↓<br>
 ローカルで開発<br>
 ↓<br>
-リモートブランチにプッシュ<br>
+自分が作ったブランチをリモートにプッシュ<br>
+※devlopブランチ、masterブランチにはpushしない事<br>
 ↓<br>
 devlopブランチをターゲットにpull requestsを出す<br>
 ↓<br>
