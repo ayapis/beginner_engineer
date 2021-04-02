@@ -21,7 +21,3 @@ DB MySQL<br>
 仮想環境　Docker<br>
 サーバー　AWS<br>
 バージョン管理　Git/Github<br>
-
-| ---- | ---- |
-|  TH  |  TD  |
-|  TH  |  TD  |
