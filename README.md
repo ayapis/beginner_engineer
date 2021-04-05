@@ -9,9 +9,10 @@ devlopからブランチを切る。ブランチ名は自由<br>
 ↓<br>
 devlopブランチをターゲットにpull requestsを出す<br>
 ↓<br>
-誰かがレビュー<br>
-↓<br>
-レビュー戻りがなければPMがdevlopにマージ<br>
+レビュー担当者がレビュー<br>
+<br>
+<br>
+※マージはレビュー担当者が行います<br>
 <br>
 <br>
 
