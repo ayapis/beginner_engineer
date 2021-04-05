@@ -1,0 +1,11 @@
+// スマホのときだけ改行
+
+// .u-break {
+//     &::before {
+//       content: "\A";
+//       white-space: pre;
+//       @include breakpoint( ipad ) {
+//         display: none;
+//       }
+//     }
+//   }

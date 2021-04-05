@@ -1,0 +1,10 @@
+// mixinは基本メディアクエリの設定のみに使用
+// min-widthのみ設定し、max-widthは設定しないほうが継承が有効になり◎
+
+@mixin breakpoint( $point ) {
+  @if $point == pc {
+    @media ( min-width: 768px ) {
+      @content ;
+    }
+  }
+}

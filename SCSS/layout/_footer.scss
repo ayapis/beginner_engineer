@@ -1,0 +1,16 @@
+// ページ単位で唯一の要素かを判断基準に設定
+// クラスではなく、idにしても支障がないか
+// 具体的には、index.htmlでクラス名を検索したときに検索結果が1つになることが条件
+
+.l-footer {
+  height: 509px;
+  background: #001D60;
+  color: #fff;
+  @include breakpoint ( pc ) {
+    height: 350px;
+  }
+}
+
+// フッターにインナー追加する場合に使用
+// .l-footer-wrap {
+// }
