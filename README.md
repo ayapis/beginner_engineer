@@ -11,7 +11,7 @@ devlopブランチをターゲットにpull requestsを出す<br>
 ↓<br>
 誰かがレビュー<br>
 ↓<br>
-レビュー戻りがなければdevlopにマージ<br>
+レビュー戻りがなければPMがdevlopにマージ<br>
 <br>
 <br>
 
