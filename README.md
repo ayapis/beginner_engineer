@@ -20,7 +20,7 @@ devlopブランチをターゲットにpull requestsを出す<br>
 |  | 技術 |
 | --- | --- |
 | OS | Linux |
-| フロントエンド | React/TypeScript |
+| フロントエンド | JavaScript/React/TypeScript |
 | バックエンド | Ruby/Ruby on Rails |
 | DB | MySQL |
 | 仮想環境 | Docker |
