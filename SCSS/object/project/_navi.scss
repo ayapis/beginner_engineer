@@ -1,0 +1,15 @@
+.p-navi {
+  width: 66.6vw;
+  height: 100vh;
+  background: #EFF5FF;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  @include breakpoint ( pc ) {
+    width: auto; 
+    height: auto;
+    position: initial;
+    background: initial;
+  }
+}

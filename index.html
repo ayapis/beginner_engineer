@@ -22,10 +22,45 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- CSSの読み込み（slickは不要な場合もある） -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- jQueryの読み込み（不要な場合もある） -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
+  <header class="l-header">
+    <div class="l-header__wrap">
+      <div class="l-header__main">
+        <img src="./image/l-header__logo.png" alt="" class="l-header__main__logo">
+        <!-- トップページ以外はサイトタイトルをpとし、ページ名をh1とします。 -->
+        <h1 class="l-header__main__title">サービス名</h1>
+      </div>
+      <button class="c-navi__openbutton" id="j-hamopen">
+        <i></i>
+        <i></i>
+        <i></i>
+      </button>
+    </div>
+    <div class="p-navi">
+      <button class="c-navi__closebutton" id="j-hamclose">
+        <i></i>
+        <i></i>
+        <i></i>
+      </button>
+      <ul class="c-navi">
+        <li>トップページ</li>
+        <li>私たちについて</li>
+        <li>Twitter分析</li>
+        <li>ポートフォリオ</li>
+        <li>お問い合わせ</li>
+        <li>
+          <div class="c-navi__login"><img src="./image/loginicon.svg">ログインはこちら</div>
+        </li>
+      </ul>
+    </div>
+  </header>
 
+  <!-- jQueryの読み込み（内容は適宜変更、不要な場合は削除） -->
+  <script src="hamburgermenu.js"></script>
 </body>
 
 </html>
