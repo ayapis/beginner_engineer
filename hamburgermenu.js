@@ -1,8 +1,7 @@
 $(function () {
-  $('#j-hamopen').on('click', function () {
-    $('.p-navi').css('right', '0');
-  });
-  $('#j-hamclose').on('click', function () {
-    $('.p-navi').css('right', '-100%');
+  $('#j-ham').on('click', function () {
+    $('.p-navi').toggleClass('p-navi-show');
+    $('.c-navi__button').toggleClass('c-navi__button-show');
+    $('body').toggleClass('body-show');
   });
 });

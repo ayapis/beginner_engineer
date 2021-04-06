@@ -478,6 +478,10 @@ body {
   letter-spacing: -0.01em;
 }
 
+.body-show {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
 .l-footer {
   height: 509px;
   background: #001D60;
@@ -569,6 +573,10 @@ body {
   margin-bottom: 5rem;
 }
 
+.c-navi li:first-of-type {
+  margin-top: 8rem;
+}
+
 .c-navi li:nth-of-type(5) {
   margin-bottom: 6rem;
 }
@@ -586,6 +594,9 @@ body {
   }
   .c-navi li:last-of-type {
     margin-right: 0;
+  }
+  .c-navi li:first-of-type {
+    margin-top: 0;
   }
 }
 
@@ -609,13 +620,14 @@ body {
   margin-right: 0.5rem;
 }
 
-.c-navi__openbutton {
+.c-navi__button {
   position: relative;
   width: 50px;
   height: 50px;
+  z-index: 10;
 }
 
-.c-navi__openbutton i {
+.c-navi__button i {
   right: 0;
   width: 27px;
   height: 2.5px;
@@ -623,31 +635,31 @@ body {
   position: absolute;
 }
 
-.c-navi__openbutton i:nth-child(1) {
+.c-navi__button i:nth-child(1) {
   top: 15px;
 }
 
-.c-navi__openbutton i:nth-child(2) {
+.c-navi__button i:nth-child(2) {
   top: 25px;
 }
 
-.c-navi__openbutton i:nth-child(3) {
+.c-navi__button i:nth-child(3) {
   top: 35px;
 }
 
 @media (min-width: 768px) {
-  .c-navi__openbutton {
+  .c-navi__button {
     display: none;
   }
 }
 
-.c-navi__closebutton {
+.c-navi__button-show {
   position: relative;
   width: 50px;
   height: 50px;
 }
 
-.c-navi__closebutton i {
+.c-navi__button-show i {
   right: 0;
   width: 27px;
   height: 2.5px;
@@ -655,7 +667,7 @@ body {
   position: absolute;
 }
 
-.c-navi__closebutton i:nth-child(1) {
+.c-navi__button-show i:nth-child(1) {
   top: 25px;
   width: 30px;
   left: 10px;
@@ -663,11 +675,11 @@ body {
           transform: rotate(45deg);
 }
 
-.c-navi__closebutton i:nth-child(2) {
+.c-navi__button-show i:nth-child(2) {
   display: none;
 }
 
-.c-navi__closebutton i:nth-child(3) {
+.c-navi__button-show i:nth-child(3) {
   top: 25px;
   width: 30px;
   left: 10px;
@@ -676,7 +688,7 @@ body {
 }
 
 @media (min-width: 768px) {
-  .c-navi__closebutton {
+  .c-navi__button-show {
     display: none;
   }
 }
@@ -698,5 +710,9 @@ body {
     position: initial;
     background: initial;
   }
+}
+
+.p-navi-show {
+  right: 0;
 }
 /*# sourceMappingURL=style.css.map */
