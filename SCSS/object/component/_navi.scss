@@ -1,47 +1,103 @@
-// 三本線のハンバーガーメニューアイコン
-// .c-navi_toggle {
-//   position: relative;
-//   width: 50px;
-//   height: 50px;
-//   background: #000000;
-//   i {
-//     left: 14px;
-//     width: 23px;
-//     height: 2px;
-//     background-color: red;
-//     position: absolute;
-//     &:nth-child(1) {
-//       top: 15px;
-//     }
-//     &:nth-child(2) {
-//       top: 25px;
-//     }
-//     &:nth-child(3) {
-//       top: 35px;
-//     }
-//   }
-// }
+.c-navi {
+  font-size: 1.4rem;
+  li {
+    text-align: center;
+    align-self: center;
+    margin-bottom: 5rem;
+    &:first-of-type {
+      margin-top: 8rem;
+    }
+    &:nth-of-type(5) {
+      margin-bottom: 6rem;
+    }
+    @include breakpoint ( pc ) {
+      margin-bottom: 0;
+      &:nth-of-type(5) {
+        margin-bottom: 0;
+      }
+      margin-right: 3rem;
+      &:nth-of-type(5) {
+        margin-right: 4rem;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+  @include breakpoint ( pc ) {
+   display: flex; 
+  }
+}
 
-// // ×マークのメニュー閉じるボタン
-// .c-navi_toggle-close {
-//   background-color: gray;
-//   i {
-//     background-color: red;
-//     left: 0px;
-//     &:nth-child(1) {
-//       top: 25px;
-//       width: 30px;
-//       left: 10px;
-//       transform:rotate(45deg)
-//     }
-//     &:nth-child(2) {
-//       display: none;
-//     }
-//     &:nth-child(3) {
-//       top: 25px;
-//       width: 30px;
-//       left: 10px;
-//       transform:rotate(-45deg)
-//     }
-//   }
-// }
+.c-navi__login {
+  color: #fff;
+  display: inline-block;
+  background: #0054EE;
+  padding: 1.6rem 0.5rem;
+  img {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+  }
+}
+
+// 三本線のハンバーガーメニューアイコン
+.c-navi__button {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  i {
+    right: 0;
+    width: 27px;
+    height: 2.5px;
+    background-color: #000;
+    position: absolute;
+    &:nth-child(1) {
+      top: 15px;
+    }
+    &:nth-child(2) {
+      top: 25px;
+    }
+    &:nth-child(3) {
+      top: 35px;
+    }
+  }
+  @include breakpoint ( pc ) {
+   display: none; 
+  }
+}
+
+// ×マークのメニュー閉じるボタン
+.c-navi__button-show {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  i {
+    right: 0;
+    width: 27px;
+    height: 2.5px;
+    background-color: #000;
+    position: absolute;
+    &:nth-child(1) {
+      top: 25px;
+      width: 30px;
+      left: 10px;
+      transform:rotate(45deg)
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+    &:nth-child(3) {
+      top: 25px;
+      width: 30px;
+      left: 10px;
+      transform:rotate(-45deg)
+    }
+  }
+  @include breakpoint ( pc ) {
+   display: none; 
+  }
+}
