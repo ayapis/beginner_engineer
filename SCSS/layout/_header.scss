@@ -9,7 +9,6 @@
   color: #000;
   margin: auto;
   @include breakpoint ( pc ) {
-    width: 80%;
     max-width: 1140px;
     height: 100px;
     // display: flex;
@@ -25,20 +24,20 @@
   align-items: center;
 }
 
-.l-header__main {
+.l-header__title {
   display: flex;
   align-items: center;
 }
 
-.l-header__main__logo {
+.l-header__title__logo {
   margin-right: 1rem;
   width: 3.3rem;
   @include breakpoint ( pc ) {
-    width: auto;
+    width: 5.2rem;
   }
 }
 
-.l-header__main__title {
+.l-header__title__name {
   font-size: 2rem;
   @include breakpoint ( pc ) {
     font-size: 3rem;
