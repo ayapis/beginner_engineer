@@ -507,15 +507,6 @@ body {
     width: 80%;
     max-width: 1140px;
     height: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 
@@ -609,6 +600,9 @@ body {
 }
 
 .c-navi__login {
+  font-size: 1.4rem;
+  line-height: 1;
+  width: 15rem;
   color: #fff;
   display: inline-block;
   background: #0054EE;
