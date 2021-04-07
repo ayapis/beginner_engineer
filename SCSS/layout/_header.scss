@@ -3,42 +3,47 @@
 // 具体的には、index.htmlでクラス名を検索したときに検索結果が1つになることが条件
 
 .l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #fff;
+}
+
+.l-header-show {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.l-header__wrap {
   width: 90%;
   min-width: 335px;
-  height: 50px;
   color: #000;
   margin: auto;
   @include breakpoint ( pc ) {
-    width: 80%;
     max-width: 1140px;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
 // インナー追加する場合に使用
-.l-header__wrap {
+.l-header__flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.l-header__main {
+.l-header__title {
   display: flex;
   align-items: center;
 }
 
-.l-header__main__logo {
+.l-header__title__logo {
   margin-right: 1rem;
   width: 3.3rem;
   @include breakpoint ( pc ) {
-    width: auto;
+    width: 5.2rem;
   }
 }
 
-.l-header__main__title {
+.l-header__title__name {
   font-size: 2rem;
   @include breakpoint ( pc ) {
     font-size: 3rem;
