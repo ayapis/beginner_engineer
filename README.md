@@ -4,7 +4,7 @@ http://52.192.29.208/beginner_engineer/<br>
 
 # ブランチ運用（暫定）
 
-devlopからブランチを切る。ブランチ名は自由だが担当者名をいれること<br>
+devlopからブランチを切る。ブランチ名は「担当者名_backlogの番号（RAISETECH02-38）」<br>
 ↓<br>
 ローカルで開発<br>
 ↓<br>
