@@ -18,16 +18,14 @@
       &:nth-of-type(5) {
         margin-bottom: 0;
       }
-      // margin-right: 3rem;
-      &:nth-of-type(5) {
-        // margin-right: 4rem;
-      }
       &:last-of-type {
-        // margin-right: 0;
         display: none;
       }
       &:first-of-type {
         margin-top: 1.5rem;
+      }
+      &:hover {
+        background-color: #EFF5FF;
       }
     }
   }

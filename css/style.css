@@ -500,21 +500,30 @@ a {
 }
 
 .l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #fff;
+}
+
+.l-header-show {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.l-header__wrap {
   width: 90%;
   min-width: 335px;
-  height: 50px;
   color: #000;
   margin: auto;
 }
 
 @media (min-width: 768px) {
-  .l-header {
+  .l-header__wrap {
     max-width: 1140px;
-    height: 100px;
   }
 }
 
-.l-header__wrap {
+.l-header__flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,6 +565,15 @@ a {
   }
 }
 
+main {
+  width: 90%;
+  margin: auto;
+}
+
+main p {
+  margin-top: 20rem;
+}
+
 .c-navi {
   font-size: 1.4rem;
 }
@@ -591,6 +609,9 @@ a {
   }
   .c-navi li:first-of-type {
     margin-top: 1.5rem;
+  }
+  .c-navi li:hover {
+    background-color: #EFF5FF;
   }
 }
 
