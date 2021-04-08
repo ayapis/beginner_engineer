@@ -7,10 +7,10 @@
   top: 0;
   right: -100%;
   @include breakpoint ( pc ) {
-    width: auto; 
+    width: 100%; 
     height: auto;
     position: initial;
-    background: initial;
+    margin-top: 1.6rem;
   }
 }
 
