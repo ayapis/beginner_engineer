@@ -586,6 +586,7 @@ a {
 
 main {
   width: 90%;
+  max-width: 1140px;
   margin: auto;
 }
 
@@ -667,6 +668,8 @@ main p {
   width: 50px;
   height: 50px;
   z-index: 10;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .c-navi__button i {
@@ -755,6 +758,8 @@ main p {
   position: fixed;
   top: 0;
   right: -100%;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 @media (min-width: 768px) {

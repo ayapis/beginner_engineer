@@ -6,6 +6,7 @@
   position: fixed;
   top: 0;
   right: -100%;
+  transition: all .5s ease-in-out;
   @include breakpoint ( pc ) {
     width: 100%; 
     height: auto;
