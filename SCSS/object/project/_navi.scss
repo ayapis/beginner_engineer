@@ -6,14 +6,26 @@
   position: fixed;
   top: 0;
   right: -100%;
+  transition: all .5s ease-in-out;
   @include breakpoint ( pc ) {
-    width: auto; 
+    width: 100%; 
     height: auto;
     position: initial;
-    background: initial;
+    margin-top: 1.6rem;
   }
 }
 
 .p-navi-show {
   right: 0;
+}
+
+.p-navi-footer {
+  margin-bottom: 4rem;
+  @include breakpoint ( pc ) {
+    margin-right: 12rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    margin-bottom: 0;
+  }
 }

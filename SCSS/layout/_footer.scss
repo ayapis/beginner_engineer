@@ -3,14 +3,20 @@
 // 具体的には、index.htmlでクラス名を検索したときに検索結果が1つになることが条件
 
 .l-footer {
-  height: 509px;
-  background: #001D60;
+  width: 100%;
   color: #fff;
-  @include breakpoint ( pc ) {
-    height: 350px;
-  }
+  text-align: center;
+  padding: 27px 0px;
+  background: #001D60;
 }
 
-// フッターにインナー追加する場合に使用
-// .l-footer-wrap {
-// }
+.l-footer__wrap {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+  text-align: left;
+  @include breakpoint ( pc ) {
+    display: flex;
+    margin-bottom: 10rem;
+  }
+}
