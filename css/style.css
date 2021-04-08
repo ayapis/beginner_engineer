@@ -595,6 +595,14 @@ main p {
 
 .c-navi {
   font-size: 1.4rem;
+  width: 90%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .c-navi {
+    max-width: 1140px;
+  }
 }
 
 .c-navi li {
@@ -602,35 +610,29 @@ main p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 .c-navi li:first-of-type {
   margin-top: 8rem;
 }
 
-.c-navi li:nth-of-type(5) {
-  margin-bottom: 6rem;
-}
-
 @media (min-width: 768px) {
   .c-navi li {
     width: 20%;
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-    border: 1px solid #aaaaaa;
+    line-height: 3rem;
+    margin-top: 0;
+    border-right: 1px solid #aaaaaa;
   }
-  .c-navi li:nth-of-type(5) {
-    margin-bottom: 0;
+  .c-navi li:first-of-type {
+    margin-top: 0;
+    border-left: 1px solid #aaaaaa;
   }
   .c-navi li:last-of-type {
     display: none;
   }
-  .c-navi li:first-of-type {
-    margin-top: 1.5rem;
-  }
   .c-navi li:hover {
-    background-color: #EFF5FF;
+    background-color: #ACCBF9;
   }
 }
 
@@ -757,10 +759,10 @@ main p {
 
 @media (min-width: 768px) {
   .p-navi {
-    width: auto;
+    width: 100%;
     height: auto;
     position: initial;
-    background: initial;
+    margin-top: 1.6rem;
   }
 }
 
