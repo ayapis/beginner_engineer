@@ -17,3 +17,14 @@
 .p-navi-show {
   right: 0;
 }
+
+.p-navi-footer {
+  margin-bottom: 4rem;
+  @include breakpoint ( pc ) {
+    margin-right: 12rem;
+    &:last-of-type {
+      margin-right: 0;
+    }
+    margin-bottom: 0;
+  }
+}
