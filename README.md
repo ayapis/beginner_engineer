@@ -1,6 +1,6 @@
 # 暫定的な検証環境
 devlopブランチのデータをアップロードしてます<br>
-http://52.192.29.208<br>
+http://board.beginner-engineer.ga/<br>
 <br>
 <br>
 
