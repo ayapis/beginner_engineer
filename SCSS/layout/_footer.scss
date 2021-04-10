@@ -6,8 +6,12 @@
   width: 100%;
   color: #fff;
   text-align: center;
-  padding: 27px 0px;
   background: #001D60;
+  padding: 3rem 2rem 2rem 2rem;
+  margin-top: 10rem;
+  @include breakpoint ( pc ) {
+    padding: 4rem 15rem 2rem 15rem;
+  }
 }
 
 .l-footer__wrap {
@@ -15,8 +19,9 @@
   max-width: 1140px;
   margin: auto;
   text-align: left;
+  margin-bottom: 8rem;
   @include breakpoint ( pc ) {
     display: flex;
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
   }
 }

@@ -478,10 +478,6 @@ body {
   letter-spacing: -0.01em;
 }
 
-.body-show {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
 a {
   display: block;
   width: 100%;
@@ -491,8 +487,15 @@ a {
   width: 100%;
   color: #fff;
   text-align: center;
-  padding: 27px 0px;
   background: #001D60;
+  padding: 3rem 2rem 2rem 2rem;
+  margin-top: 10rem;
+}
+
+@media (min-width: 768px) {
+  .l-footer {
+    padding: 4rem 15rem 2rem 15rem;
+  }
 }
 
 .l-footer__wrap {
@@ -500,6 +503,7 @@ a {
   max-width: 1140px;
   margin: auto;
   text-align: left;
+  margin-bottom: 8rem;
 }
 
 @media (min-width: 768px) {
@@ -507,7 +511,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
   }
 }
 
@@ -519,7 +523,7 @@ a {
 }
 
 .l-header-show {
-  background-color: rgba(0, 0, 0, 0.01);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .l-header__wrap {
@@ -527,6 +531,7 @@ a {
   min-width: 335px;
   color: #000;
   margin: auto;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -591,7 +596,21 @@ main {
 }
 
 main p {
-  margin-top: 20rem;
+  margin-top: 6.5rem;
+}
+
+@media (min-width: 768px) {
+  main p {
+    margin-top: 11.8rem;
+  }
+}
+
+.bg-show {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.bg-show2 {
+  background: rgba(0, 0, 0, 0.01);
 }
 
 .c-navi {
@@ -668,8 +687,6 @@ main p {
   width: 50px;
   height: 50px;
   z-index: 10;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
 }
 
 .c-navi__button i {
@@ -678,6 +695,8 @@ main p {
   height: 2.5px;
   background-color: #000;
   position: absolute;
+  -webkit-transition: all 1.0s ease-in-out;
+  transition: all 1.0s ease-in-out;
 }
 
 .c-navi__button i:nth-child(1) {
@@ -702,6 +721,7 @@ main p {
   position: relative;
   width: 50px;
   height: 50px;
+  z-index: 10;
 }
 
 .c-navi__button-show i {
@@ -715,7 +735,7 @@ main p {
 .c-navi__button-show i:nth-child(1) {
   top: 25px;
   width: 30px;
-  left: 10px;
+  right: 0px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -727,7 +747,7 @@ main p {
 .c-navi__button-show i:nth-child(3) {
   top: 25px;
   width: 30px;
-  left: 10px;
+  right: 0px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -758,8 +778,8 @@ main p {
   position: fixed;
   top: 0;
   right: -100%;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 1.0s ease-in-out;
+  transition: all 1.0s ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -767,7 +787,7 @@ main p {
     width: 100%;
     height: auto;
     position: initial;
-    margin-top: 1.6rem;
+    margin-top: 1.3rem;
   }
 }
 
