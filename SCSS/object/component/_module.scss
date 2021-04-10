@@ -5,6 +5,16 @@ main {
   max-width: 1140px;
   margin: auto;
   p {
-    margin-top: 20rem;
+    margin-top: 6.5rem;
+    @include breakpoint ( pc ) {
+      margin-top: 11.8rem;
+    }
   }
+}
+
+.bg-show {
+  background: rgba(0, 0, 0, 0.7);
+}
+.bg-show2 {
+  background: rgba(0, 0, 0, 0.01);
 }
