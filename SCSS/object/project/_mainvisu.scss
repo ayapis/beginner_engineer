@@ -41,15 +41,13 @@
   }
 }
 
-.p-mainvisu__intro {
-  font-size: 1.4rem;
-  width: 30rem;
-  text-align: center;
-  margin: auto;
-  margin-top: 2.5rem;
-  @include breakpoint ( pc ) {
-    font-size: 1.8rem;
-    width: 60rem;
-    margin-top: 4rem;
+.p-mainvisu {
+  .c-comment {
+    margin-top: 2.5rem;
+    @include breakpoint ( pc ) {
+      margin-top: 4rem;
+      width: 60rem;
+      text-align: center;
+    }
   }
 }
