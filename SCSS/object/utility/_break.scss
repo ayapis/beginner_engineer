@@ -9,3 +9,16 @@
 //       }
 //     }
 //   }
+
+// PCのときだけ改行
+
+.u-break-pc {
+  display: none;
+  @include breakpoint( pc ) {
+    display: block;
+    &::before {
+      content: "\A";
+      white-space: pre;
+      }
+    }
+}

@@ -1,17 +1,18 @@
 // ボタン追加の場合に使用
 
-// .c-button {
-//   font-size: 1.5rem;
-//   line-height: 3rem;
-//   border: 1px solid red;
-//   border-radius: 20px;
-//   background: transparent linear-gradient(180deg, #F2EDE9 0%, #DED8D3 100%);
-//   a {
-//     width: 100%;
-//     display: inline-block;
-//     text-align: center;
-//   }
-// }
+.c-button {
+  color: #fff;
+  background: #0054EE;
+  width: 15rem;
+  height: 6rem;
+  margin: auto;
+  text-align: center;
+  display: block;
+  font-size: 1.8rem;
+  @include breakpoint ( pc ) {
+    font-size: 2rem;
+  }
+}
 
 // .c-button-open {
 //   color: red;

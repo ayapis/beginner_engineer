@@ -1,0 +1,18 @@
+.p-analysis {
+  padding-bottom: 6rem;
+  @include breakpoint ( pc ) {
+    padding-bottom: 8rem;
+  }
+  .c-button {
+    margin-top: 4.5rem;
+    @include breakpoint ( pc ) {
+      margin: inherit;
+      margin-top: 6rem;
+    }
+  }
+  .c-image {
+    @include breakpoint ( pc ) {
+      width: 50%;
+    }
+  }
+}

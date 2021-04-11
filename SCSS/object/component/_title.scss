@@ -1,8 +1,13 @@
-// .c-title {
-//   color: #fff;
-//   font-size: 3.6rem;
-//   line-height: 2rem;
-// }
+.c-title {
+  font-size: 2.4rem;
+  padding-top: 4rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  @include breakpoint ( pc ) {
+    padding-top: 8rem;
+    margin-bottom: 7rem;
+  }
+}
 
 .c-title-footer {
   font-size: 1.8rem;
