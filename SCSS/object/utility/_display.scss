@@ -1,8 +1,14 @@
 // 769px以上のときだけ表示
-
 .u-forpc {
   display: none;
   @include breakpoint ( pc ) {
     display: block;
+  }
+}
+// 768px以下のときだけ表示
+.u-forsp {
+  display: block;
+  @include breakpoint ( pc ) {
+    display: none;
   }
 }

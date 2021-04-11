@@ -473,7 +473,6 @@ html {
 body {
   font-size: 1.8rem;
   font-weight: 700;
-  line-height: 2;
   font-family: Verdana,"メイリオ","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
   letter-spacing: -0.01em;
 }
@@ -481,6 +480,16 @@ body {
 a {
   display: block;
   width: 100%;
+}
+
+main {
+  margin-top: 6.5rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-top: 11.8rem;
+  }
 }
 
 .l-footer {
@@ -520,6 +529,7 @@ a {
   position: fixed;
   top: 0;
   background: #fff;
+  z-index: 10;
 }
 
 .l-header-show {
@@ -582,27 +592,18 @@ a {
   }
 }
 
+.c-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .c-item-footer {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 1.7;
   margin-bottom: 2rem;
-}
-
-main {
-  width: 90%;
-  max-width: 1140px;
-  margin: auto;
-}
-
-main p {
-  margin-top: 6.5rem;
-}
-
-@media (min-width: 768px) {
-  main p {
-    margin-top: 11.8rem;
-  }
 }
 
 .bg-show {
@@ -770,6 +771,79 @@ main p {
   }
 }
 
+.c-wrap {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.p-mainvisu {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #fff), color-stop(50%, #EFF5FF), to(#EFF5FF));
+  background: linear-gradient(to bottom, #fff 0%, #fff 50%, #EFF5FF 50%, #EFF5FF 100%);
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+  .p-mainvisu {
+    padding-bottom: 10rem;
+  }
+}
+
+.p-mainvisu h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .p-mainvisu h2 {
+    font-size: 2.8rem;
+    margin-top: 10rem;
+  }
+}
+
+.p-mainvisu__firstview {
+  position: relative;
+}
+
+.p-mainvisu__firstview__text {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .p-mainvisu__firstview__text {
+    font-size: 5rem;
+    line-height: 1.5;
+    bottom: 5rem;
+    left: 5rem;
+    text-align: inherit;
+  }
+}
+
+.p-mainvisu__firstview__text p:last-of-type {
+  display: inline-block;
+}
+
+.p-mainvisu__intro {
+  font-size: 1.4rem;
+  width: 30rem;
+  text-align: center;
+  margin: auto;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .p-mainvisu__intro {
+    font-size: 1.8rem;
+    width: 60rem;
+    margin-top: 4rem;
+  }
+}
+
 .p-navi {
   width: 66.6vw;
   height: 100vh;
@@ -809,6 +883,20 @@ main p {
   }
 }
 
+.u-break-pc {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .u-break-pc {
+    display: block;
+  }
+  .u-break-pc::before {
+    content: "\A";
+    white-space: pre;
+  }
+}
+
 .u-forpc {
   display: none;
 }
@@ -816,6 +904,16 @@ main p {
 @media (min-width: 768px) {
   .u-forpc {
     display: block;
+  }
+}
+
+.u-forsp {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .u-forsp {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
