@@ -48,3 +48,4 @@ devlopブランチをターゲットにpull requestsを出す<br>
 | 仮想環境 | Docker |
 | サーバー | AWS |
 | バージョン管理 | Git/Github |
+| CI/CD | Github Actions |
