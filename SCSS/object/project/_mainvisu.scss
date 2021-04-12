@@ -6,11 +6,13 @@
   }
   h2 {
     font-size: 2rem;
+    line-height: 2.4rem;
     text-align: center;
     margin-top: 3rem;
     @include breakpoint ( pc ) {
       font-size: 2.8rem;
-      margin-top: 10rem;
+      line-height: 5.6rem;
+      margin-top: 8rem;
     }
   }
 }
@@ -25,12 +27,15 @@
   bottom: 0;
   color: #fff;
   font-size: 3.2rem;
+  line-height: 3.9rem;
+  letter-spacing: 0.03rem;
   text-align: center;
+  left: 0.3rem;
   @include breakpoint ( pc ) {
-    font-size: 5rem;
-    line-height: 1.5;
+    font-size: 6rem;
+    line-height: 9rem;
     bottom: 5rem;
-    left: 5rem;
+    left: 6rem;
     text-align: inherit;
   }
   p {

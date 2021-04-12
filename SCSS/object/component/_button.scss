@@ -11,6 +11,7 @@
   font-size: 1.8rem;
   @include breakpoint ( pc ) {
     font-size: 2rem;
+    width: 20rem;
   }
 }
 
