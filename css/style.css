@@ -814,7 +814,7 @@ main {
 .c-title {
   font-size: 2.4rem;
   line-height: 2.9rem;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05rem;
   padding-top: 4rem;
   margin-bottom: 2.5rem;
   text-align: center;
@@ -824,7 +824,7 @@ main {
   .c-title {
     font-size: 3rem;
     line-height: 3.6rem;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.05rem;
     padding-top: 8rem;
     margin-bottom: 7rem;
   }
@@ -931,7 +931,7 @@ main {
   color: #fff;
   font-size: 3.2rem;
   line-height: 3.9rem;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03rem;
   text-align: center;
   left: 0.3rem;
 }
