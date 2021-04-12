@@ -10,19 +10,24 @@
   padding: 3rem 2rem 2rem 2rem;
   margin-top: 6rem;
   @include breakpoint ( pc ) {
-    padding: 4rem 15rem 2rem 15rem;
+    padding: 4rem 0 2rem ;
     margin-top: 11rem;
+  }
+  small {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.03em;
   }
 }
 
 .l-footer__wrap {
-  width: 90%;
   max-width: 1140px;
   margin: auto;
   text-align: left;
   margin-bottom: 8rem;
   @include breakpoint ( pc ) {
+    width: 90%;
     display: flex;
-    margin-bottom: 12rem;
+    margin-bottom: 10rem;
   }
 }

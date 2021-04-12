@@ -1,9 +1,14 @@
 .c-title {
   font-size: 2.4rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.03em;
   padding-top: 4rem;
   margin-bottom: 2.5rem;
   text-align: center;
   @include breakpoint ( pc ) {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.03em;
     padding-top: 8rem;
     margin-bottom: 7rem;
   }
@@ -11,9 +16,11 @@
 
 .c-title-footer {
   font-size: 1.8rem;
+  line-height: 2.2rem;
   margin-bottom: 2rem;
   @include breakpoint ( pc ) {
     font-size: 2rem;
+    line-height: 2.4rem;
     margin-bottom: 3.4rem;
   }
 }

@@ -7,6 +7,8 @@
   top: 0;
   right: -100%;
   transition: all 1.0s ease-in-out;
+  border-top:1px solid #aaaaaa;
+  border-bottom:1px solid #aaaaaa;
   @include breakpoint ( pc ) {
     width: 100%; 
     height: auto;
