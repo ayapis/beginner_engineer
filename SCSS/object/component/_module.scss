@@ -9,12 +9,22 @@
 
 
 .wrapper {
-  width: 57%;
-  max-width: 440px;
+  width: 70%;
   min-width: 280px;
+  max-width: 440px;
   padding-left: 2rem;
   padding-right: 2rem;
   margin: auto;
+  @include breakpoint ( narrow ) {
+    width: 70%;
+    min-width: 280px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  @include breakpoint ( pc ) {
+    width: 57%;
+    min-width: 335px;
+  }
 }
 
 .login {
@@ -25,8 +35,13 @@
   border: 1px solid #DDDDDD;
   border-radius: 5px;
   background: #ffffff;
-
   position: relative;
+  @include breakpoint ( narrow ) {
+    padding: 2.5rem 1rem;
+  }
+  @include breakpoint ( pc ) {
+    padding: 2.5rem;
+  }
   
   .title {
     color: #333;

@@ -7,4 +7,9 @@
       @content ;
     }
   }
+  @if $point == narrow {
+    @media ( min-width: 280px ) {
+      @content ;
+    }
+  }
 }
