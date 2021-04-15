@@ -667,21 +667,10 @@ main {
 }
 
 .wrapper {
-  width: 70%;
+  width: 90%;
   min-width: 280px;
   max-width: 440px;
-  padding-left: 2rem;
-  padding-right: 2rem;
   margin: auto;
-}
-
-@media (min-width: 280px) {
-  .wrapper {
-    width: 70%;
-    min-width: 280px;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -696,16 +685,12 @@ main {
   margin: auto;
   margin-top: 18rem;
   padding: 2.5rem;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
   border: 1px solid #DDDDDD;
   border-radius: 5px;
   background: #ffffff;
   position: relative;
-}
-
-@media (min-width: 280px) {
-  .login {
-    padding: 2.5rem 1rem;
-  }
 }
 
 @media (min-width: 768px) {
