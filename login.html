@@ -27,7 +27,7 @@
         <div class="l-header__title">
           <img src="./images/l-header__logo.png" alt="" class="l-header__title__logo">
           <!-- トップページ以外はサイトタイトルをpとし、ページ名をh1とします。 -->
-          <h1 class="l-header__title__name"><a href="index.html">サービス名</a></h1>
+          <p class="l-header__title__name"><a href="index.html">サービス名</a></p>
         </div>
         <div class="c-navi__login u-forpc"><a href="login.html"><img src="./images/loginicon.svg">ログインはこちら</a></div>
         <button class="c-navi__button" id="j-ham">
@@ -52,55 +52,28 @@
   </header>
 
   <main>
-    <section class="p-mainvisu">
-      <div class="c-wrap">
-        <div class="p-mainvisu__firstview">
-          <img class="c-image u-forpc" src="./images/firstview.png" alt="PC用ファーストビュー画像">
-          <img class="c-image u-forsp" src="./images/firstview-sp.png" alt="SP用ファーストビュー画像">
-          <div class="p-mainvisu__firstview__text">
-            <p>実務未経験の<br class="u-break-pc">一歩先、</p>
-            <p>本物のエンジニアに</p>
-          </div>
+    <div class="wrapper">
+      <form class="login">
+        <p class="title">ログイン</p>
+        <button class="twitter"><i class="fab fa-twitter"></i>
+          <p>Twitterでログインする</p>
+        </button>
+        <div class="text-divider">または</div>
+        <input class="mail" type="text" placeholder="メールアドレス" autofocus />
+        <input class="password" type="password" placeholder="パスワード" />
+        <div class="check">
+          <input type="checkbox" id="scales" name="scales">
+          <label for="scales">メールアドレスを記憶する</label>
         </div>
-        <h2 class="u-forpc">ここには、サブタイトルが入ります。</h2>
-        <h2 class="u-forsp">サブタイトル</h2>
-        <p class="c-comment">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
-        </p>
-      </div>
-    </section>
-    <section class="p-analysis">
-      <div class="c-wrap">
-        <h3 class="c-title">Twitter分析</h3>
-        <div class="c-wrap-flexbox">
-          <img class="c-image" src="./images/top__analysis.png" alt="Twitter分析のイメージ画像">
-          <div class="p-analysis__box">
-            <p class="c-comment">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
-            <button class="c-button"><a href="#">MORE</a></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="p-portfolio">
-      <div class="c-wrap">
-        <h3 class="c-title">ポートフォリオ検索・投稿</h3>
-        <div class="c-wrap-flexbox">
-          <img class="c-image" src="./images/top__portfolio.png" alt="ポートフォリオ検索・投稿のイメージ画像">
-          <div class="p-portfolio__box">
-            <p class="c-comment">どんなポートフォリオを作れば良いのかわからない時に見て欲しい<br>もしかしたら、企業からのオファーも...？</p>
-            <button class="c-button"><a href="#">MORE</a></button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="p-sponsorship">
-      <div class="c-wrap">
-        <h3 class="c-title">協賛企業・団体</h3>
-        <div class="c-wrap-flexbox">
-          <img class="c-image" src="./images/top__sponsorship__tf.png" alt="協賛企業ロゴ">
-          <img class="c-image" src="./images/top__sponsorship__rt.png" alt="協賛企業ロゴ">
-        </div>
-      </div>
-    </section>
+        <button class="login">
+          <p class="state"><i class="far fa-envelope"></i>メールアドレスでログインする</p>
+        </button>
+        <a href="#">パスワードを忘れた方はこちら</a>
+        <a href="#">ログインできない方はこちら</a>
+        <div class="text-divider"></div>
+        <a href="#">会員登録はこちら</a>
+      </form>
+    </div>
   </main>
 
   <footer class="l-footer">
