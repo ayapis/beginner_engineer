@@ -14,7 +14,7 @@ devlopからブランチを切る。ブランチ名は「担当者名_backlogの
 ↓<br>
 devlopブランチをターゲットにpull requestsを出す。 画面右側「Reviewers」でレビューして欲しい人を選択<br>
 ↓<br>
-レビュー担当者がレビュー<br>
+レビュー担当者がレビュー。レビューOKの場合は「Approve」をチェック<br>
 <br>
 <br>
 ※マージはレビュー担当者が行います<br>
