@@ -10,8 +10,7 @@ devlopからブランチを切る。ブランチ名は「担当者名_backlogの
 ↓<br>
 ローカルで開発<br>
 ↓<br>
-自分が作ったブランチをリモートにプッシュ<br>
-※devlopブランチ、masterブランチにはpushしない事<br>
+自分が作ったブランチをリモートにプッシュ。※devlopブランチ、masterブランチにはpushしない事<br>
 ↓<br>
 devlopブランチをターゲットにpull requestsを出す<br>
 ↓<br>
