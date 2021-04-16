@@ -46,6 +46,6 @@ devlopブランチをターゲットにpull requestsを出す<br>
 | バックエンド | Ruby/Ruby on Rails |
 | DB | MySQL |
 | 仮想環境 | Docker |
-| サーバー | AWS |
+| サーバー | AWS（VPC、EC2、CloudWatch） |
 | バージョン管理 | Git/Github |
 | CI/CD | Github Actions |
