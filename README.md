@@ -12,7 +12,7 @@ devlopからブランチを切る。ブランチ名は「担当者名_backlogの
 ↓<br>
 自分が作ったブランチをリモートにプッシュ。※devlopブランチ、masterブランチにはpushしない事<br>
 ↓<br>
-devlopブランチをターゲットにpull requestsを出す<br>
+devlopブランチをターゲットにpull requestsを出す。 画面右側「Reviewers」でレビューして欲しい人を選択<br>
 ↓<br>
 レビュー担当者がレビュー<br>
 <br>
