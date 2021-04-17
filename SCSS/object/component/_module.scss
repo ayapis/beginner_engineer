@@ -32,13 +32,8 @@
   padding: 2.5rem;
   padding-left: 6.25%;
   padding-right: 6.25%;
-  border: 1px solid #DDDDDD;
   border-radius: 5px;
-  background: #ffffff;
   position: relative;
-  // @include breakpoint ( narrow ) {
-  //   padding: 2.5rem 1rem;
-  // }
   @include breakpoint ( pc ) {
     padding: 2.5rem;
   }

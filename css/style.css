@@ -687,9 +687,7 @@ main {
   padding: 2.5rem;
   padding-left: 6.25%;
   padding-right: 6.25%;
-  border: 1px solid #DDDDDD;
   border-radius: 5px;
-  background: #ffffff;
   position: relative;
 }
 
@@ -892,7 +890,8 @@ main {
 
 .c-navi__login {
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 1.7rem;
+  text-align: center;
   width: 15rem;
   color: #fff;
   display: inline-block;
@@ -904,7 +903,7 @@ main {
 }
 
 .c-navi__login img {
-  vertical-align: middle;
+  height: 1.7rem;
   margin-right: 0.5rem;
 }
 
