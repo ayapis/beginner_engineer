@@ -8,10 +8,9 @@
   text-align: center;
   background: #001D60;
   padding: 3rem 2rem 2rem 2rem;
-  margin-top: 6rem;
+  margin-top: 10rem;
   @include breakpoint ( pc ) {
     padding: 4rem 0 2rem ;
-    margin-top: 10rem;
   }
   small {
     font-size: 1.4rem;
