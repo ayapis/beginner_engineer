@@ -28,14 +28,16 @@
 .login {
   width: 100%;
   margin: auto;
-  margin-top: 18rem;
+  margin-top: 9.5rem;
   padding: 2.5rem;
   padding-left: 6.25%;
   padding-right: 6.25%;
+  border: 1px solid #DDDDDD;
   border-radius: 5px;
   position: relative;
   @include breakpoint ( pc ) {
     padding: 2.5rem;
+    margin-top: 16.5rem;
   }
   
   .title {
@@ -61,7 +63,7 @@
       color: #333;
       text-align: center;
       font-size: 1.4rem;
-      line-height: 1.7rem;
+      line-height: 2.1rem;
       letter-spacing: -0.01rem;
     }
     
@@ -99,18 +101,20 @@
   }
   
   
-  .login {
+  .c-button-login {
     width: 100%;
     height: 45px;
     background: #0054EE;
     margin-top: 1.5rem;
     padding: 1.5rem 0;
+  }
+  .c-button-login__text {
+    display: flex;
+    justify-content: center;
+    color: #fff;
     p {
-      text-align: center;
       font-weight: bold;
-      font-size: 14px;
-      line-height: 16px;
-      color: #fff;
+      font-size: 1.4rem;
     }
   }
   .fa-envelope {
