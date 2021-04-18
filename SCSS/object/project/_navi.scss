@@ -9,6 +9,7 @@
   transition: all 1.0s ease-in-out;
   border-top:1px solid #aaaaaa;
   border-bottom:1px solid #aaaaaa;
+  z-index: 25;
   @include breakpoint ( pc ) {
     width: 100%; 
     height: auto;
@@ -19,6 +20,7 @@
 
 .p-navi-show {
   right: 0;
+  z-index: 25;
 }
 
 .p-navi-footer {
