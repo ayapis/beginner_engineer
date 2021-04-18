@@ -1,13 +1,4 @@
 // 分類前のコンポーネントをとりあえず書く場所
-
-.bg-show {
-  background: rgba(0, 0, 0, 0.7);
-}
-.bg-show2 {
-  background: rgba(0, 0, 0, 0.01);
-}
-
-
 .wrapper {
   width: 90%;
   min-width: 280px;
@@ -141,4 +132,22 @@
   letter-spacing: -0.01rem;
   color: #333333;
   margin-top: 1.5rem;
+}
+
+.back {
+  overflow: hidden;
+  &::before{
+    /* 透過した黒を上から重ねるイメージ */
+    background-color: rgba(0,0,0,0.4);
+    /* 自由に位置指定 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+    width: 100vw;
+    height: 100vh;
+    z-index: 20;
+  }
 }
