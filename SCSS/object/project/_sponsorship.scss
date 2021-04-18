@@ -1,0 +1,20 @@
+.p-sponsorship {
+  // padding-bottom: 6rem;
+  // @include breakpoint ( pc ) {
+  //   padding-bottom: 8rem;
+  // }
+  .c-image {
+    width: 30%;
+    @include breakpoint ( pc ) {
+      width: 22%;
+    }
+  }
+  .c-wrap-flexbox {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3.7rem;
+    @include breakpoint ( pc ) {
+      margin-top: 6rem;
+    }
+  }
+}

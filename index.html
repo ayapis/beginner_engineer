@@ -12,20 +12,144 @@
   <!-- viewportの指定 -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- GoogleFontsの読み込み（内容は適宜変更） -->
-  <link href="https://fonts.googleapis.com/css2?family=Philosopher" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet">
-
   <!-- FontAwesomeの読み込み -->
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <!-- CSSの読み込み（slickは不要な場合もある） -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- jQueryの読み込み（不要な場合もある） -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    //共通パーツ読み込み
+    $(function () {
+      $("#header").load("header.html");
+    });
+  </script>
 </head>
 
 <body>
+  <!-- <header id="header"></header> -->
+  <header class="l-header">
+    <div class="l-header__wrap">
+      <div class="l-header__flex">
+        <div class="l-header__title">
+          <img src="./images/l-header__logo.png" alt="" class="l-header__title__logo">
+          <!-- トップページ以外はサイトタイトルをpとし、ページ名をh1とします。 -->
+          <h1 class="l-header__title__name"><a href="index.html">サービス名</a></h1>
+        </div>
+        <div class="c-navi__login u-forpc"><a href="login.html"><img src="./images/loginicon.svg">ログインはこちら</a></div>
+      </div>
+    </div>
+    <div class="p-navi u-forpc">
+      <ul class="c-navi">
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="#">Twitter分析</a></li>
+        <li><a href="#">ポートフォリオ</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+        <li>
+          <div class="c-navi__login"><a href="login.html"><img src="./images/loginicon.svg">ログインはこちら</a></div> </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="u-fixedbox">
+    <button class="c-navi__button" id="j-ham">
+      <i></i>
+      <i></i>
+      <i></i>
+    </button>
+  </div>
+  <div class="p-navi u-forsp">
+    <ul class="c-navi">
+      <li><a href="index.html">トップページ</a></li>
+      <li><a href="#">Twitter分析</a></li>
+      <li><a href="#">ポートフォリオ</a></li>
+      <li><a href="contact.html">お問い合わせ</a></li>
+      <li>
+        <div class="c-navi__login"><a href="login.html"><img src="./images/loginicon.svg">ログインはこちら</a></div> </a>
+      </li>
+    </ul>
+  </div>
+  <main>
+    <section class="p-mainvisu">
+      <div class="c-wrap">
+        <div class="p-mainvisu__firstview">
+          <img class="c-image u-forpc" src="./images/firstview.png" alt="PC用ファーストビュー画像">
+          <img class="c-image u-forsp" src="./images/firstview-sp.png" alt="SP用ファーストビュー画像">
+          <div class="p-mainvisu__firstview__text">
+            <p>実務未経験の<br class="u-break-pc">一歩先、</p>
+            <p>本物のエンジニアに</p>
+          </div>
+        </div>
+        <h2 class="u-forpc">ここには、サブタイトルが入ります。</h2>
+        <h2 class="u-forsp">サブタイトル</h2>
+        <p class="c-comment">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+        </p>
+      </div>
+    </section>
+    <section class="p-analysis">
+      <div class="c-wrap">
+        <h3 class="c-title">Twitter分析</h3>
+        <div class="c-wrap-flexbox">
+          <img class="c-image" src="./images/top__analysis.png" alt="Twitter分析のイメージ画像">
+          <div class="p-analysis__box">
+            <p class="c-comment">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+            <button class="c-button"><a href="#">MORE</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-portfolio">
+      <div class="c-wrap">
+        <h3 class="c-title">ポートフォリオ検索・投稿</h3>
+        <div class="c-wrap-flexbox">
+          <img class="c-image" src="./images/top__portfolio.png" alt="ポートフォリオ検索・投稿のイメージ画像">
+          <div class="p-portfolio__box">
+            <p class="c-comment">どんなポートフォリオを作れば良いのかわからない時に見て欲しい<br>もしかしたら、企業からのオファーも...？</p>
+            <button class="c-button"><a href="#">MORE</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="p-sponsorship">
+      <div class="c-wrap">
+        <h3 class="c-title">協賛企業・団体</h3>
+        <div class="c-wrap-flexbox">
+          <img class="c-image" src="./images/top__sponsorship__tf.png" alt="協賛企業ロゴ">
+          <img class="c-image" src="./images/top__sponsorship__rt.png" alt="協賛企業ロゴ">
+        </div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="l-footer">
+    <div class="l-footer__wrap">
+      <div class="p-navi-footer">
+        <p class="c-title-footer">Twitter分析</p>
+        <ul>
+          <li class="c-item-footer"><a href="#">仕事を探す</a></li>
+        </ul>
+      </div>
+      <div class="p-navi-footer">
+        <p class="c-title-footer">ポートフォリオ</p>
+        <ul>
+          <li class="c-item-footer"><a href="#">投稿する</a></li>
+          <li class="c-item-footer"><a href="#">プロフィール編集</a></li>
+          <li class="c-item-footer"><a href="#">見本を探す</a></li>
+        </ul>
+      </div>
+      <div class="p-navi-footer">
+        <p class="c-title-footer">その他</p>
+        <ul>
+          <li class="c-item-footer"><a href="#">利用規約</a></li>
+          <li class="c-item-footer"><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <small>© 2021 サービス名</small>
+  </footer>
+  <!-- jQueryの読み込み（内容は適宜変更、不要な場合は削除） -->
+  <script src="hamburgermenu.js"></script>
 </body>
 
 </html>

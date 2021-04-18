@@ -3,29 +3,50 @@
 // 具体的には、index.htmlでクラス名を検索したときに検索結果が1つになることが条件
 
 .l-header {
-  // width: 100%;
-  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+}
+
+.l-header-show {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.l-header__wrap {
+  width: 90%;
   color: #000;
-  // display: flex;
-  // align-items: center;
+  margin: auto;
+  margin-top: 1.5rem;
   @include breakpoint ( pc ) {
-    height: 100px;
+    max-width: 1140px;
   }
 }
 
 // インナー追加する場合に使用
-// .l-header__wrap {
-//   width: 80%;
-//   margin: auto;
-//   text-align: center;
-//   @include breakpoint ( pc ) {
-//     display: flex;
-//     justify-content: space-between;
-//     max-width: 1200px;
-//   }
-// }
+.l-header__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-// .l-header__title {
-//   font-size: 4.0rem;
-//   font-weight: bold;
-// }
+.l-header__title {
+  display: flex;
+  align-items: center;
+}
+
+.l-header__title__logo {
+  margin-right: 1rem;
+  width: 3.3rem;
+  @include breakpoint ( pc ) {
+    width: 5.2rem;
+  }
+}
+
+.l-header__title__name {
+  font-size: 2rem;
+  @include breakpoint ( pc ) {
+    font-size: 3rem;
+  }
+}

@@ -1,11 +1,20 @@
 // スマホのときだけ改行
 
-// .u-break {
-//     &::before {
-//       content: "\A";
-//       white-space: pre;
-//       @include breakpoint( ipad ) {
-//         display: none;
-//       }
-//     }
-//   }
+.u-break {
+  @include breakpoint( pc ) {
+    display: none;
+  }
+}
+
+// PCのときだけ改行
+
+.u-break-pc {
+  display: none;
+  @include breakpoint( pc ) {
+    display: block;
+    &::before {
+      content: "\A";
+      white-space: pre;
+      }
+    }
+}

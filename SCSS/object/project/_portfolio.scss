@@ -1,0 +1,25 @@
+.p-portfolio {
+  padding-bottom: 6rem;
+  background: #EFF5FF;
+  @include breakpoint ( pc ) {
+    padding-bottom: 11rem;
+  }
+  .c-button {
+    margin-top: 4.5rem;
+    @include breakpoint ( pc ) {
+      margin: inherit;
+      margin-top: 12%;
+    }
+  }
+  .c-image {
+    @include breakpoint ( pc ) {
+      width: 50%;
+    }
+  }
+}
+
+.p-portfolio__box {
+  @include breakpoint ( pc ) {
+    width: 43%;
+  }
+}
