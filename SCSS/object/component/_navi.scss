@@ -1,3 +1,56 @@
+.c-navi {
+  font-size: 1.4rem;
+  width: 90%;
+  margin: auto;
+  @include breakpoint ( pc ) {
+    max-width: 1140px;
+  }
+  li {
+    text-align: center;
+    align-self: center;
+    margin-top: 5rem;
+    &:first-of-type {
+      margin-top: 8rem;
+    }
+    @include breakpoint ( pc ) {
+      width: 25%;
+      line-height: 3rem;
+      margin-top: 0;
+      border-right:1px solid #aaaaaa;
+      &:first-of-type {
+        margin-top: 0;
+        border-left:1px solid #aaaaaa;
+      }
+      &:last-of-type {
+        display: none;
+      }
+      &:hover {
+        background-color: #ACCBF9;
+      }
+    }
+  }
+  @include breakpoint ( pc ) {
+   display: flex; 
+  }
+}
+
+.c-navi__login {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  text-align: center;
+  width: 15rem;
+  color: #fff;
+  display: inline-block;
+  background: #0054EE;
+  a {
+    padding: 1.6rem 0.5rem;
+  }
+  img {
+    height: 1.7rem;
+    margin-right: 0.5rem;
+  }
+}
+
 // 三本線のハンバーガーメニューアイコン
 .c-navi__button {
   position: relative;

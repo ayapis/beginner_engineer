@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <!-- サイトタイトル（適宜変更） -->
+  <title>未経験者向けポータルサイト</title>
+  <!-- サイト説明（適宜変更） -->
+  <meta name="description" content="未経験者向けポータルサイトです。">
+  <!-- ファビコン（適宜変更） -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+  <!-- viewportの指定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- FontAwesomeの読み込み -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- CSSの読み込み（slickは不要な場合もある） -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- jQueryの読み込み（不要な場合もある） -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header class="l-header">
+    <div class="l-header__wrap">
+      <div class="l-header__flex">
+        <div class="l-header__title">
+          <img src="./images/l-header__logo.png" alt="" class="l-header__title__logo">
+          <!-- トップページ以外はサイトタイトルをpとし、ページ名をh1とします。 -->
+          <p class="l-header__title__name"><a href="index.html">サービス名</a></p>
+        </div>
+        <div class="c-navi__login u-forpc"><a href="login.html">
+            <img src="./images/loginicon.svg">ログインはこちら
+          </a></div>
+        <button class="c-navi__button" id="j-ham">
+          <i></i>
+          <i></i>
+          <i></i>
+        </button>
+      </div>
+    </div>
+    <div class="p-navi">
+      <ul class="c-navi">
+        <li><a href="index.html">トップページ</a></li>
+        <li><a href="#">Twitter分析</a></li>
+        <li><a href="#">ポートフォリオ</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+        <li>
+          <div class="c-navi__login"><a href="login.html"><img src="./images/loginicon.svg">ログインはこちら</a></div> </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="c-title-contact">お問い合わせ</h1>
+    <p class="c-comment-contact">何かご質問等ありましたら、<br class="u-break">下記のメールアドレスよりご連絡ください。</p>
+    <address>
+      <a class="c-comment-link" href="mailto:example@gmail.com">example@gmail.com</a>
+    </address>
+  </main>
+
+  <footer class="l-footer">
+    <div class="l-footer__wrap">
+      <div class="p-navi-footer">
+        <p class="c-title-footer">Twitter分析</p>
+        <ul>
+          <li class="c-item-footer"><a href="#">仕事を探す</a></li>
+        </ul>
+      </div>
+      <div class="p-navi-footer">
+        <p class="c-title-footer">ポートフォリオ</p>
+        <ul>
+          <li class="c-item-footer"><a href="#">投稿する</a></li>
+          <li class="c-item-footer"><a href="#">プロフィール編集</a></li>
+          <li class="c-item-footer"><a href="#">見本を探す</a></li>
+        </ul>
+      </div>
+      <div class="p-navi-footer">
+        <p class="c-title-footer">その他</p>
+        <ul>
+          <li class="c-item-footer"><a href="#">利用規約</a></li>
+          <li class="c-item-footer"><a href="#">プライバシーポリシー</a></li>
+        </ul>
+      </div>
+    </div>
+    <small>© 2021 サービス名</small>
+  </footer>
+  <!-- jQueryの読み込み（内容は適宜変更、不要な場合は削除） -->
+  <script src="hamburgermenu.js"></script>
+</body>
+
+</html>

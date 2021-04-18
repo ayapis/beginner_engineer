@@ -472,20 +472,61 @@ html {
 
 body {
   font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2;
+  font-weight: 700;
   font-family: Verdana,"メイリオ","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  letter-spacing: -0.01em;
+}
+
+a {
+  display: block;
+  width: 100%;
+}
+
+main {
+  margin-top: 6.5rem;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin-top: 11rem;
+  }
 }
 
 .l-footer {
-  height: 509px;
-  background: #001D60;
+  width: 100%;
   color: #fff;
+  text-align: center;
+  background: #001D60;
+  padding: 3rem 2rem 2rem 2rem;
+  margin-top: 10rem;
 }
 
 @media (min-width: 768px) {
   .l-footer {
-    height: 350px;
+    padding: 4rem 0 2rem;
+  }
+}
+
+.l-footer small {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.03rem;
+}
+
+.l-footer__wrap {
+  max-width: 1140px;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 8rem;
+}
+
+@media (min-width: 768px) {
+  .l-footer__wrap {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 10rem;
   }
 }
 
@@ -1288,8 +1329,8 @@ body {
 }
 
 @media (min-width: 768px) {
-  .l-header {
-    height: 100px;
+  .u-forsp {
+    display: none;
   }
 }
 

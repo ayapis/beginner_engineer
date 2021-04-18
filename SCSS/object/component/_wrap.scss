@@ -1,15 +1,13 @@
-// .c-wrap {
-//   width: 90%;
-//   margin: auto;
-//   max-width: 1200px;
-// }
+// 最大幅の設定
+.c-wrap {
+  width: 90%;
+  max-width: 1140px;
+  margin: auto;
+}
 
-// .c-wrap-flexbox {
-//   @include breakpoint ( ipad ) {
-//     display: flex;
-//   }
-//   @include breakpoint ( pc ) {
-//     display: flex;
-//     justify-content: center;
-//   }
-// }
+.c-wrap-flexbox {
+  @include breakpoint ( pc ) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

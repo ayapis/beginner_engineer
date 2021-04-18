@@ -1,0 +1,58 @@
+.p-mainvisu {
+  background: linear-gradient(to bottom, #fff 0%, #fff 50%, #EFF5FF 50%, #EFF5FF 100%);
+  padding-bottom: 6rem;
+  @include breakpoint ( pc ) {
+    padding-bottom: 10rem;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+    margin-top: 3rem;
+    @include breakpoint ( pc ) {
+      font-size: 2.8rem;
+      line-height: 5.6rem;
+      margin-top: 8rem;
+    }
+  }
+}
+
+// 画像と文字を重ねて表示
+.p-mainvisu__firstview {
+  position: relative;
+}
+
+.p-mainvisu__firstview__text {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  font-size: 3.2rem;
+  line-height: 3.9rem;
+  letter-spacing: 0.03rem;
+  text-align: center;
+  left: 0.3rem;
+  @include breakpoint ( pc ) {
+    font-size: 6rem;
+    line-height: 9rem;
+    bottom: 5rem;
+    left: 6rem;
+    text-align: inherit;
+  }
+  p {
+    // スマホ版の重なりテキスト2行目のセンター配置用
+    &:last-of-type {
+      display: inline-block;
+    }
+  }
+}
+
+.p-mainvisu {
+  .c-comment {
+    margin-top: 2.5rem;
+    @include breakpoint ( pc ) {
+      margin-top: 4rem;
+      width: 60rem;
+      text-align: center;
+    }
+  }
+}
