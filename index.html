@@ -20,12 +20,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <script>
-  $("#header").load("header.html");
-  $('#j-ham').on('click', function () {
-    $('.p-navi').toggleClass('p-navi-show');
-    $('.c-navi__button').toggleClass('c-navi__button-show');
-    $('body').toggleClass('back');
-  });
+    $(function () {
+      $("#header").load("header.html");
+      $('#j-ham').on('click', function () {
+        $('.p-navi').toggleClass('p-navi-show');
+        $('.c-navi__button').toggleClass('c-navi__button-show');
+        $('body').toggleClass('back');
+      });
+    });
   </script>
 </head>
 
