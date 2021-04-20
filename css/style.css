@@ -477,6 +477,11 @@ body {
   letter-spacing: -0.01em;
 }
 
+a {
+  display: block;
+  width: 100%;
+}
+
 main {
   margin-top: 6.5rem;
 }
@@ -593,72 +598,21 @@ main {
 }
 
 .c-button {
+  color: #fff;
+  background: #0054EE;
+  width: 15rem;
+  height: 6rem;
+  margin: auto;
   text-align: center;
+  display: block;
+  font-size: 1.8rem;
 }
 
 @media (min-width: 768px) {
   .c-button {
-    text-align: initial;
-  }
-}
-
-.c-button a {
-  color: #fff;
-  font-size: 1.8rem;
-  text-align: center;
-  display: inline-block;
-  margin: auto;
-  background: #0054EE;
-  padding: 1.9rem 3.3rem;
-}
-
-.c-button a:hover {
-  background: #001D60;
-}
-
-@media (min-width: 768px) {
-  .c-button a {
     font-size: 2rem;
-    padding: 1.8rem 6.5rem;
+    width: 20rem;
   }
-}
-
-.c-button-login {
-  width: 100%;
-  height: 45px;
-  background: #0054EE;
-  margin-top: 1.5rem;
-  padding: 1.5rem 0;
-  border-radius: 5px;
-}
-
-.c-button-login:hover {
-  background: #001D60;
-}
-
-.c-button-login__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #fff;
-}
-
-.c-button-login__text p {
-  font-weight: bold;
-  font-size: 1.4rem;
-}
-
-.c-check {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  letter-spacing: -0.01rem;
-  color: #333333;
-  margin-top: 1.5rem;
 }
 
 .c-comment {
@@ -683,7 +637,6 @@ main {
 }
 
 .c-comment-link {
-  display: block;
   font-weight: bold;
   font-size: 1.2rem;
   line-height: 1.4rem;
@@ -694,12 +647,8 @@ main {
 
 @media (min-width: 768px) {
   .c-comment-link {
-    margin-top: 1.5rem;
+    margin-top: 3rem;
   }
-}
-
-.c-comment-link:hover {
-  opacity: 0.7;
 }
 
 .c-comment-contact {
@@ -713,113 +662,6 @@ main {
   .c-comment-contact {
     margin-top: 2.5rem;
   }
-}
-
-.c-divider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1rem;
-  line-height: 1.2rem;
-  letter-spacing: -0.01rem;
-  color: #AAA;
-  margin-top: 1rem;
-}
-
-.c-divider::before,
-.c-divider::after {
-  content: '';
-  height: 1px;
-  background-color: #AAA;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.c-divider-light {
-  color: #DDD;
-}
-
-.text-divider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1rem;
-  line-height: 1.2rem;
-  letter-spacing: -0.01rem;
-  margin-top: 1rem;
-}
-
-.text-divider::before,
-.text-divider::after {
-  content: '';
-  height: 1px;
-  background-color: #AAA;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.c-frame {
-  width: 100%;
-  padding: 1.3rem 1.5rem;
-  position: relative;
-  border: 2px solid #DDDDDD;
-  border-radius: 4px;
-}
-
-.c-frame p {
-  color: #333;
-  text-align: center;
-  font-size: 1.4rem;
-  line-height: 2.1rem;
-  letter-spacing: -0.01rem;
-}
-
-.c-frame-text {
-  padding: 1.5rem 1rem;
-}
-
-.c-frame-text::-webkit-input-placeholder {
-  font-weight: bold;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  color: #AAAAAA;
-}
-
-.c-frame-text:-ms-input-placeholder {
-  font-weight: bold;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  color: #AAAAAA;
-}
-
-.c-frame-text::-ms-input-placeholder {
-  font-weight: bold;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  color: #AAAAAA;
-}
-
-.c-frame-text::placeholder {
-  font-weight: bold;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  color: #AAAAAA;
-}
-
-.c-frame-text-mail {
-  margin-top: 1.2rem;
-}
-
-.c-frame-text-password {
-  margin-top: 0.9rem;
 }
 
 .c-image {
@@ -845,6 +687,196 @@ main {
 
 .c-item-footer a:hover {
   opacity: 0.7;
+}
+
+.wrapper {
+  width: 90%;
+  min-width: 280px;
+  max-width: 440px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 57%;
+    min-width: 335px;
+  }
+}
+
+.login {
+  width: 100%;
+  margin: auto;
+  margin-top: 9.5rem;
+  padding: 2.5rem;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .login {
+    padding: 2.5rem;
+    margin-top: 16.5rem;
+  }
+}
+
+.login .title {
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login .twitter, .login .mail, .login .password {
+  width: 100%;
+  padding: 1.3rem 1.5rem;
+  position: relative;
+  border-radius: 4px;
+  border: 2px solid #DDDDDD;
+}
+
+.login .twitter .fa-twitter, .login .mail .fa-twitter, .login .password .fa-twitter {
+  font-size: 2.1rem;
+  color: #55ACEE;
+  position: absolute;
+  left: 1.5rem;
+}
+
+.login .twitter p, .login .mail p, .login .password p {
+  color: #333;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  letter-spacing: -0.01rem;
+}
+
+.login .mail, .login .password {
+  padding: 1.5rem 1rem;
+}
+
+.login .mail::-webkit-input-placeholder, .login .password::-webkit-input-placeholder {
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #AAAAAA;
+}
+
+.login .mail:-ms-input-placeholder, .login .password:-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #AAAAAA;
+}
+
+.login .mail::-ms-input-placeholder, .login .password::-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #AAAAAA;
+}
+
+.login .mail::placeholder, .login .password::placeholder {
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #AAAAAA;
+}
+
+.login .mail {
+  margin-top: 1.2rem;
+}
+
+.login .password {
+  margin-top: 0.9rem;
+}
+
+.login .c-comment-link:last-of-type {
+  margin-top: 2rem;
+}
+
+.login .c-button-login {
+  width: 100%;
+  height: 45px;
+  background: #0054EE;
+  margin-top: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.login .c-button-login__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+}
+
+.login .c-button-login__text p {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.login .fa-envelope {
+  font-size: 1.6rem;
+  margin-right: 0.5rem;
+}
+
+.text-divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: -0.01rem;
+  color: #AAAAAA;
+  margin-top: 1rem;
+}
+
+.text-divider::before,
+.text-divider::after {
+  content: '';
+  height: 1px;
+  background-color: #AAA;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.check {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.01rem;
+  color: #333333;
+  margin-top: 1.5rem;
+}
+
+.back {
+  overflow: hidden;
+}
+
+.back::before {
+  /* 透過した黒を上から重ねるイメージ */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 自由に位置指定 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
 }
 
 .c-navi {
@@ -905,15 +937,11 @@ main {
   width: 15rem;
   color: #fff;
   display: inline-block;
+  background: #0054EE;
 }
 
 .c-navi__login a {
-  background: #0054EE;
   padding: 1.6rem 0.5rem;
-}
-
-.c-navi__login a:hover {
-  background: #001D60;
 }
 
 .c-navi__login img {
@@ -1032,15 +1060,6 @@ main {
   }
 }
 
-.c-title-login {
-  color: #333;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
 .c-title-footer {
   font-size: 1.8rem;
   line-height: 2.2rem;
@@ -1059,20 +1078,6 @@ main {
   width: 90%;
   max-width: 1140px;
   margin: auto;
-}
-
-.c-wrap-login {
-  width: 90%;
-  min-width: 280px;
-  max-width: 440px;
-  margin: auto;
-}
-
-@media (min-width: 768px) {
-  .c-wrap-login {
-    width: 57%;
-    min-width: 335px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1117,41 +1122,6 @@ main {
   .p-analysis__box {
     width: 43%;
   }
-}
-
-.p-login {
-  width: 100%;
-  margin: auto;
-  margin-top: 9.5rem;
-  padding: 2.5rem;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
-  border: 1px solid #DDDDDD;
-  border-radius: 5px;
-  position: relative;
-}
-
-@media (min-width: 768px) {
-  .p-login {
-    padding: 2.5rem;
-    margin-top: 16.5rem;
-  }
-}
-
-.p-login .fa-twitter {
-  font-size: 2.1rem;
-  color: #55ACEE;
-  position: absolute;
-  left: 1.5rem;
-}
-
-.p-login .fa-envelope {
-  font-size: 1.6rem;
-  margin-right: 0.5rem;
-}
-
-.p-login .c-comment-link:last-of-type {
-  margin-top: 2rem;
 }
 
 .p-mainvisu {
@@ -1322,25 +1292,6 @@ main {
   .p-sponsorship .c-wrap-flexbox {
     margin-top: 6rem;
   }
-}
-
-.u-back {
-  overflow: hidden;
-}
-
-.u-back::before {
-  /* 透過した黒を上から重ねるイメージ */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* 自由に位置指定 */
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: ' ';
-  width: 100vw;
-  height: 100vh;
-  z-index: 20;
 }
 
 @media (min-width: 768px) {

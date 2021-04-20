@@ -41,12 +41,9 @@
   width: 15rem;
   color: #fff;
   display: inline-block;
+  background: #0054EE;
   a {
-    background: #0054EE;
     padding: 1.6rem 0.5rem;
-    &:hover {
-      background: #001D60;
-    }
   }
   img {
     height: 1.7rem;
