@@ -636,6 +636,10 @@ main {
   background: #001D60;
 }
 
+.c-button-signup {
+  margin-top: 3rem;
+}
+
 .c-button-login__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -784,34 +788,23 @@ main {
 
 .c-frame-text {
   padding: 1.5rem 1rem;
+  height: 4.6rem;
 }
 
 .c-frame-text::-webkit-input-placeholder {
-  font-weight: bold;
   font-size: 1.4rem;
-  line-height: 1.6rem;
-  color: #AAAAAA;
 }
 
 .c-frame-text:-ms-input-placeholder {
-  font-weight: bold;
   font-size: 1.4rem;
-  line-height: 1.6rem;
-  color: #AAAAAA;
 }
 
 .c-frame-text::-ms-input-placeholder {
-  font-weight: bold;
   font-size: 1.4rem;
-  line-height: 1.6rem;
-  color: #AAAAAA;
 }
 
 .c-frame-text::placeholder {
-  font-weight: bold;
   font-size: 1.4rem;
-  line-height: 1.6rem;
-  color: #AAAAAA;
 }
 
 .c-frame-text-mail {
@@ -1064,7 +1057,7 @@ main {
 .c-wrap-login {
   width: 90%;
   min-width: 280px;
-  max-width: 440px;
+  max-width: 400px;
   margin: auto;
 }
 
@@ -1119,7 +1112,7 @@ main {
   }
 }
 
-.p-login {
+.p-form {
   width: 100%;
   margin: auto;
   margin-top: 9.5rem;
@@ -1132,25 +1125,25 @@ main {
 }
 
 @media (min-width: 768px) {
-  .p-login {
+  .p-form {
     padding: 2.5rem;
     margin-top: 16.5rem;
   }
 }
 
-.p-login .fa-twitter {
+.p-form .fa-twitter {
   font-size: 2.1rem;
   color: #55ACEE;
   position: absolute;
   left: 1.5rem;
 }
 
-.p-login .fa-envelope {
+.p-form .fa-envelope {
   font-size: 1.6rem;
   margin-right: 0.5rem;
 }
 
-.p-login .c-comment-link:last-of-type {
+.p-form .c-comment-link:last-of-type {
   margin-top: 2rem;
 }
 
