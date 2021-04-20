@@ -17,6 +17,7 @@
 }
 
 .c-comment-link {
+  display: block;
   font-weight: bold;
   font-size: 1.2rem;
   line-height: 1.4rem;
@@ -24,7 +25,10 @@
   text-align: center;
   margin-top: 2.5rem;
   @include breakpoint ( pc ) {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
+  }
+  &:hover {
+    opacity: 0.7;
   }
 }
 

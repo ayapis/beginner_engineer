@@ -5,6 +5,17 @@
   margin: auto;
 }
 
+.c-wrap-login {
+  width: 90%;
+  min-width: 280px;
+  max-width: 440px;
+  margin: auto;
+  @include breakpoint ( pc ) {
+    width: 57%;
+    min-width: 335px;
+  }
+}
+
 .c-wrap-flexbox {
   @include breakpoint ( pc ) {
     display: flex;
