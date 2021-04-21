@@ -28,6 +28,9 @@
         background-color: #ACCBF9;
       }
     }
+    a {
+      display: block;
+    }
   }
   @include breakpoint ( pc ) {
    display: flex; 
