@@ -883,6 +883,10 @@ main {
   }
 }
 
+.c-navi li a {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .c-navi {
     display: -webkit-box;
