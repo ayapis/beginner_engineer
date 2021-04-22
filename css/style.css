@@ -729,7 +729,6 @@ main {
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: -0.01rem;
-  color: #AAA;
   margin-top: 1rem;
 }
 
@@ -743,31 +742,19 @@ main {
           flex-grow: 1;
 }
 
-.c-divider-light {
-  color: #DDD;
+.c-divider::before {
+  margin-right: 7px;
 }
 
-.text-divider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1rem;
-  line-height: 1.2rem;
-  letter-spacing: -0.01rem;
-  margin-top: 1rem;
+.c-divider::after {
+  margin-left: 7px;
 }
 
-.text-divider::before,
-.text-divider::after {
-  content: '';
-  height: 1px;
-  background-color: #AAA;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.c-divider-bottom::before,
+.c-divider-bottom::after {
+  background-color: #DDD;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .c-frame {
