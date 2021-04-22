@@ -1390,7 +1390,7 @@ main {
 
 .u-fixedbox {
   position: fixed;
-  left: calc(100% - 60px);
+  right: 5%;
   top: 0;
   z-index: 30;
 }
