@@ -776,22 +776,27 @@ main {
 .c-frame-text {
   padding: 1.5rem 1rem;
   height: 4.6rem;
+  font-weight: normal;
 }
 
 .c-frame-text::-webkit-input-placeholder {
   font-size: 1.4rem;
+  color: #ddd;
 }
 
 .c-frame-text:-ms-input-placeholder {
   font-size: 1.4rem;
+  color: #ddd;
 }
 
 .c-frame-text::-ms-input-placeholder {
   font-size: 1.4rem;
+  color: #ddd;
 }
 
 .c-frame-text::placeholder {
   font-size: 1.4rem;
+  color: #ddd;
 }
 
 .c-frame-text-mail {
