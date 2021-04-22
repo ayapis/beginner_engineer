@@ -492,7 +492,7 @@ main {
   color: #fff;
   text-align: center;
   background: #001D60;
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 3rem 0 2rem;
   margin-top: 10rem;
 }
 
@@ -509,6 +509,7 @@ main {
 }
 
 .l-footer__wrap {
+  width: 90%;
   max-width: 1140px;
   margin: auto;
   text-align: left;
