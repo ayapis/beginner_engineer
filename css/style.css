@@ -855,6 +855,29 @@ main {
   opacity: 0.7;
 }
 
+.u-footerFixed {
+  min-height: calc(100vh - 9.5rem);
+  /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+  position: relative;
+  /* ←相対位置 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */
+}
+
+@media (min-width: 768px) {
+  .u-footerFixed {
+    min-height: calc(100vh - 16.5rem);
+    /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+  }
+}
+
+.l-footer {
+  position: absolute;
+  /* ←絶対位置 */
+  bottom: 0;
+}
+
 .c-navi {
   font-size: 1.4rem;
   width: 90%;
