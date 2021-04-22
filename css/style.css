@@ -542,11 +542,13 @@ main {
   color: #000;
   margin: auto;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .l-header__wrap {
     max-width: 1140px;
+    margin-bottom: 0;
   }
 }
 
