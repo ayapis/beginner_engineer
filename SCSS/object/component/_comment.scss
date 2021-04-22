@@ -32,9 +32,18 @@
   }
 }
 
+.c-comment-link-contact {
+  font-size: 1.6rem;
+  line-height: 2.0rem;
+  margin-top: 3.5rem;
+  @include breakpoint ( pc ) {
+    margin-top: 2.5rem;
+  }
+}
+
 .c-comment-contact {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 2.0rem;
   text-align: center;
   margin-top: 2rem;
   @include breakpoint ( pc ) {
