@@ -19,8 +19,10 @@
   color: #000;
   margin: auto;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   @include breakpoint ( pc ) {
     max-width: 1140px;
+    margin-bottom: 0;
   }
 }
 

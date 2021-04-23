@@ -492,7 +492,7 @@ main {
   color: #fff;
   text-align: center;
   background: #001D60;
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 3rem 0 2rem;
   margin-top: 10rem;
 }
 
@@ -509,6 +509,7 @@ main {
 }
 
 .l-footer__wrap {
+  width: 90%;
   max-width: 1140px;
   margin: auto;
   text-align: left;
@@ -542,11 +543,13 @@ main {
   color: #000;
   margin: auto;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .l-header__wrap {
     max-width: 1140px;
+    margin-bottom: 0;
   }
 }
 
@@ -706,15 +709,31 @@ main {
   opacity: 0.7;
 }
 
+.c-comment-link-contact {
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+  margin-top: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .c-comment-link-contact {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    margin-top: 2.5rem;
+  }
+}
+
 .c-comment-contact {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1.8rem;
+  line-height: 2.25rem;
   text-align: center;
   margin-top: 2rem;
 }
 
 @media (min-width: 768px) {
   .c-comment-contact {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
     margin-top: 2.5rem;
   }
 }
@@ -729,7 +748,6 @@ main {
   font-size: 1rem;
   line-height: 1.2rem;
   letter-spacing: -0.01rem;
-  color: #AAA;
   margin-top: 1rem;
 }
 
@@ -743,31 +761,23 @@ main {
           flex-grow: 1;
 }
 
-.c-divider-light {
-  color: #DDD;
+.c-divider::before {
+  margin-right: 7px;
 }
 
-.text-divider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 1rem;
-  line-height: 1.2rem;
-  letter-spacing: -0.01rem;
-  margin-top: 1rem;
+.c-divider::after {
+  margin-left: 7px;
 }
 
-.text-divider::before,
-.text-divider::after {
-  content: '';
-  height: 1px;
-  background-color: #AAA;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+.c-divider-bottom {
+  margin-top: 2rem;
+}
+
+.c-divider-bottom::before,
+.c-divider-bottom::after {
+  background-color: #DDD;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .c-frame {
@@ -789,22 +799,27 @@ main {
 .c-frame-text {
   padding: 1.5rem 1rem;
   height: 4.6rem;
+  font-weight: normal;
 }
 
 .c-frame-text::-webkit-input-placeholder {
   font-size: 1.4rem;
+  color: #ddd;
 }
 
 .c-frame-text:-ms-input-placeholder {
   font-size: 1.4rem;
+  color: #ddd;
 }
 
 .c-frame-text::-ms-input-placeholder {
   font-size: 1.4rem;
+  color: #ddd;
 }
 
 .c-frame-text::placeholder {
   font-size: 1.4rem;
+  color: #ddd;
 }
 
 .c-frame-text-mail {
@@ -838,6 +853,29 @@ main {
 
 .c-item-footer a:hover {
   opacity: 0.7;
+}
+
+.u-footerFixed {
+  min-height: calc(100vh - 9.5rem);
+  /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+  position: relative;
+  /* ←相対位置 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */
+}
+
+@media (min-width: 768px) {
+  .u-footerFixed {
+    min-height: calc(100vh - 16.5rem);
+    /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+  }
+}
+
+.l-footer {
+  position: absolute;
+  /* ←絶対位置 */
+  bottom: 0;
 }
 
 .c-navi {
@@ -1382,7 +1420,7 @@ main {
 
 .u-fixedbox {
   position: fixed;
-  left: calc(100% - 60px);
+  right: 5%;
   top: 0;
   z-index: 30;
 }

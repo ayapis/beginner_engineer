@@ -18,8 +18,10 @@
 .c-frame-text {
   padding: 1.5rem 1rem;
   height: 4.6rem;
+  font-weight: normal;
   &::placeholder {
     font-size: 1.4rem;
+    color: #ddd;
   }
 }
 .c-frame-text-mail {
