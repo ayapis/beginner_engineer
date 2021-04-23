@@ -9,9 +9,8 @@
   @include breakpoint ( pc ) {
     min-height: calc(100vh - 16.5rem); /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
   }
-}
-
-.l-footer{
-  position: absolute;/* ←絶対位置 */
-  bottom: 0;
+  .l-footer{
+    position: absolute;/* ←絶対位置 */
+    bottom: 0;
+  }
 }

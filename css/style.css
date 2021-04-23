@@ -872,7 +872,7 @@ main {
   }
 }
 
-.l-footer {
+.u-footerFixed .l-footer {
   position: absolute;
   /* ←絶対位置 */
   bottom: 0;
