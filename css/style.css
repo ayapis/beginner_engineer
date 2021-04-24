@@ -487,6 +487,23 @@ main {
   }
 }
 
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 100vh;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .l-footer {
   width: 100%;
   color: #fff;
@@ -1056,14 +1073,14 @@ main {
   font-size: 2rem;
   line-height: 2.4rem;
   letter-spacing: 0.03em;
-  margin-top: 9.5rem;
+  margin-top: 3.5rem;
 }
 
 @media (min-width: 768px) {
   .c-title-contact {
     font-size: 3rem;
     line-height: 3.6rem;
-    margin-top: 16.5rem;
+    margin-top: 5.5rem;
   }
 }
 
@@ -1157,7 +1174,7 @@ main {
 .p-form {
   width: 100%;
   margin: auto;
-  margin-top: 9.5rem;
+  margin-top: 3.5rem;
   padding: 2.5rem;
   padding-left: 6.25%;
   padding-right: 6.25%;
@@ -1169,7 +1186,7 @@ main {
 @media (min-width: 768px) {
   .p-form {
     padding: 2.5rem;
-    margin-top: 16.5rem;
+    margin-top: 5.5rem;
   }
 }
 
