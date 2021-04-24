@@ -1239,13 +1239,14 @@ main {
 
 .p-mainvisu__firstview__text {
   position: absolute;
-  bottom: 0;
+  bottom: 5rem;
+  left: 3rem;
   color: #fff;
   font-size: 3.2rem;
-  line-height: 3.9rem;
+  font-size: 7vw;
+  line-height: 1.5;
   letter-spacing: 0.03rem;
   text-align: center;
-  left: 0.3rem;
 }
 
 @media (min-width: 768px) {
