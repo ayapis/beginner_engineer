@@ -48,3 +48,27 @@
     font-size: 1.4rem;
   }
 }
+
+.c-button-registration {
+  width: 90%;
+  height: 6rem;
+  background: #0054EE;
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  border-radius: 5px;
+  &:hover {
+    background: #001D60;
+  }
+  @include breakpoint ( pc ) {
+    width: 30rem;
+    text-align: center;
+  }
+}
+
+.c-button-registration__text {
+  p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #fff;
+  }
+}

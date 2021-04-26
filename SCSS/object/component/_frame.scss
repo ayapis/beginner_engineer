@@ -30,3 +30,37 @@
 .c-frame-text-password {
   margin-top: 0.9rem;
 }
+.c-frame-text-registration {
+  width: 100%;
+  margin-top: 1rem;
+  @include breakpoint ( pc ) {
+    width: 62.5%;
+    margin-top: 0;
+  }
+}
+
+.c-frame-select {
+  width: 7.1rem;
+  height: 2.6rem;
+  padding: 0;
+  select {
+    padding-left: 1rem;
+    vertical-align: baseline;
+    width: 100%;
+  }
+}
+
+.c-frame-select-month {
+  width: 5.4rem;
+}
+.c-frame-select-day {
+  width: 5.4rem;
+}
+.c-frame-select-prefectures {
+  width: 14.6rem;
+  select {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #333;
+  }
+}
