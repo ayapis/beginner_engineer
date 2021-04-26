@@ -1,0 +1,33 @@
+.c-itemlabel {
+  // width: 100%;
+  // max-width: 248px;
+  // letter-spacing: 0.05em;
+  font-weight: bold;
+  font-size: 1.1rem;
+  @include breakpoint ( pc ) {
+    width: 13.8rem;
+  }
+  p {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    @include breakpoint ( pc ) {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &:nth-of-type(2) {
+    p {
+      margin-top: 2rem;
+    }
+  }
+  &:nth-of-type(3) {
+    p {
+      margin-top: 2rem;
+    }
+  }
+}
+
+.c-itemlabel__private {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-weight: normal;
+}

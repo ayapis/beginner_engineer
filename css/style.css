@@ -675,6 +675,32 @@ main {
   font-size: 1.4rem;
 }
 
+.c-button-registration {
+  width: 90%;
+  height: 6rem;
+  background: #0054EE;
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  border-radius: 5px;
+}
+
+.c-button-registration:hover {
+  background: #001D60;
+}
+
+@media (min-width: 768px) {
+  .c-button-registration {
+    width: 30rem;
+    text-align: center;
+  }
+}
+
+.c-button-registration__text p {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #fff;
+}
+
 .c-check {
   text-align: center;
   font-weight: bold;
@@ -752,6 +778,19 @@ main {
     font-size: 1.6rem;
     line-height: 2.0rem;
     margin-top: 2.5rem;
+  }
+}
+
+.c-comment-annotation {
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .c-comment-annotation {
+    margin-left: 13.8rem;
   }
 }
 
@@ -847,6 +886,48 @@ main {
   margin-top: 0.9rem;
 }
 
+.c-frame-text-registration {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .c-frame-text-registration {
+    width: 62.5%;
+    margin-top: 0;
+  }
+}
+
+.c-frame-select {
+  width: 7.1rem;
+  height: 2.6rem;
+  padding: 0;
+}
+
+.c-frame-select select {
+  padding-left: 1rem;
+  vertical-align: baseline;
+  width: 100%;
+}
+
+.c-frame-select-month {
+  width: 5.4rem;
+}
+
+.c-frame-select-day {
+  width: 5.4rem;
+}
+
+.c-frame-select-prefectures {
+  width: 14.6rem;
+}
+
+.c-frame-select-prefectures select {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #333;
+}
+
 .c-image {
   width: 100%;
   height: 100%;
@@ -872,27 +953,352 @@ main {
   opacity: 0.7;
 }
 
-.u-footerFixed {
-  min-height: calc(100vh - 9.5rem);
-  /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
-  position: relative;
-  /* ←相対位置 */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* ↑ヘッダーやフッターを含むすべての要素の高さ＝min-height:100vhになるように指定 */
+.c-itemlabel {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 @media (min-width: 768px) {
-  .u-footerFixed {
-    min-height: calc(100vh - 16.5rem);
-    /* ←コンテンツの高さの最小値＝ブラウザの高さに指定 */
+  .c-itemlabel {
+    width: 13.8rem;
   }
 }
 
-.u-footerFixed .l-footer {
+.c-itemlabel p {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+@media (min-width: 768px) {
+  .c-itemlabel p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.c-itemlabel:nth-of-type(2) p {
+  margin-top: 2rem;
+}
+
+.c-itemlabel:nth-of-type(3) p {
+  margin-top: 2rem;
+}
+
+.c-itemlabel__private {
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  font-weight: normal;
+}
+
+.Form {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .Form-Item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.Form-Item:nth-of-type(2) .c-itemlabel p {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .Form-Item:nth-of-type(2) .c-itemlabel p {
+    margin-top: 0;
+  }
+}
+
+.Form-Item:nth-of-type(3) .c-itemlabel p {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .Form-Item:nth-of-type(3) .c-itemlabel p {
+    margin-top: 0;
+  }
+}
+
+.Form-Item:nth-of-type(4) .c-itemlabel p {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .Form-Item:nth-of-type(4) .c-itemlabel p {
+    margin-top: 0;
+  }
+}
+
+.Form-Item:nth-of-type(5) .c-itemlabel p {
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .Form-Item:nth-of-type(5) .c-itemlabel p {
+    margin-top: 0;
+  }
+}
+
+.Form-Item:nth-of-type(6) .c-itemlabel p {
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .Form-Item:nth-of-type(6) .c-itemlabel p {
+    margin-top: 0;
+  }
+}
+
+.Form-Item-radio .c-itemlabel {
+  margin-bottom: 0.6rem;
+}
+
+.Form-Item-radio input:nth-of-type(2) {
+  margin-left: 4.3rem;
+}
+
+@media (min-width: 768px) {
+  .Form-Item-radio input:nth-of-type(2) {
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .Form-Item-radio input {
+    margin-right: 0.4rem;
+  }
+}
+
+.Form-Item-radio label {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.Form-Item-Label {
+  font-weight: bold;
+}
+
+.Form-Item-Label {
+  max-width: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+@media (min-width: 768px) {
+  .Form-Item-Label {
+    display: block;
+  }
+}
+
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+
+.c-itemlabel__required {
+  color: #FF0000;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.04em;
+  margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+  .c-itemlabel__required {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    -webkit-box-flex: inherit;
+        -ms-flex: inherit;
+            flex: inherit;
+    font-size: 15px;
+  }
+}
+
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    -webkit-box-flex: inherit;
+        -ms-flex: inherit;
+            flex: inherit;
+    font-size: 15px;
+  }
+}
+
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #5bc8ac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 160px;
+    font-size: 16px;
+  }
+}
+
+.custom-select-trigger {
+  position: relative;
+}
+
+.custom-select-trigger:after {
   position: absolute;
-  /* ←絶対位置 */
-  bottom: 0;
+  display: block;
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  top: 50%;
+  right: 0.45rem;
+  margin-top: -3px;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  -webkit-transform: rotate(45deg) translateY(-50%);
+          transform: rotate(45deg) translateY(-50%);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+}
+
+.selectbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.selectbox span {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-left: 0.7rem;
+  margin-right: 1.2rem;
+}
+
+.Form-Item-Purpose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Form-Item-Purpose p {
+  margin-bottom: 0.5rem;
+}
+
+.Form-Item-Purpose .Form-Item-Label {
+  display: block;
+}
+
+.Form-Item-Purpose .c-itemlabel__required {
+  margin: 0;
+}
+
+.Form-Item-Purpose .c-frame-select-prefectures {
+  margin-left: 4.7rem;
+}
+
+@media (min-width: 768px) {
+  .Form-Item-Purpose .c-frame-select-prefectures {
+    margin-left: 0;
+  }
+}
+
+.terms {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .terms {
+    margin-top: 4rem;
+  }
+}
+
+.terms .terms-comment {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+.terms .c-comment-link {
+  display: initial;
 }
 
 .c-navi {
@@ -1093,6 +1499,22 @@ main {
   margin-bottom: 2rem;
 }
 
+.c-title-registration {
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  border-bottom: 1px solid #AAA;
+  padding-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .c-title-registration {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    margin-top: 5.5rem;
+  }
+}
+
 .c-title-footer {
   font-size: 1.8rem;
   line-height: 2.2rem;
@@ -1124,6 +1546,12 @@ main {
   .c-wrap-login {
     width: 57%;
     min-width: 335px;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-wrap-registration {
+    width: 56rem;
   }
 }
 

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <!-- サイトタイトル（適宜変更） -->
+  <title>未経験者向けポータルサイト</title>
+  <!-- サイト説明（適宜変更） -->
+  <meta name="description" content="未経験者向けポータルサイトです。">
+  <!-- ファビコン（適宜変更） -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+  <!-- viewportの指定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- FontAwesomeの読み込み -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- CSSの読み込み（slickは不要な場合もある） -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- jQueryの読み込み（不要な場合もある） -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- 共通パーツとハンバーガーメニューの読み込み -->
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <header id="header"></header>
+  <main>
+    <div class="c-wrap c-wrap-registration">
+      <h1 class="c-title-registration">新規会員登録</h1>
+      <div class="Form">
+        <div class="Form-Item">
+          <!-- <div> -->
+          <div class="Form-Item-Label c-itemlabel">
+            <p>メールアドレス</p>
+            <span class="c-itemlabel__required">※必須</span><span class="c-itemlabel__private">（非公開）</span>
+          </div>
+          <input type="text" class="c-frame c-frame-text c-frame-text-registration" placeholder="プレースホルダー">
+        </div>
+        <div class="Form-Item">
+          <div class="Form-Item-Label c-itemlabel">
+            <p>ユーザー名</p>
+            <span class="c-itemlabel__required">※必須</span>
+          </div>
+          <input type="text" class="c-frame c-frame-text c-frame-text-registration" placeholder="プレースホルダー">
+        </div>
+        <p class="c-comment-annotation">※3文字以上20文字以内、記号不可。登録後に変更も可能です。</p>
+        <div class="Form-Item">
+          <div class="Form-Item-Label c-itemlabel">
+            <p>パスワード</p>
+            <span class="c-itemlabel__required">※必須</span>
+          </div>
+          <input type="text" class="c-frame c-frame-text c-frame-text-registration" placeholder="プレースホルダー">
+        </div>
+        <p class="c-comment-annotation">※3文字以上20文字以内、記号不可。登録後に変更も可能です。</p>
+        <div class="Form-Item Form-Item-select">
+          <div class="Form-Item-Label c-itemlabel">
+            <p>生年月日</p>
+            <span class="c-itemlabel__required">※必須</span>
+          </div>
+          <div class="selectbox">
+            <div class="c-frame c-frame-text c-frame-text-registration custom-select-trigger c-frame-select">
+              <select required>
+                <option value="" hidden>-</option>
+                <option value="1">cat</option>
+                <option value="2">dog</option>
+                <option value="3">rabbit</option>
+                <option value="4">squirrel</option>
+              </select>
+            </div>
+            <span>年</span>
+            <div
+              class="c-frame c-frame-text c-frame-text-registration custom-select-trigger c-frame-select c-frame-select-month">
+              <select required>
+                <option value="" hidden>-</option>
+                <option value="1">cat</option>
+                <option value="2">dog</option>
+                <option value="3">rabbit</option>
+                <option value="4">squirrel</option>
+              </select>
+            </div>
+            <span>月</span>
+            <div
+              class="c-frame c-frame-text c-frame-text-registration custom-select-trigger c-frame-select c-frame-select-day">
+              <select required>
+                <option value="" hidden>-</option>
+                <option value="1">cat</option>
+                <option value="2">dog</option>
+                <option value="3">rabbit</option>
+                <option value="4">squirrel</option>
+              </select>
+            </div>
+            <span>日</span>
+          </div>
+        </div>
+        <div class="Form-Item Form-Item-radio">
+          <div class="Form-Item-Label c-itemlabel">
+            <p>性別</p>
+            <span class="c-itemlabel__required">※必須</span>
+          </div>
+          <input type="radio" id="01-D" name="radio01">
+          <label for="01-D" class="radio01">男性</label>
+          <input type="radio" id="01-E" name="radio01">
+          <label for="01-E" class="radio01">女性</label>
+        </div>
+        <div class="Form-Item">
+          <div class="Form-Item-Label c-itemlabel">
+            <p>都道府県</p>
+            <span class="c-itemlabel__required">※必須</span>
+          </div>
+          <div
+            class="c-frame c-frame-text c-frame-text-registration custom-select-trigger c-frame-select c-frame-select-prefectures">
+            <select required>
+              <option value="" hidden>選択してください</option>
+              <option value="1">cat</option>
+              <option value="2">dog</option>
+              <option value="3">rabbit</option>
+              <option value="4">squirrel</option>
+            </select>
+          </div>
+        </div>
+        <div class="Form-Item Form-Item-Purpose">
+          <div class="Form-Item-Label c-itemlabel">
+            <p>利用目的</p>
+            <span class="c-itemlabel__required">※必須</span><span class="c-itemlabel__private">（非公開）</span>
+          </div>
+          <div
+            class="c-frame c-frame-text c-frame-text-registration custom-select-trigger c-frame-select c-frame-select-prefectures">
+            <select required>
+              <option value="" hidden>選択してください</option>
+              <option value="1">cat</option>
+              <option value="2">dog</option>
+              <option value="3">rabbit</option>
+              <option value="4">squirrel</option>
+            </select>
+          </div>
+        </div>
+        <div class="terms">
+          <p class="terms-comment"><a class="c-comment-link" href="#">利用規約</a>に同意の上ご登録ください</p>
+          <button class="c-button c-button-registration">
+            <div class="c-button-registration__text">
+              <p class="state">利用規約に同意して登録</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer"></footer>
+</body>
+
+</html>

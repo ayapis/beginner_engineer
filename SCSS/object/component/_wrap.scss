@@ -16,6 +16,12 @@
   }
 }
 
+.c-wrap-registration {
+  @include breakpoint ( pc ) {
+    width: 56rem;
+  }
+}
+
 .c-wrap-flexbox {
   @include breakpoint ( pc ) {
     display: flex;
