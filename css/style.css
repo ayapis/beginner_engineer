@@ -1284,13 +1284,7 @@ main {
 
 .terms {
   text-align: center;
-  margin-top: 3rem;
-}
-
-@media (min-width: 768px) {
-  .terms {
-    margin-top: 4rem;
-  }
+  margin-top: 5rem;
 }
 
 .terms .terms-comment {
