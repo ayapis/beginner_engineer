@@ -839,6 +839,9 @@ main {
 }
 
 .c-frame {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  color: #333;
   width: 100%;
   padding: 1.3rem 1.5rem;
   position: relative;
@@ -907,9 +910,9 @@ main {
 }
 
 .c-frame-select select {
-  padding-left: 1rem;
   vertical-align: baseline;
   width: 100%;
+  padding-left: 1rem;
 }
 
 .c-frame-select-month {
@@ -922,12 +925,6 @@ main {
 
 .c-frame-select-prefectures {
   width: 14.6rem;
-}
-
-.c-frame-select-prefectures select {
-  font-size: 1.4rem;
-  line-height: 1.7rem;
-  color: #333;
 }
 
 .c-image {
@@ -1130,88 +1127,6 @@ main {
   }
 }
 
-.Form-Item-Input {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-left: 40px;
-  padding-left: 1em;
-  padding-right: 1em;
-  height: 48px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-  max-width: 410px;
-  background: #eaedf2;
-  font-size: 18px;
-}
-
-@media screen and (max-width: 480px) {
-  .Form-Item-Input {
-    margin-left: 0;
-    margin-top: 18px;
-    height: 40px;
-    -webkit-box-flex: inherit;
-        -ms-flex: inherit;
-            flex: inherit;
-    font-size: 15px;
-  }
-}
-
-.Form-Item-Textarea {
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  margin-left: 40px;
-  padding-left: 1em;
-  padding-right: 1em;
-  height: 216px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  width: 100%;
-  max-width: 410px;
-  background: #eaedf2;
-  font-size: 18px;
-}
-
-@media screen and (max-width: 480px) {
-  .Form-Item-Textarea {
-    margin-top: 18px;
-    margin-left: 0;
-    height: 200px;
-    -webkit-box-flex: inherit;
-        -ms-flex: inherit;
-            flex: inherit;
-    font-size: 15px;
-  }
-}
-
-.Form-Btn {
-  border-radius: 6px;
-  margin-top: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 280px;
-  display: block;
-  letter-spacing: 0.05em;
-  background: #5bc8ac;
-  color: #fff;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-@media screen and (max-width: 480px) {
-  .Form-Btn {
-    margin-top: 24px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    width: 160px;
-    font-size: 16px;
-  }
-}
-
 .custom-select-trigger {
   position: relative;
 }
@@ -1271,16 +1186,6 @@ main {
 
 .Form-Item-Purpose .c-itemlabel__required {
   margin: 0;
-}
-
-.Form-Item-Purpose .c-frame-select-prefectures {
-  margin-left: 4.7rem;
-}
-
-@media (min-width: 768px) {
-  .Form-Item-Purpose .c-frame-select-prefectures {
-    margin-left: 0;
-  }
 }
 
 .terms {
