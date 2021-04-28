@@ -658,6 +658,7 @@ main {
 
 .c-button-signup {
   margin-top: 3rem;
+  display: block;
 }
 
 .c-button-login__text {
