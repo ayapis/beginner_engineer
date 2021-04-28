@@ -1,11 +1,12 @@
 .c-itemlabel {
-  // width: 100%;
-  // max-width: 248px;
-  // letter-spacing: 0.05em;
   font-weight: bold;
   font-size: 1.1rem;
+  max-width: inherit;
+  display: flex;
+  align-items: baseline;
   @include breakpoint ( pc ) {
     width: 13.8rem;
+    display: block;
   }
   p {
     font-size: 1.4rem;
@@ -26,8 +27,27 @@
   }
 }
 
+.c-itemlabel-radio {
+  margin-bottom: 0.6rem;
+  @include breakpoint ( pc ) {
+    margin-bottom: 0;
+  }
+}
+
 .c-itemlabel__private {
   font-size: 1.1rem;
   line-height: 1.3rem;
   font-weight: normal;
+}
+
+.c-itemlabel__required {
+  color: #FF0000;
+  font-size: 1.1rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.04em;
+  margin-left: 1rem;
+  @include breakpoint ( pc ) {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
 }

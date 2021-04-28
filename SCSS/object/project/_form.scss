@@ -33,3 +33,84 @@
     }
   }
 }
+
+.p-form-registration {
+  margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// 新規会員登録の各項目
+.p-form-registration__item {
+  @include breakpoint ( pc ) {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+  }
+  &:nth-of-type(2) {
+    .c-itemlabel {
+      p {
+        margin-top: 2rem;
+        @include breakpoint ( pc ) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  &:nth-of-type(3) {
+    .c-itemlabel {
+      p {
+        margin-top: 2rem;
+        @include breakpoint ( pc ) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  &:nth-of-type(4) {
+    .c-itemlabel {
+      p {
+        margin-top: 2rem;
+        @include breakpoint ( pc ) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  &:nth-of-type(5) {
+    .c-itemlabel {
+      p {
+        margin-top: 3rem;
+        @include breakpoint ( pc ) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  &:nth-of-type(6) {
+    .c-itemlabel {
+      p {
+        margin-top: 3rem;
+        @include breakpoint ( pc ) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+// 利用目的入力欄
+.p-form-registration__item-purpose {
+  display: flex;
+  margin-top: 2.5rem;
+  align-items: center;
+  p {
+    margin-bottom: 0.5rem;
+  }
+  .c-itemlabel {
+    display: block;
+  }
+  .c-itemlabel__required {
+    margin: 0;
+  }
+}

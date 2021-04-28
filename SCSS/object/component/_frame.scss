@@ -36,9 +36,25 @@
 .c-frame-text-registration {
   width: 100%;
   margin-top: 1rem;
+  position: relative;
   @include breakpoint ( pc ) {
     width: 62.5%;
     margin-top: 0;
+  }
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0.8rem;
+    height: 0.8rem;
+    top: 50%;
+    right: 0.45rem;
+    margin-top: -3px;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg) translateY(-50%);
+    transition: all .4s ease-in-out;
+    transform-origin: 50% 0;
   }
 }
 
