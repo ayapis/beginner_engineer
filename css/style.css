@@ -1518,9 +1518,10 @@ main {
 
 .p-mainvisu__firstview__text {
   position: absolute;
-  bottom: 1rem;
-  left: 2rem;
+  bottom: 5rem;
+  left: 3rem;
   color: #fff;
+  font-size: 3.2rem;
   font-size: 7vw;
   line-height: 1.5;
   letter-spacing: 0.03rem;
@@ -1529,16 +1530,11 @@ main {
 
 @media (min-width: 768px) {
   .p-mainvisu__firstview__text {
+    font-size: 6rem;
     line-height: 9rem;
     bottom: 5rem;
     left: 6rem;
     text-align: inherit;
-  }
-}
-
-@media (min-width: 1140px) {
-  .p-mainvisu__firstview__text {
-    font-size: 7.9rem;
   }
 }
 
