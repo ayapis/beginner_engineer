@@ -797,6 +797,7 @@ main {
 }
 
 .c-divider {
+  color: #AAA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
