@@ -678,6 +678,7 @@ main {
 
 .c-button-registration {
   width: 90%;
+  max-width: 30rem;
   height: 6rem;
   background: #0054EE;
   margin-top: 3rem;
