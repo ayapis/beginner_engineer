@@ -911,7 +911,7 @@ main {
   content: '';
   width: 0.8rem;
   height: 0.8rem;
-  top: 50%;
+  top: 55%;
   right: 0.45rem;
   margin-top: -3px;
   border-bottom: 2px solid #000;
@@ -922,6 +922,7 @@ main {
   transition: all .4s ease-in-out;
   -webkit-transform-origin: 50% 0;
           transform-origin: 50% 0;
+  z-index: -1;
 }
 
 .c-frame-select {
@@ -934,6 +935,7 @@ main {
   vertical-align: baseline;
   width: 100%;
   padding-left: 1rem;
+  cursor: pointer;
 }
 
 .c-frame-select-month {
@@ -953,6 +955,10 @@ main {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.c-item-radio input {
+  cursor: pointer;
 }
 
 .c-item-radio input:nth-of-type(2) {
