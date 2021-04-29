@@ -56,19 +56,3 @@
     }
   }
 }
-
-// 利用目的入力欄
-.p-form-registration__item-purpose {
-  display: flex;
-  margin-top: 2.5rem;
-  align-items: center;
-  p {
-    margin-bottom: 0.5rem;
-  }
-  .c-itemlabel {
-    display: block;
-  }
-  .c-itemlabel__required {
-    margin: 0;
-  }
-}

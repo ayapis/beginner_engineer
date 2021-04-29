@@ -1430,28 +1430,6 @@ main {
   }
 }
 
-.p-form-registration__item-purpose {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 2.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.p-form-registration__item-purpose p {
-  margin-bottom: 0.5rem;
-}
-
-.p-form-registration__item-purpose .c-itemlabel {
-  display: block;
-}
-
-.p-form-registration__item-purpose .c-itemlabel__required {
-  margin: 0;
-}
-
 .p-mainvisu {
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #fff), color-stop(50%, #EFF5FF), to(#EFF5FF));
   background: linear-gradient(to bottom, #fff 0%, #fff 50%, #EFF5FF 50%, #EFF5FF 100%);
