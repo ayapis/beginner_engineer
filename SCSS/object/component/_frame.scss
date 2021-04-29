@@ -47,7 +47,7 @@
     content: '';
     width: 0.8rem;
     height: 0.8rem;
-    top: 50%;
+    top: 55%;
     right: 0.45rem;
     margin-top: -3px;
     border-bottom: 2px solid #000;
@@ -55,6 +55,7 @@
     transform: rotate(45deg) translateY(-50%);
     transition: all .4s ease-in-out;
     transform-origin: 50% 0;
+    z-index: -1;
   }
 }
 
@@ -66,6 +67,7 @@
     vertical-align: baseline;
     width: 100%;
     padding-left: 1rem;
+    cursor: pointer;
   }
 }
 

@@ -1,6 +1,9 @@
 .p-selectbox {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  @include breakpoint ( pc ) {
+    align-items: center;
+  }
   span {
     font-size: 1.2rem;
     line-height: 1.5rem;
