@@ -957,6 +957,21 @@ main {
      object-fit: cover;
 }
 
+.c-image-advertising {
+  display: block;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .c-image-advertising {
+    max-width: 300px;
+  }
+}
+
+.c-image-advertising + .c-image-advertising {
+  margin-top: 3rem;
+}
+
 .c-item-radio input {
   cursor: pointer;
 }
@@ -1067,6 +1082,10 @@ main {
     margin-left: 0;
     margin-top: 0.5rem;
   }
+}
+
+.p-main {
+  height: 3000px;
 }
 
 .c-navi {
@@ -1303,15 +1322,28 @@ main {
   margin: auto;
 }
 
-.c-wrap-login {
+.c-wrap-twitter {
   width: 90%;
-  min-width: 280px;
+  margin: auto;
+  margin-top: 6.5rem;
+}
+
+@media (min-width: 768px) {
+  .c-wrap-twitter {
+    max-width: 1140px;
+    margin-top: 11rem;
+  }
+}
+
+.c-wrap-nallow {
+  width: 90%;
+  min-width: 278px;
   max-width: 400px;
   margin: auto;
 }
 
 @media (min-width: 768px) {
-  .c-wrap-login {
+  .c-wrap-nallow {
     width: 57%;
     min-width: 335px;
   }
@@ -1602,6 +1634,33 @@ main {
   line-height: 1.5rem;
   margin-left: 0.7rem;
   margin-right: 1.2rem;
+}
+
+.p-side {
+  margin-top: 6rem;
+}
+
+@media (min-width: 768px) {
+  .p-side {
+    margin-top: 0;
+  }
+}
+
+.p-side .c-wrap-nallow {
+  max-width: none;
+}
+
+@media (min-width: 768px) {
+  .p-side .c-wrap-nallow {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15rem;
+    width: 21%;
+    margin-top: 5.5rem;
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
 }
 
 .p-sponsorship .c-image {

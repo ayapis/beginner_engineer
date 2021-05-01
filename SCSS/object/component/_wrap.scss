@@ -5,9 +5,19 @@
   margin: auto;
 }
 
-.c-wrap-login {
+.c-wrap-twitter {
   width: 90%;
-  min-width: 280px;
+  margin: auto;
+  margin-top: 6.5rem;
+  @include breakpoint ( pc ) {
+    max-width: 1140px;
+    margin-top: 11rem;
+  }
+}
+
+.c-wrap-nallow {
+  width: 90%;
+  min-width: 278px;
   max-width: 400px;
   margin: auto;
   @include breakpoint ( pc ) {
