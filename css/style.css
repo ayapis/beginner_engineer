@@ -614,15 +614,19 @@ main {
 
 .c-button {
   text-align: center;
+  width: 150px;
+  margin: auto;
 }
 
 @media (min-width: 768px) {
   .c-button {
+    width: 200px;
     text-align: initial;
   }
 }
 
 .c-button a {
+  width: 100%;
   color: #fff;
   font-size: 1.8rem;
   text-align: center;
