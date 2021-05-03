@@ -1093,10 +1093,75 @@ main {
   display: -ms-flexbox;
   display: flex;
   padding: 1rem 1.5rem;
+  height: 4.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  border-bottom: 1px solid #000;
+  background: yellow;
+}
+
+.c-ranking:first-of-type {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .c-ranking {
+    font-size: 3.6rem;
+    line-height: 5.5rem;
+    height: 7.5rem;
+  }
 }
 
 .c-ranking__rank {
-  margin-right: 4rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.c-ranking__item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.c-ranking__number {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+@media (min-width: 768px) {
+  .c-ranking__number {
+    width: 19.3%;
+  }
+}
+
+.c-ranking__allow {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+  font-size: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .c-ranking__allow {
+    font-size: 1rem;
+  }
+}
+
+.c-ranking__smalltext {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .c-ranking__smalltext {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
 }
 
 .c-navi {
@@ -1272,7 +1337,7 @@ main {
   }
 }
 
-.c-title-contact {
+.c-title-page {
   font-size: 2.4rem;
   line-height: 2.9rem;
   letter-spacing: 0.03em;
@@ -1281,7 +1346,7 @@ main {
 }
 
 @media (min-width: 768px) {
-  .c-title-contact {
+  .c-title-page {
     font-size: 3rem;
     line-height: 3.6rem;
     margin-top: 5.5rem;
@@ -1475,12 +1540,22 @@ main {
 
 .p-main {
   width: 100%;
-  margin-right: 8%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.p-main .c-wrap-nallow {
-  margin: unset;
-  margin-top: 2.5rem;
+@media (min-width: 768px) {
+  .p-main {
+    margin-right: 5%;
+    min-width: 460px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .p-main {
+    margin-right: 10.5%;
+  }
 }
 
 .p-mainvisu {
@@ -1633,6 +1708,41 @@ main {
   }
 }
 
+.p-ranking {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .p-ranking {
+    margin-top: 8rem;
+  }
+}
+
+.p-ranking h2 {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+@media (min-width: 768px) {
+  .p-ranking h2 {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+  }
+}
+
+.p-ranking .c-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4.6rem;
+}
+
+@media (min-width: 768px) {
+  .p-ranking .c-button {
+    margin-top: 6rem;
+  }
+}
+
 .p-selectbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1669,6 +1779,9 @@ main {
 
 .p-side .c-wrap-nallow {
   max-width: none;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
 }
 
 @media (min-width: 768px) {
@@ -1678,9 +1791,6 @@ main {
     top: 15rem;
     width: 21%;
     margin-top: 5.5rem;
-    min-width: -webkit-fit-content;
-    min-width: -moz-fit-content;
-    min-width: fit-content;
   }
 }
 
