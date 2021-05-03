@@ -1562,6 +1562,25 @@ main {
   }
 }
 
+.p-main h2 {
+  margin-top: 6rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+
+.p-main h2:first-of-type {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .p-main h2 {
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    margin-top: 8rem;
+  }
+}
+
 .p-mainvisu {
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #fff), color-stop(50%, #EFF5FF), to(#EFF5FF));
   background: linear-gradient(to bottom, #fff 0%, #fff 50%, #EFF5FF 50%, #EFF5FF 100%);
@@ -1712,28 +1731,6 @@ main {
   }
 }
 
-.p-ranking {
-  margin-top: 2.5rem;
-}
-
-@media (min-width: 768px) {
-  .p-ranking {
-    margin-top: 8rem;
-  }
-}
-
-.p-ranking h2 {
-  font-size: 1.6rem;
-  line-height: 1.9rem;
-}
-
-@media (min-width: 768px) {
-  .p-ranking h2 {
-    font-size: 2.4rem;
-    line-height: 2.9rem;
-  }
-}
-
 .p-ranking .c-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1846,7 +1843,7 @@ main {
   /* 透過した黒を上から重ねるイメージ */
   background-color: rgba(0, 0, 0, 0.4);
   /* 自由に位置指定 */
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
