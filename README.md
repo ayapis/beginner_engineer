@@ -4,7 +4,7 @@ http://board.beginner-engineer.ga/<br>
 <br>
 <br>
 
-# ブランチ運用（暫定）
+# ブランチ運用
 
 devlopからブランチを切る。ブランチ名は「担当者名_backlogの番号（tanaka_RAISETECH02-38）」<br>
 ↓<br>
@@ -23,7 +23,7 @@ devlopブランチをターゲットにpull requestsを出す。 画面右側「
 <br>
 <br>
 
-# Backlog運用（暫定）
+# Backlog運用
 <br>
 １、課題に着手したら「処理中」に変更<br>
 <br>
