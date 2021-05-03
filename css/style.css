@@ -1088,6 +1088,17 @@ main {
   height: 3000px;
 }
 
+.c-ranking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 1.5rem;
+}
+
+.c-ranking__rank {
+  margin-right: 4rem;
+}
+
 .c-navi {
   font-size: 1.4rem;
   width: 90%;
@@ -1460,6 +1471,16 @@ main {
   .p-form-registration__item .c-itemlabel p {
     margin-top: 0;
   }
+}
+
+.p-main {
+  width: 100%;
+  margin-right: 8%;
+}
+
+.p-main .c-wrap-nallow {
+  margin: unset;
+  margin-top: 2.5rem;
 }
 
 .p-mainvisu {

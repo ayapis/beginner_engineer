@@ -1,4 +1,20 @@
 // 分類前のコンポーネントをとりあえず書く場所
+
+// 最後消す
 .p-main {
   height: 3000px;
+}
+// 最後消す終わり
+
+.p-main__ranking {
+  // margin-top: 2.5rem;
+}
+
+.c-ranking {
+  display: flex;
+  padding: 1rem 1.5rem;
+}
+
+.c-ranking__rank {
+  margin-right: 4rem;
 }
