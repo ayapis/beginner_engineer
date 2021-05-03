@@ -1,1 +1,62 @@
 // 分類前のコンポーネントをとりあえず書く場所
+
+// 最後消す
+.p-main {
+  height: 3000px;
+}
+// 最後消す終わり
+
+.c-ranking {
+  display: flex;
+  padding: 1rem 1.5rem;
+  height: 4.5rem;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  border-bottom: 1px solid #000;
+  &:first-of-type {
+    margin-top: 1.5rem;
+  }
+  @include breakpoint ( pc ) {
+    font-size: 3.6rem;
+    line-height: 5.5rem;
+    height: 7.5rem;
+  }
+  // 最後消す
+  background: yellow;
+}
+
+.c-ranking__rank {
+  flex-grow: 1;
+}
+
+.c-ranking__item {
+  flex-grow: 1;
+}
+
+.c-ranking__number {
+  // margin-right: 1.5rem;
+  flex-grow: 1;
+  text-align: right;
+  @include breakpoint ( pc ) {
+    width: 19.3%;
+    // margin-right: 4rem;
+  }
+}
+
+.c-ranking__allow {
+  flex-grow: 1;
+  text-align: right;
+  font-size: 0.5rem;
+  @include breakpoint ( pc ) {
+    font-size: 1rem;
+  }
+}
+.c-ranking__smalltext {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  vertical-align: middle;
+  @include breakpoint ( pc ) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}

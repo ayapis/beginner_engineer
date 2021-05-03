@@ -1,0 +1,16 @@
+.p-side {
+  margin-top: 6rem;
+  @include breakpoint ( pc ) {
+    margin-top: 0;
+  }
+  .c-wrap-nallow {
+    max-width: none;
+    min-width: fit-content;
+    @include breakpoint ( pc ) {
+      position: sticky;
+      top: 15rem;
+      width: 21%;
+      margin-top: 5.5rem;
+    }
+  }
+}

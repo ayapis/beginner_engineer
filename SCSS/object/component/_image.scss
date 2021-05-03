@@ -3,3 +3,14 @@
   height: 100%;
   object-fit: cover;
 }
+.c-image-advertising {
+  display: block;
+  margin: auto;
+  // max-width: 335px;
+  @include breakpoint ( pc ) {
+    max-width: 300px;
+  }
+  + .c-image-advertising {
+    margin-top: 3rem;
+  }
+}
