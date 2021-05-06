@@ -9,6 +9,30 @@
   }
 }
 
+.p-message-left {
+  width: 100%;
+  margin: auto;
+  margin-top: 3.5rem;
+  text-align: left;
+  @include breakpoint ( pc ) {
+    width: 60%;
+    margin-top: 3rem;
+  }
+  .c-frame-text-registration {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .c-button {
+    width: 15rem;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 0;
+    @include breakpoint ( pc ) {
+      width: 20rem;
+    }
+  }
+}
+
 .p-message__thanks {
   color: #F00;
   font-size: 2rem;
@@ -20,6 +44,16 @@
   font-weight: normal;
   line-height: 1.7rem;
   margin: 2rem 0;
+  p {
+    &:not(:first-of-type) {
+      margin-top: 1rem;
+    }
+  }
+}
+.p-message__boldtext {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.7rem;
   p {
     &:not(:first-of-type) {
       margin-top: 1rem;

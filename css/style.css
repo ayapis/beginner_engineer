@@ -1181,6 +1181,10 @@ main {
   margin: auto;
 }
 
+.u-center {
+  text-align: center;
+}
+
 .c-navi {
   font-size: 1.4rem;
   width: 90%;
@@ -1691,6 +1695,38 @@ main {
   margin-top: 3rem;
 }
 
+.p-message-left {
+  width: 100%;
+  margin: auto;
+  margin-top: 3.5rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .p-message-left {
+    width: 60%;
+    margin-top: 3rem;
+  }
+}
+
+.p-message-left .c-frame-text-registration {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.p-message-left .c-button {
+  width: 15rem;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .p-message-left .c-button {
+    width: 20rem;
+  }
+}
+
 .p-message__thanks {
   color: #F00;
   font-size: 2rem;
@@ -1705,6 +1741,16 @@ main {
 }
 
 .p-message__normaltext p:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.p-message__boldtext {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.7rem;
+}
+
+.p-message__boldtext p:not(:first-of-type) {
   margin-top: 1rem;
 }
 
