@@ -14,7 +14,7 @@
   line-height: 2.5rem;
   border-bottom: 1px solid #000;
   @include breakpoint ( pc ) {
-    font-size: 3.6rem;
+    font-size: 3rem;
     line-height: 5.5rem;
     height: 7.5rem;
   }
@@ -76,4 +76,10 @@
 
 .twitter-tweet.twitter-tweet-rendered {
   margin: auto;
+}
+.twitter-tweet iframe {
+  margin-bottom: 1rem;
+  @include breakpoint ( pc ) {
+    margin-bottom: 2rem;
+  }
 }
