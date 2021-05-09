@@ -1,0 +1,89 @@
+.p-message {
+  margin-top: 3.5rem;
+  text-align: center;
+  @include breakpoint ( pc ) {
+    margin-top: 3rem;
+  }
+  .c-comment-link {
+    margin-top: 3rem;
+  }
+}
+
+.p-message-left {
+  width: 100%;
+  margin: auto;
+  margin-top: 3.5rem;
+  text-align: left;
+  @include breakpoint ( pc ) {
+    width: 60%;
+    margin-top: 3rem;
+  }
+  .c-frame-text-registration {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .c-button {
+    width: 15rem;
+    margin: auto;
+    margin-top: 3rem;
+    border-radius: 0;
+    @include breakpoint ( pc ) {
+      width: 20rem;
+    }
+  }
+}
+
+.p-message-moreleft {
+  width: 100%;
+  margin: auto;
+  margin-top: 3.5rem;
+  text-align: left;
+  @include breakpoint ( pc ) {
+    width: 95%;
+    margin-top: 3rem;
+  }
+  .c-comment-link {
+    text-align: left;
+  }
+}
+
+.p-message__thanks {
+  color: #F00;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.p-message__normaltext {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+  margin: 2rem 0;
+  p {
+    &:not(:first-of-type) {
+      margin-top: 1rem;
+    }
+  }
+}
+.p-message__boldtext {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.7rem;
+  p {
+    &:not(:first-of-type) {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.p-message__mailtitle {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  display: inline;
+}
+
+.p-message__mailaddress {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.03em;
+  display: inline;
+}

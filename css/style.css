@@ -1181,14 +1181,8 @@ main {
   margin: auto;
 }
 
-.twitter-tweet iframe {
-  margin-bottom: 1rem;
-}
-
-@media (min-width: 768px) {
-  .twitter-tweet iframe {
-    margin-bottom: 2rem;
-  }
+.u-center {
+  text-align: center;
 }
 
 .c-navi {
@@ -1380,16 +1374,7 @@ main {
   }
 }
 
-.c-title-login {
-  color: #333;
-  font-size: 1.6rem;
-  line-height: 1.9rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.c-title-registration {
+.c-title-page-border {
   font-size: 2.4rem;
   line-height: 2.9rem;
   border-bottom: 1px solid #AAA;
@@ -1398,11 +1383,20 @@ main {
 }
 
 @media (min-width: 768px) {
-  .c-title-registration {
+  .c-title-page-border {
     font-size: 3rem;
     line-height: 3.6rem;
     margin-top: 5.5rem;
   }
+}
+
+.c-title-login {
+  color: #333;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .c-title-footer {
@@ -1678,6 +1672,111 @@ main {
     width: 60rem;
     text-align: center;
   }
+}
+
+.p-message {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .p-message {
+    margin-top: 3rem;
+  }
+}
+
+.p-message .c-comment-link {
+  margin-top: 3rem;
+}
+
+.p-message-left {
+  width: 100%;
+  margin: auto;
+  margin-top: 3.5rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .p-message-left {
+    width: 60%;
+    margin-top: 3rem;
+  }
+}
+
+.p-message-left .c-frame-text-registration {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.p-message-left .c-button {
+  width: 15rem;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .p-message-left .c-button {
+    width: 20rem;
+  }
+}
+
+.p-message-moreleft {
+  width: 100%;
+  margin: auto;
+  margin-top: 3.5rem;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .p-message-moreleft {
+    width: 95%;
+    margin-top: 3rem;
+  }
+}
+
+.p-message-moreleft .c-comment-link {
+  text-align: left;
+}
+
+.p-message__thanks {
+  color: #F00;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.p-message__normaltext {
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+  margin: 2rem 0;
+}
+
+.p-message__normaltext p:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.p-message__boldtext {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.7rem;
+}
+
+.p-message__boldtext p:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.p-message__mailtitle {
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  display: inline;
+}
+
+.p-message__mailaddress {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.03em;
+  display: inline;
 }
 
 .p-navi {

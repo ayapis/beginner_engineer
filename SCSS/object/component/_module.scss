@@ -77,9 +77,6 @@
 .twitter-tweet.twitter-tweet-rendered {
   margin: auto;
 }
-.twitter-tweet iframe {
-  margin-bottom: 1rem;
-  @include breakpoint ( pc ) {
-    margin-bottom: 2rem;
-  }
+.u-center {
+  text-align: center;
 }
