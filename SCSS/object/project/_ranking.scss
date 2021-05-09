@@ -1,2 +1,6 @@
 .p-ranking {
+  margin-top: 2.5rem;
+  @include breakpoint ( pc ) {
+    margin-top: 8rem;
+  }
 }

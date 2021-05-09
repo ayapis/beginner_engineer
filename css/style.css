@@ -1856,6 +1856,16 @@ main {
   }
 }
 
+.p-ranking {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .p-ranking {
+    margin-top: 8rem;
+  }
+}
+
 .p-selectbox {
   display: -webkit-box;
   display: -ms-flexbox;
