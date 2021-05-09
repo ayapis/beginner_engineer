@@ -1177,14 +1177,6 @@ main {
   }
 }
 
-.twitter-tweet.twitter-tweet-rendered {
-  margin: auto;
-}
-
-.u-center {
-  text-align: center;
-}
-
 .c-navi {
   font-size: 1.4rem;
   width: 90%;
@@ -1996,6 +1988,10 @@ main {
   }
 }
 
+.u-center {
+  text-align: center;
+}
+
 .u-forpc {
   display: none;
 }
@@ -2021,5 +2017,9 @@ main {
   right: 5%;
   top: 0;
   z-index: 30;
+}
+
+.twitter-tweet.twitter-tweet-rendered {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
