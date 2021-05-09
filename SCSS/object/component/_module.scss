@@ -1,11 +1,5 @@
 // 分類前のコンポーネントをとりあえず書く場所
 
-// 最後消す
-// .p-main {
-//   height: 3000px;
-// }
-// 最後消す終わり
-
 .c-ranking {
   display: flex;
   padding: 1rem 1.5rem;
@@ -44,17 +38,14 @@
 }
 
 .c-ranking__number {
-  // margin-right: 1.5rem;
   flex-grow: 1;
   text-align: right;
   @include breakpoint ( pc ) {
     width: 19.3%;
-    // margin-right: 4rem;
   }
 }
 
 .c-ranking__allow {
-  // flex-grow: 1;
   text-align: right;
   font-size: 0.5rem;
   margin-left: 4.5%;
