@@ -504,6 +504,10 @@ main {
           flex: 1;
 }
 
+input {
+  text-align: left;
+}
+
 .l-footer {
   width: 100%;
   color: #fff;
@@ -1754,9 +1758,9 @@ main {
 }
 
 .p-message__boldtext {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1.7rem;
+  line-height: 1.9rem;
 }
 
 .p-message__boldtext p:not(:first-of-type) {
