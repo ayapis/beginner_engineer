@@ -758,6 +758,11 @@ main {
   opacity: 0.7;
 }
 
+.c-comment-link-big {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
 .c-comment-link-contact {
   font-size: 1.8rem;
   line-height: 2.25rem;
@@ -1759,8 +1764,8 @@ main {
 }
 
 .p-message__mailtitle {
-  font-size: 1.3rem;
-  line-height: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
   display: inline;
 }
 
