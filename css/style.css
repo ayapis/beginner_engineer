@@ -1722,24 +1722,6 @@ input {
   }
 }
 
-.p-message-moreleft {
-  width: 100%;
-  margin: auto;
-  margin-top: 3.5rem;
-  text-align: left;
-}
-
-@media (min-width: 768px) {
-  .p-message-moreleft {
-    width: 95%;
-    margin-top: 3rem;
-  }
-}
-
-.p-message-moreleft .c-comment-link {
-  text-align: left;
-}
-
 .p-message__thanks {
   color: #F00;
   font-size: 2rem;

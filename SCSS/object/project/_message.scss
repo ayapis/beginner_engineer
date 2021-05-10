@@ -33,20 +33,6 @@
   }
 }
 
-.p-message-moreleft {
-  width: 100%;
-  margin: auto;
-  margin-top: 3.5rem;
-  text-align: left;
-  @include breakpoint ( pc ) {
-    width: 95%;
-    margin-top: 3rem;
-  }
-  .c-comment-link {
-    text-align: left;
-  }
-}
-
 .p-message__thanks {
   color: #F00;
   font-size: 2rem;
