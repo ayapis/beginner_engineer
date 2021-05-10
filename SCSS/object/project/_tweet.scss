@@ -1,0 +1,16 @@
+.p-tweet {
+  .twitter-tweet {
+    iframe {
+    margin-bottom: 2rem;
+    @include breakpoint ( pc ) {
+      margin-bottom: 3rem;
+    }
+    }
+  }
+  .c-button {
+    margin-top: 2.5rem;
+    @include breakpoint ( pc ) {
+      margin-top: 1.5rem;
+    }
+  }
+}
