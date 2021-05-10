@@ -1949,6 +1949,26 @@ main {
   display: initial;
 }
 
+.p-tweet .twitter-tweet iframe {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .p-tweet .twitter-tweet iframe {
+    margin-bottom: 3rem;
+  }
+}
+
+.p-tweet .c-button {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .p-tweet .c-button {
+    margin-top: 1.5rem;
+  }
+}
+
 .u-back {
   overflow: hidden;
 }
