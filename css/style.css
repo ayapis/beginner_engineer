@@ -504,6 +504,10 @@ main {
           flex: 1;
 }
 
+input {
+  text-align: left;
+}
+
 .l-footer {
   width: 100%;
   color: #fff;
@@ -758,6 +762,11 @@ main {
   opacity: 0.7;
 }
 
+.c-comment-link-big {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
 .c-comment-link-contact {
   font-size: 1.8rem;
   line-height: 2.25rem;
@@ -776,6 +785,8 @@ main {
   font-size: 1.4rem;
   line-height: 180%;
   text-align: center;
+  max-width: 40rem;
+  margin: auto;
   margin-top: 2rem;
 }
 
@@ -1713,24 +1724,6 @@ main {
   }
 }
 
-.p-message-moreleft {
-  width: 100%;
-  margin: auto;
-  margin-top: 3.5rem;
-  text-align: left;
-}
-
-@media (min-width: 768px) {
-  .p-message-moreleft {
-    width: 95%;
-    margin-top: 3rem;
-  }
-}
-
-.p-message-moreleft .c-comment-link {
-  text-align: left;
-}
-
 .p-message__thanks {
   color: #F00;
   font-size: 2rem;
@@ -1749,9 +1742,9 @@ main {
 }
 
 .p-message__boldtext {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1.7rem;
+  line-height: 1.9rem;
 }
 
 .p-message__boldtext p:not(:first-of-type) {
@@ -1759,8 +1752,8 @@ main {
 }
 
 .p-message__mailtitle {
-  font-size: 1.3rem;
-  line-height: 1.6rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
   display: inline;
 }
 
