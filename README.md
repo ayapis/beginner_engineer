@@ -50,3 +50,4 @@ devlopブランチをターゲットにpull requestsを出す。 画面右側「
 | サーバー | AWS（VPC、EC2、CloudWatch） |
 | バージョン管理 | Git/Github |
 | CI/CD | Github Actions |
+| タスク管理 | Backlog |
