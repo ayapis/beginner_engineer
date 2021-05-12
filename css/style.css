@@ -781,6 +781,20 @@ input {
   }
 }
 
+.c-comment-link-totop {
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+  margin-top: 4.5rem;
+}
+
+@media (min-width: 768px) {
+  .c-comment-link-totop {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    margin-top: 6rem;
+  }
+}
+
 .c-comment-contact {
   font-size: 1.4rem;
   font-weight: 400;
@@ -1604,8 +1618,8 @@ input {
 }
 
 .p-mainvisu {
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(50%, #fff), color-stop(50%, #EFF5FF), to(#EFF5FF));
-  background: linear-gradient(to bottom, #fff 0%, #fff 50%, #EFF5FF 50%, #EFF5FF 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(30%, #fff), color-stop(30%, #EFF5FF), to(#EFF5FF));
+  background: linear-gradient(to bottom, #fff 0%, #fff 30%, #EFF5FF 30%, #EFF5FF 100%);
   padding-bottom: 6rem;
 }
 
@@ -1647,7 +1661,7 @@ input {
 
 @media (min-width: 768px) {
   .p-mainvisu__firstview__text {
-    line-height: 9rem;
+    font-size: 5vw;
     bottom: 5rem;
     left: 6rem;
     text-align: inherit;
@@ -1656,7 +1670,7 @@ input {
 
 @media (min-width: 1140px) {
   .p-mainvisu__firstview__text {
-    font-size: 7.9rem;
+    font-size: 6rem;
   }
 }
 
