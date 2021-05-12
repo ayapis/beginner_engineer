@@ -45,6 +45,16 @@
     margin-top: 2.5rem;
   }
 }
+.c-comment-link-totop {
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+  margin-top: 4.5rem;
+  @include breakpoint ( pc ) {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    margin-top: 6rem;
+  }
+}
 
 .c-comment-contact {
   font-size: 1.4rem;

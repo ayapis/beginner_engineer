@@ -781,6 +781,20 @@ input {
   }
 }
 
+.c-comment-link-totop {
+  font-size: 1.8rem;
+  line-height: 2.25rem;
+  margin-top: 4.5rem;
+}
+
+@media (min-width: 768px) {
+  .c-comment-link-totop {
+    font-size: 1.6rem;
+    line-height: 2.0rem;
+    margin-top: 6rem;
+  }
+}
+
 .c-comment-contact {
   font-size: 1.4rem;
   line-height: 180%;
