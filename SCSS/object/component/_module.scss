@@ -1,1 +1,78 @@
 // 分類前のコンポーネントをとりあえず書く場所
+
+// アコーディオンメニュー通常時は閉じた状態にするため
+
+// メニューを横並びにする
+.menu {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.menu__item {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 1px;
+  position: relative;
+  flex-grow: 1;
+  width: 50%;
+  border: 1px solid #000;
+  @include breakpoint ( pc ) {
+    width: 25%;
+  }
+  &:not(:last-child) {
+    border-right: none;
+  }
+}
+.menu__item__link {
+  color: #2d2d2d;
+  display: block;
+  padding: 1.5rem 3rem;
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0.8rem;
+    height: 0.8rem;
+    top: 50%;
+    right: 0.45rem;
+    margin-top: -3px;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg) translate(-85%, 50%);
+  }
+  &:hover {
+    background: #EFF5FF;
+  }
+}
+.on {
+  &::after {
+    transform: rotate(225deg) translate(25%, -50%);
+  }
+}
+ 
+.submenu {
+  background: #fff;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 4.9rem;
+  z-index: 10;
+}
+.submenu__item {
+  border: 1px solid #000;
+  border-top: none;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: normal;
+  &:hover {
+    background: #EFF5FF;
+  }
+  a{
+    display: block;
+    padding: 0.5rem;
+  }
+}
