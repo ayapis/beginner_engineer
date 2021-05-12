@@ -8,3 +8,13 @@ $(function () {
   });
   $("#footer").load("footer.html");
 });
+
+$(function () {
+  $('.js-menu__item__link').each(function () {
+    $(this).on('click', function () {
+      $("+.submenu", this).slideToggle();
+      $(this).toggleClass('on');
+      return false;
+    });
+  });
+});
