@@ -1,5 +1,5 @@
 .p-mainvisu {
-  background: linear-gradient(to bottom, #fff 0%, #fff 50%, #EFF5FF 50%, #EFF5FF 100%);
+  background: linear-gradient(to bottom, #fff 0%, #fff 30%, #EFF5FF 30%, #EFF5FF 100%);
   padding-bottom: 6rem;
   @include breakpoint ( pc ) {
     padding-bottom: 10rem;
@@ -32,13 +32,13 @@
   letter-spacing: 0.03rem;
   text-align: center;
   @include breakpoint ( pc ) {
-    line-height: 9rem;
+    font-size: 5vw;
     bottom: 5rem;
     left: 6rem;
     text-align: inherit;
   }
   @include breakpoint ( wide ) {
-    font-size: 7.9rem;
+    font-size: 6rem;
   }
   p {
     // スマホ版の重なりテキスト2行目のセンター配置用
