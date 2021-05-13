@@ -1138,14 +1138,28 @@ input {
   border: 1px solid #000;
 }
 
+.menu__item:nth-child(odd) {
+  border-right: none;
+}
+
+.menu__item:nth-child(-n+2) {
+  border-bottom: none;
+}
+
+.menu__item:nth-child(n+3) .submenu__item:first-of-type {
+  border-top: none;
+}
+
 @media (min-width: 768px) {
   .menu__item {
     width: 25%;
   }
-}
-
-.menu__item:not(:last-child) {
-  border-right: none;
+  .menu__item:not(:last-child) {
+    border-right: none;
+  }
+  .menu__item:nth-child(-n+2) {
+    border-bottom: 1px solid #000;
+  }
 }
 
 .menu__item__link {
@@ -1182,7 +1196,7 @@ input {
   background: #fff;
   display: none;
   position: absolute;
-  right: 0;
+  right: -1px;
   top: 4.9rem;
   z-index: 10;
 }
@@ -1193,6 +1207,18 @@ input {
   color: #000;
   font-size: 1.4rem;
   font-weight: normal;
+  text-align: right;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+}
+
+.submenu__item:first-of-type {
+  border-top: 1px solid #000;
+}
+
+@media (min-width: 768px) {
+  .submenu__item:first-of-type {
+    border-top: none;
+  }
 }
 
 .submenu__item:hover {
