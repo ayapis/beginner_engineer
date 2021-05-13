@@ -1123,6 +1123,7 @@ input {
       flex-wrap: wrap;
   font-size: 1.6rem;
   font-weight: normal;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .menu__item {
