@@ -1230,6 +1230,64 @@ input {
   padding: 0.5rem;
 }
 
+.p-pager__list {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.p-pager__list li {
+  margin: 0 2px;
+  padding: 0;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  border: 1px solid #0054EE;
+}
+
+.p-pager__list li:nth-of-type(6) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .p-pager__list li:nth-of-type(6) {
+    display: inline-block;
+  }
+}
+
+.p-pager__list li a {
+  vertical-align: middle;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+  color: #0054EE;
+  text-decoration: none;
+}
+
+.p-pager__list li a span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.p-pager__list li a:hover {
+  background: #EFF5FF;
+}
+
+.p-pager__list li a:active {
+  color: #fff;
+  background: #0054EE;
+}
+
+.p-pager__list .p-pager__list__pre {
+  display: none;
+}
+
 .c-navi {
   font-size: 1.4rem;
   width: 90%;
@@ -1714,10 +1772,17 @@ input {
   line-height: 1.9rem;
 }
 
+.p-main h2:nth-child(2) {
+  margin-top: 2.5rem;
+}
+
 @media (min-width: 768px) {
   .p-main h2 {
     font-size: 2.4rem;
     line-height: 2.9rem;
+    margin-top: 8rem;
+  }
+  .p-main h2:nth-child(2) {
     margin-top: 8rem;
   }
 }

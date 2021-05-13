@@ -100,3 +100,55 @@
     padding: 0.5rem;
   }
 }
+
+
+// ページネーションここから
+.p-pager__list {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0 2px;
+    padding: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #0054EE;
+    &:nth-of-type(6) {
+      display: none;
+    }
+    @include breakpoint ( pc ) {
+      &:nth-of-type(6) {
+        display: inline-block;
+      }
+    }
+    a{
+      vertical-align: middle;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display:table;
+      color: #0054EE;
+      text-decoration: none;
+      span {
+        display:table-cell;
+        vertical-align:middle;
+      }
+      &:hover {
+        background: #EFF5FF;
+      }
+      &:active {
+        color: #fff;
+        background: #0054EE;
+      }
+    }
+  }
+  .p-pager__list__pre {
+    display: none;
+  }
+}
