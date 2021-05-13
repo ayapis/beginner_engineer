@@ -1236,10 +1236,23 @@ input {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans JP', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+  .p-pager__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .p-pager__list li {
-  margin: 0 2px;
+  margin: 0 0.2rem;
   padding: 0;
   display: inline-block;
   width: 40px;
@@ -1254,6 +1267,9 @@ input {
 }
 
 @media (min-width: 768px) {
+  .p-pager__list li {
+    margin: 0 1.5rem;
+  }
   .p-pager__list li:nth-of-type(6) {
     display: inline-block;
   }
@@ -1281,8 +1297,12 @@ input {
   background: #EFF5FF;
 }
 
-.p-pager__list li a:active {
+.p-pager__list .active {
   color: #fff;
+  background: #0054EE;
+}
+
+.p-pager__list .active:hover {
   background: #0054EE;
 }
 

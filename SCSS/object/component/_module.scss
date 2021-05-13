@@ -109,8 +109,13 @@
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans JP', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  @include breakpoint ( pc ) {
+    justify-content: center;
+  }
   li {
-    margin: 0 2px;
+    margin: 0 0.2rem;
     padding: 0;
     display: inline-block;
     width: 40px;
@@ -122,6 +127,7 @@
       display: none;
     }
     @include breakpoint ( pc ) {
+      margin: 0 1.5rem;
       &:nth-of-type(6) {
         display: inline-block;
       }
@@ -144,10 +150,13 @@
       &:hover {
         background: #EFF5FF;
       }
-      &:active {
-        color: #fff;
-        background: #0054EE;
-      }
+    }
+  }
+  .active {
+    color: #fff;
+    background: #0054EE;
+    &:hover {
+      background: #0054EE;
     }
   }
   .p-pager__list__pre {
