@@ -468,6 +468,7 @@ template {
 
 html {
   font-size: 62.5%;
+  line-height: 1.8;
 }
 
 body {
@@ -654,6 +655,7 @@ input {
 .c-button-login {
   width: 100%;
   height: 45px;
+  line-height: 1.15;
   background: #0054EE;
   margin-top: 1.5rem;
   padding: 1.5rem 0;
