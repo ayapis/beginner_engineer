@@ -1417,7 +1417,6 @@ input {
 
 .c-ranking__smalltext {
   font-size: 1.2rem;
-  line-height: 1.4rem;
   vertical-align: middle;
   color: #000;
 }
@@ -1425,7 +1424,6 @@ input {
 @media (min-width: 768px) {
   .c-ranking__smalltext {
     font-size: 2rem;
-    line-height: 2.4rem;
   }
 }
 

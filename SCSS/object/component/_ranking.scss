@@ -3,10 +3,12 @@
   padding: 1rem 1.5rem;
   height: 4.5rem;
   font-size: 2rem;
+  // lh固定
   line-height: 2.5rem;
   border-bottom: 1px solid #000;
   @include breakpoint ( pc ) {
     font-size: 3rem;
+    // lh固定
     line-height: 5.5rem;
     height: 7.5rem;
   }
@@ -54,11 +56,9 @@
 }
 .c-ranking__smalltext {
   font-size: 1.2rem;
-  line-height: 1.4rem;
   vertical-align: middle;
   color: #000;
   @include breakpoint ( pc ) {
     font-size: 2rem;
-    line-height: 2.4rem;
   }
 }
