@@ -57,12 +57,11 @@
 .c-comment-contact {
   font-size: 1.4rem;
   font-weight: 400;
-  line-height: 180%;
+  line-height: 1.5;
   text-align: center;
   margin-top: 2rem;
   @include breakpoint ( pc ) {
     font-size: 1.6rem;
-    line-height: 2.0rem;
     margin-top: 2.5rem;
   }
 }
