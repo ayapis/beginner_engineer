@@ -1429,7 +1429,6 @@ input {
 
 .c-title {
   font-size: 2.4rem;
-  line-height: 2.9rem;
   letter-spacing: 0.05rem;
   padding-top: 4rem;
   margin-bottom: 2.5rem;
@@ -1439,7 +1438,6 @@ input {
 @media (min-width: 768px) {
   .c-title {
     font-size: 3rem;
-    line-height: 3.6rem;
     letter-spacing: 0.05rem;
     padding-top: 8rem;
     margin-bottom: 7rem;
@@ -1448,7 +1446,6 @@ input {
 
 .c-title-page {
   font-size: 2.4rem;
-  line-height: 2.9rem;
   letter-spacing: 0.03em;
   margin-top: 3.5rem;
   text-align: center;
@@ -1457,7 +1454,6 @@ input {
 @media (min-width: 768px) {
   .c-title-page {
     font-size: 3rem;
-    line-height: 3.6rem;
     margin-top: 5.5rem;
   }
 }
@@ -1479,7 +1475,6 @@ input {
 .c-title-login {
   color: #333;
   font-size: 1.6rem;
-  line-height: 1.9rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
@@ -1487,14 +1482,12 @@ input {
 
 .c-title-footer {
   font-size: 1.8rem;
-  line-height: 2.2rem;
   margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
   .c-title-footer {
     font-size: 2rem;
-    line-height: 2.4rem;
     margin-bottom: 3.4rem;
   }
 }
