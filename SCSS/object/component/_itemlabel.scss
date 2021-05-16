@@ -10,7 +10,6 @@
   }
   p {
     font-size: 1.4rem;
-    line-height: 1.7rem;
     @include breakpoint ( pc ) {
       margin-bottom: 0.5rem;
     }
@@ -36,14 +35,12 @@
 
 .c-itemlabel__private {
   font-size: 1.1rem;
-  line-height: 1.3rem;
   font-weight: normal;
 }
 
 .c-itemlabel__required {
   color: #FF0000;
   font-size: 1.1rem;
-  line-height: 1.3rem;
   letter-spacing: 0.04em;
   margin-left: 1rem;
   @include breakpoint ( pc ) {
