@@ -748,7 +748,6 @@ input {
   display: block;
   font-weight: bold;
   font-size: 1.2rem;
-  line-height: 1.4rem;
   color: #40A8E2;
   text-align: center;
   margin-top: 2.5rem;
@@ -766,7 +765,6 @@ input {
 
 .c-comment-link-big {
   font-size: 1.4rem;
-  line-height: 1.7rem;
 }
 
 .c-comment-link-contact {
@@ -1486,7 +1484,6 @@ input {
 
 .c-title-page-border {
   font-size: 2.4rem;
-  line-height: 2.9rem;
   border-bottom: 1px solid #AAA;
   padding-bottom: 0.5rem;
   margin-top: 3rem;
@@ -1495,7 +1492,6 @@ input {
 @media (min-width: 768px) {
   .c-title-page-border {
     font-size: 3rem;
-    line-height: 3.6rem;
     margin-top: 5.5rem;
   }
 }
@@ -1847,13 +1843,11 @@ input {
 .p-message__thanks {
   color: #F00;
   font-size: 2rem;
-  line-height: 2.4rem;
 }
 
 .p-message__normaltext {
   font-size: 1.4rem;
   font-weight: normal;
-  line-height: 1.7rem;
   margin: 2rem 0;
 }
 
@@ -1864,7 +1858,6 @@ input {
 .p-message__boldtext {
   font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1.9rem;
 }
 
 .p-message__boldtext p:not(:first-of-type) {
@@ -1873,13 +1866,11 @@ input {
 
 .p-message__mailtitle {
   font-size: 1.6rem;
-  line-height: 1.9rem;
   display: inline;
 }
 
 .p-message__mailaddress {
   font-size: 1.6rem;
-  line-height: 1.9rem;
   letter-spacing: 0.03em;
   display: inline;
 }

@@ -29,13 +29,11 @@
 
 .c-title-page-border {
   font-size: 2.4rem;
-  line-height: 2.9rem;
   border-bottom: 1px solid #AAA;
   padding-bottom: 0.5rem;
   margin-top: 3rem;
   @include breakpoint ( pc ) {
     font-size: 3rem;
-    line-height: 3.6rem;
     margin-top: 5.5rem;
   }
 }
