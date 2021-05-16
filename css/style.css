@@ -722,7 +722,6 @@ input {
 
 .c-comment {
   font-size: 1.4rem;
-  line-height: 180%;
   width: 100%;
   max-width: 30rem;
   text-align: center;
@@ -733,7 +732,6 @@ input {
 @media (min-width: 768px) {
   .c-comment {
     font-size: 1.8rem;
-    line-height: 3.6rem;
     width: 100%;
     max-width: none;
     margin-top: 15%;
@@ -766,28 +764,24 @@ input {
 
 .c-comment-link-contact {
   font-size: 1.8rem;
-  line-height: 2.25rem;
   margin-top: 3.5rem;
 }
 
 @media (min-width: 768px) {
   .c-comment-link-contact {
     font-size: 1.6rem;
-    line-height: 2.0rem;
     margin-top: 2.5rem;
   }
 }
 
 .c-comment-link-totop {
   font-size: 1.8rem;
-  line-height: 2.25rem;
   margin-top: 4.5rem;
 }
 
 @media (min-width: 768px) {
   .c-comment-link-totop {
     font-size: 1.6rem;
-    line-height: 2.0rem;
     margin-top: 6rem;
   }
 }
@@ -795,7 +789,6 @@ input {
 .c-comment-contact {
   font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.5;
   text-align: center;
   margin-top: 2rem;
 }
@@ -810,7 +803,6 @@ input {
 .c-comment-annotation {
   font-weight: normal;
   font-size: 1.2rem;
-  line-height: 1.5rem;
   margin-top: 1rem;
 }
 
