@@ -7,6 +7,18 @@
   .c-comment-link {
     margin-top: 3rem;
   }
+  p {
+    .c-comment-link {
+      display: inline-block;
+    }
+  }
+  p.c-comment-link {
+    color: #000;
+    margin-top: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .p-message-left {

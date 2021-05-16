@@ -1797,6 +1797,19 @@ input {
   margin-top: 3rem;
 }
 
+.p-message p .c-comment-link {
+  display: inline-block;
+}
+
+.p-message p.c-comment-link {
+  color: #000;
+  margin-top: 0;
+}
+
+.p-message p.c-comment-link:hover {
+  opacity: 1;
+}
+
 .p-message-left {
   width: 100%;
   margin: auto;
