@@ -1,6 +1,7 @@
 // ログインページの中身の枠
 .c-frame {
   font-size: 1.4rem;
+  // lh固定
   line-height: 2.2rem;
   color: #333;
   width: 100%;
@@ -12,6 +13,7 @@
     color: #333;
     text-align: center;
     font-size: 1.4rem;
+    // lh固定
     line-height: 2.1rem;
     letter-spacing: -0.01rem;
   }
@@ -79,9 +81,4 @@
 }
 .c-frame-select-prefectures {
   width: 14.6rem;
-  // select {
-  //   font-size: 1.4rem;
-  //   line-height: 1.7rem;
-  //   color: #333;
-  // }
 }

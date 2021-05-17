@@ -468,6 +468,7 @@ template {
 
 html {
   font-size: 62.5%;
+  line-height: 1.8;
 }
 
 body {
@@ -525,7 +526,6 @@ input {
 
 .l-footer small {
   font-size: 1.4rem;
-  line-height: 1.7rem;
   letter-spacing: 0.03rem;
 }
 
@@ -654,6 +654,7 @@ input {
 .c-button-login {
   width: 100%;
   height: 45px;
+  line-height: 1.15;
   background: #0054EE;
   margin-top: 1.5rem;
   padding: 1.5rem 0;
@@ -707,7 +708,6 @@ input {
 
 .c-button-registration__text p {
   font-size: 1.8rem;
-  line-height: 2.2rem;
   color: #fff;
 }
 
@@ -715,7 +715,6 @@ input {
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
-  line-height: 1.5rem;
   letter-spacing: -0.01rem;
   color: #333333;
   margin-top: 1.5rem;
@@ -723,7 +722,6 @@ input {
 
 .c-comment {
   font-size: 1.4rem;
-  line-height: 180%;
   width: 100%;
   max-width: 30rem;
   text-align: center;
@@ -734,7 +732,6 @@ input {
 @media (min-width: 768px) {
   .c-comment {
     font-size: 1.8rem;
-    line-height: 3.6rem;
     width: 100%;
     max-width: none;
     margin-top: 15%;
@@ -746,7 +743,6 @@ input {
   display: block;
   font-weight: bold;
   font-size: 1.2rem;
-  line-height: 1.4rem;
   color: #40A8E2;
   text-align: center;
   margin-top: 2.5rem;
@@ -764,33 +760,28 @@ input {
 
 .c-comment-link-big {
   font-size: 1.4rem;
-  line-height: 1.7rem;
 }
 
 .c-comment-link-contact {
   font-size: 1.8rem;
-  line-height: 2.25rem;
   margin-top: 3.5rem;
 }
 
 @media (min-width: 768px) {
   .c-comment-link-contact {
     font-size: 1.6rem;
-    line-height: 2.0rem;
     margin-top: 2.5rem;
   }
 }
 
 .c-comment-link-totop {
   font-size: 1.4rem;
-  line-height: 2.25rem;
   margin-top: 4.5rem;
 }
 
 @media (min-width: 768px) {
   .c-comment-link-totop {
     font-size: 1.6rem;
-    line-height: 2.0rem;
     margin-top: 6rem;
   }
 }
@@ -798,7 +789,6 @@ input {
 .c-comment-contact {
   font-size: 1.4rem;
   font-weight: 400;
-  line-height: 180%;
   text-align: center;
   margin-top: 2rem;
 }
@@ -806,7 +796,6 @@ input {
 @media (min-width: 768px) {
   .c-comment-contact {
     font-size: 1.6rem;
-    line-height: 2.0rem;
     margin-top: 2.5rem;
   }
 }
@@ -814,7 +803,6 @@ input {
 .c-comment-annotation {
   font-weight: normal;
   font-size: 1.2rem;
-  line-height: 1.5rem;
   margin-top: 1rem;
 }
 
@@ -833,7 +821,6 @@ input {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1rem;
-  line-height: 1.2rem;
   letter-spacing: -0.01rem;
   margin-top: 1rem;
 }
@@ -1022,13 +1009,12 @@ input {
 
 .c-item-radio label {
   font-size: 1.3rem;
-  line-height: 1.6rem;
 }
 
 .c-item-footer {
   font-size: 1.4rem;
   font-weight: 400;
-  line-height: 1.7rem;
+  line-height: 1.5;
   letter-spacing: 0.03rem;
   margin-bottom: 2rem;
 }
@@ -1064,7 +1050,6 @@ input {
 
 .c-itemlabel p {
   font-size: 1.4rem;
-  line-height: 1.7rem;
 }
 
 @media (min-width: 768px) {
@@ -1093,14 +1078,12 @@ input {
 
 .c-itemlabel__private {
   font-size: 1.1rem;
-  line-height: 1.3rem;
   font-weight: normal;
 }
 
 .c-itemlabel__required {
   color: #FF0000;
   font-size: 1.1rem;
-  line-height: 1.3rem;
   letter-spacing: 0.04em;
   margin-left: 1rem;
 }
@@ -1337,7 +1320,6 @@ input {
 @media (min-width: 768px) {
   .c-navi li {
     width: 25%;
-    line-height: 3rem;
     margin-top: 0;
     border-right: 1px solid #aaaaaa;
   }
@@ -1541,7 +1523,6 @@ input {
 
 .c-ranking__smalltext {
   font-size: 1.2rem;
-  line-height: 1.4rem;
   vertical-align: middle;
   color: #000;
 }
@@ -1549,13 +1530,11 @@ input {
 @media (min-width: 768px) {
   .c-ranking__smalltext {
     font-size: 2rem;
-    line-height: 2.4rem;
   }
 }
 
 .c-title {
   font-size: 2.4rem;
-  line-height: 2.9rem;
   letter-spacing: 0.05rem;
   padding-top: 4rem;
   margin-bottom: 2.5rem;
@@ -1565,7 +1544,6 @@ input {
 @media (min-width: 768px) {
   .c-title {
     font-size: 3rem;
-    line-height: 3.6rem;
     letter-spacing: 0.05rem;
     padding-top: 8rem;
     margin-bottom: 7rem;
@@ -1574,7 +1552,6 @@ input {
 
 .c-title-page {
   font-size: 2.4rem;
-  line-height: 2.9rem;
   letter-spacing: 0.03em;
   margin-top: 3.5rem;
   text-align: center;
@@ -1583,14 +1560,12 @@ input {
 @media (min-width: 768px) {
   .c-title-page {
     font-size: 3rem;
-    line-height: 3.6rem;
     margin-top: 5.5rem;
   }
 }
 
 .c-title-page-border {
   font-size: 2.4rem;
-  line-height: 2.9rem;
   border-bottom: 1px solid #AAA;
   padding-bottom: 0.5rem;
   margin-top: 3rem;
@@ -1599,7 +1574,6 @@ input {
 @media (min-width: 768px) {
   .c-title-page-border {
     font-size: 3rem;
-    line-height: 3.6rem;
     margin-top: 5.5rem;
   }
 }
@@ -1607,7 +1581,6 @@ input {
 .c-title-login {
   color: #333;
   font-size: 1.6rem;
-  line-height: 1.9rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 2rem;
@@ -1615,14 +1588,12 @@ input {
 
 .c-title-footer {
   font-size: 1.8rem;
-  line-height: 2.2rem;
   margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
   .c-title-footer {
     font-size: 2rem;
-    line-height: 2.4rem;
     margin-bottom: 3.4rem;
   }
 }
@@ -1791,7 +1762,6 @@ input {
   margin-top: 6rem;
   margin-bottom: 2rem;
   font-size: 1.6rem;
-  line-height: 1.9rem;
 }
 
 .p-main h2:nth-child(2) {
@@ -1801,7 +1771,6 @@ input {
 @media (min-width: 768px) {
   .p-main h2 {
     font-size: 2.4rem;
-    line-height: 2.9rem;
     margin-top: 8rem;
   }
   .p-main h2:nth-child(2) {
@@ -1836,7 +1805,6 @@ input {
 
 .p-mainvisu h2 {
   font-size: 2rem;
-  line-height: 2.4rem;
   text-align: center;
   margin-top: 3rem;
 }
@@ -1844,7 +1812,6 @@ input {
 @media (min-width: 768px) {
   .p-mainvisu h2 {
     font-size: 2.8rem;
-    line-height: 5.6rem;
     margin-top: 8rem;
   }
 }
@@ -1859,7 +1826,6 @@ input {
   left: 2rem;
   color: #fff;
   font-size: 7vw;
-  line-height: 1.5;
   letter-spacing: 0.03rem;
   text-align: center;
 }
@@ -1910,6 +1876,19 @@ input {
   margin-top: 3rem;
 }
 
+.p-message p .c-comment-link {
+  display: inline-block;
+}
+
+.p-message p.c-comment-link {
+  color: #000;
+  margin-top: 0;
+}
+
+.p-message p.c-comment-link:hover {
+  opacity: 1;
+}
+
 .p-message-left {
   width: 100%;
   margin: auto;
@@ -1945,13 +1924,12 @@ input {
 .p-message__thanks {
   color: #F00;
   font-size: 2rem;
-  line-height: 2.4rem;
 }
 
 .p-message__normaltext {
   font-size: 1.4rem;
   font-weight: normal;
-  line-height: 1.7rem;
+  line-height: 1.5;
   margin: 2rem 0;
 }
 
@@ -1962,7 +1940,6 @@ input {
 .p-message__boldtext {
   font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1.9rem;
 }
 
 .p-message__boldtext p:not(:first-of-type) {
@@ -1971,13 +1948,11 @@ input {
 
 .p-message__mailtitle {
   font-size: 1.6rem;
-  line-height: 1.9rem;
   display: inline;
 }
 
 .p-message__mailaddress {
   font-size: 1.6rem;
-  line-height: 1.9rem;
   letter-spacing: 0.03em;
   display: inline;
 }
@@ -2088,7 +2063,6 @@ input {
 
 .p-selectbox span {
   font-size: 1.2rem;
-  line-height: 1.5rem;
   margin-left: 0.7rem;
   margin-right: 1.2rem;
 }
@@ -2152,7 +2126,6 @@ input {
 
 .p-terms .terms-comment {
   font-size: 1.6rem;
-  line-height: 1.6rem;
 }
 
 .p-terms .c-comment-link {

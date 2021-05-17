@@ -14,7 +14,6 @@
     }
     @include breakpoint ( pc ) {
       width: 25%;
-      line-height: 3rem;
       margin-top: 0;
       border-right:1px solid #aaaaaa;
       &:first-of-type {
@@ -39,6 +38,7 @@
 
 .c-navi__login {
   font-size: 1.4rem;
+  // lh固定
   line-height: 1.7rem;
   text-align: center;
   width: 15rem;

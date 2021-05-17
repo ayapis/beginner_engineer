@@ -7,6 +7,18 @@
   .c-comment-link {
     margin-top: 3rem;
   }
+  p {
+    .c-comment-link {
+      display: inline-block;
+    }
+  }
+  p.c-comment-link {
+    color: #000;
+    margin-top: 0;
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 .p-message-left {
@@ -36,13 +48,12 @@
 .p-message__thanks {
   color: #F00;
   font-size: 2rem;
-  line-height: 2.4rem;
 }
 
 .p-message__normaltext {
   font-size: 1.4rem;
   font-weight: normal;
-  line-height: 1.7rem;
+  line-height: 1.5;
   margin: 2rem 0;
   p {
     &:not(:first-of-type) {
@@ -53,7 +64,6 @@
 .p-message__boldtext {
   font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1.9rem;
   p {
     &:not(:first-of-type) {
       margin-top: 1rem;
@@ -63,13 +73,11 @@
 
 .p-message__mailtitle {
   font-size: 1.6rem;
-  line-height: 1.9rem;
   display: inline;
 }
 
 .p-message__mailaddress {
   font-size: 1.6rem;
-  line-height: 1.9rem;
   letter-spacing: 0.03em;
   display: inline;
 }

@@ -30,6 +30,8 @@
 .c-button-login {
   width: 100%;
   height: 45px;
+  // ここのlhは固定
+  line-height: 1.15;
   background: #0054EE;
   margin-top: 1.5rem;
   padding: 1.5rem 0;
@@ -74,7 +76,6 @@
 .c-button-registration__text {
   p {
     font-size: 1.8rem;
-    line-height: 2.2rem;
     color: #fff;
   }
 }
