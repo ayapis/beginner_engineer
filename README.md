@@ -39,12 +39,7 @@ devlopブランチをターゲットにpull requestsを出す。 画面右側「
 <br>
 
 # コーディング規約
-なるべくコメントを書いてください<br>
-<br>
-コメントを書かない事がカッコいいという現場も稀にありますが、基本的にコメントを書いた方が他の人が見ると理解しやすいです<br>
-<br>
-コメントを書く練習にもなるので、どんどん書いていってください
-<br>
+未定<br>
 <br>
 
 
@@ -54,7 +49,7 @@ devlopブランチをターゲットにpull requestsを出す。 画面右側「
 | OS | Linux |
 | フロントエンド | JavaScript/React/TypeScript |
 | バックエンド | Ruby/Ruby on Rails |
-| DB | MySQL |
+| DB | 未定 |
 | 仮想環境 | Docker |
 | サーバー | AWS（VPC、EC2、CloudWatch） |
 | バージョン管理 | Git/Github |
