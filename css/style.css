@@ -1107,6 +1107,13 @@ input {
   font-size: 1.8rem;
   font-weight: normal;
   font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    margin-bottom: 6rem;
+  }
 }
 
 .menu__item {
@@ -1149,22 +1156,23 @@ input {
 .menu__item__link {
   color: #2d2d2d;
   display: block;
-  padding: 1.5rem 3rem;
+  padding: 1.5rem 10%;
 }
 
 .menu__item__link::after {
+  content: "";
   position: absolute;
+  right: 15px;
+  top: 42%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   display: block;
-  content: '';
-  width: 0.8rem;
-  height: 0.8rem;
-  top: 50%;
-  right: 0.45rem;
-  margin-top: -3px;
-  border-bottom: 2px solid #000;
-  border-right: 2px solid #000;
-  -webkit-transform: rotate(45deg) translate(-85%, 50%);
-          transform: rotate(45deg) translate(-85%, 50%);
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #000;
+  border-right: solid 2px #000;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .menu__item__link:hover {
@@ -1172,8 +1180,9 @@ input {
 }
 
 .on::after {
-  -webkit-transform: rotate(225deg) translate(25%, -50%);
-          transform: rotate(225deg) translate(25%, -50%);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 45%;
 }
 
 .submenu {
@@ -1181,7 +1190,7 @@ input {
   display: none;
   position: absolute;
   right: -1px;
-  top: 4.9rem;
+  top: 6.3rem;
   z-index: 10;
 }
 
@@ -1764,16 +1773,9 @@ input {
   font-size: 1.6rem;
 }
 
-.p-main h2:nth-child(2) {
-  margin-top: 2.5rem;
-}
-
 @media (min-width: 768px) {
   .p-main h2 {
     font-size: 2.4rem;
-    margin-top: 8rem;
-  }
-  .p-main h2:nth-child(2) {
     margin-top: 8rem;
   }
 }
