@@ -14,3 +14,16 @@
     }
   }
 }
+
+.p-tweet-offerlist {
+  .twitter-tweet {
+    &:last-of-type{
+        iframe {
+        margin-bottom: 0;
+        @include breakpoint ( pc ) {
+          margin-bottom: 0;
+        }
+      }
+   }
+  }
+}

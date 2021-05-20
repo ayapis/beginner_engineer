@@ -50,3 +50,9 @@
     margin-bottom: 3.4rem;
   }
 }
+
+.c-title-narrowdown {
+  @include breakpoint ( pc ) {
+    font-size: 1.8rem;
+  }
+}

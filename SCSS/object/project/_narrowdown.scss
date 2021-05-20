@@ -1,0 +1,109 @@
+.p-narrowdown {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+  font-weight: normal;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-bottom: 3rem;
+  @include breakpoint ( pc ) {
+    font-size: 1.6rem;
+    margin-bottom: 6rem;
+  }
+}
+
+.p-narrowdown__item {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 1px;
+  position: relative;
+  flex-grow: 1;
+  width: 50%;
+  border: 1px solid #000;
+  &:nth-child(odd) {
+    border-right: none;
+  }
+  &:nth-child(-n+2) {
+    border-bottom: none;
+  }
+  &:nth-child(n+3) {
+    .p-narrowdown__sub {
+      &:first-of-type {
+        border-top: none;
+        top: 4.5rem;
+      }
+    }
+  }
+  @include breakpoint ( pc ) {
+    width: 25%;
+    &:not(:last-child) {
+      border-right: none;
+    }
+    &:nth-child(-n+2) {
+      border-bottom: 1px solid #000;
+    }
+  }
+}
+.p-narrowdown__item__link {
+  color: #2d2d2d;
+  display: block;
+  padding: 1.0rem 10%;
+  &::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 42%;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: solid 2px #000;
+    border-right: solid 2px #000;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  &:hover {
+    background: #EFF5FF;
+  }
+}
+.on {
+  &::after {
+    transform: rotate(-45deg);
+    top: 45%;
+  }
+}
+ 
+.p-narrowdown__sub {
+  background: #fff;
+  display: none;
+  position: absolute;
+  right: -1px;
+  top: 4.6rem;
+  z-index: 10;
+  @include breakpoint ( pc ) {
+    top: 4.9rem;
+  }
+}
+.p-narrowdown__sub__item {
+  border: 1px solid #000;
+  border-top: none;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: normal;
+  text-align: right;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  &:first-of-type {
+    border-top: 1px solid #000;
+    @include breakpoint ( pc ) {
+      border-top: none;
+    }
+  }
+  &:hover {
+    background: #EFF5FF;
+  }
+  a{
+    display: block;
+    padding: 0.5rem;
+  }
+}
