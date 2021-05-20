@@ -7,11 +7,12 @@
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: normal;
   font-family: 'Noto Sans JP', sans-serif;
   margin-bottom: 3rem;
   @include breakpoint ( pc ) {
+    font-size: 1.6rem;
     margin-bottom: 6rem;
   }
 }
@@ -51,7 +52,7 @@
 .menu__item__link {
   color: #2d2d2d;
   display: block;
-  padding: 1.5rem 10%;
+  padding: 1.0rem 10%;
   &::after {
     content: "";
     position: absolute;

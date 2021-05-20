@@ -1108,7 +1108,7 @@ input {
           align-items: baseline;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: normal;
   font-family: 'Noto Sans JP', sans-serif;
   margin-bottom: 3rem;
@@ -1116,6 +1116,7 @@ input {
 
 @media (min-width: 768px) {
   .menu {
+    font-size: 1.6rem;
     margin-bottom: 6rem;
   }
 }
@@ -1160,7 +1161,7 @@ input {
 .menu__item__link {
   color: #2d2d2d;
   display: block;
-  padding: 1.5rem 10%;
+  padding: 1.0rem 10%;
 }
 
 .menu__item__link::after {
@@ -1611,6 +1612,12 @@ input {
   }
 }
 
+@media (min-width: 768px) {
+  .c-title-narrowdown {
+    font-size: 1.8rem;
+  }
+}
+
 .c-wrap {
   width: 90%;
   max-width: 1140px;
@@ -1781,6 +1788,12 @@ input {
   .p-main h2 {
     font-size: 2.4rem;
     margin-top: 8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-main h2.c-title-narrowdown {
+    font-size: 1.8rem;
   }
 }
 
