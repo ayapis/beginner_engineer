@@ -1228,6 +1228,18 @@ input {
   padding: 0.5rem;
 }
 
+.p-pager {
+  max-width: 34rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .p-pager {
+    max-width: unset;
+  }
+}
+
 .p-pager__list {
   text-align: center;
   margin: 0;
@@ -1285,8 +1297,7 @@ input {
   text-decoration: none;
 }
 
-.p-pager__list li a span {
-  display: table-cell;
+.p-pager__list li a img {
   vertical-align: middle;
 }
 
@@ -2169,6 +2180,16 @@ input {
 @media (min-width: 768px) {
   .p-tweet .c-button {
     margin-top: 1.5rem;
+  }
+}
+
+.p-tweet-offerlist .twitter-tweet:last-of-type iframe {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .p-tweet-offerlist .twitter-tweet:last-of-type iframe {
+    margin-bottom: 0;
   }
 }
 

@@ -111,6 +111,14 @@
 
 
 // ページネーションここから
+.p-pager {
+  max-width: 34rem;
+  margin: auto;
+  margin-top: 3rem;
+  @include breakpoint ( pc ) {
+    max-width: unset;
+  }
+}
 .p-pager__list {
   text-align: center;
   margin: 0;
@@ -150,8 +158,7 @@
       display:table;
       color: #0054EE;
       text-decoration: none;
-      span {
-        display:table-cell;
+      img {
         vertical-align:middle;
       }
       &:hover {
