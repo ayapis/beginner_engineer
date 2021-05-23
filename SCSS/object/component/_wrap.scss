@@ -5,7 +5,7 @@
   margin: auto;
 }
 
-.c-wrap-twitter {
+.c-wrap-top {
   width: 90%;
   margin: auto;
   margin-top: 6.5rem;
@@ -36,5 +36,10 @@
   @include breakpoint ( pc ) {
     display: flex;
     justify-content: space-between;
+  }
+}
+.c-wrap-flexbox-wrap {
+  @include breakpoint ( pc ) {
+    flex-wrap: wrap;
   }
 }

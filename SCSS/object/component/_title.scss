@@ -56,3 +56,10 @@
     font-size: 1.8rem;
   }
 }
+
+.c-title-page-portfolio {
+  margin-bottom: 0.5rem;
+  @include breakpoint ( pc ) {
+    margin-bottom: 4rem;
+  }
+}
