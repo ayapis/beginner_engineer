@@ -1826,6 +1826,10 @@ input {
   .p-narrowdown__item:nth-child(-n+2) {
     border-bottom: 1px solid #000;
   }
+  .p-narrowdown__item:nth-child(n+3) .p-narrowdown__sub:first-of-type {
+    border-top: none;
+    top: 4.9rem;
+  }
 }
 
 .p-narrowdown__item__link {
