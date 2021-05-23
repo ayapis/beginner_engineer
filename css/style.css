@@ -1889,6 +1889,12 @@ input {
   padding: 0.5rem 0.5rem 0.5rem 3rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 982px) {
+  .p-narrowdown__sub__item {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}
+
 .p-narrowdown__sub__item:first-of-type {
   border-top: 1px solid #000;
 }
