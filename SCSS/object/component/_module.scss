@@ -1,1 +1,17 @@
 // 分類前のコンポーネントをとりあえず書く場所
+
+.box {
+  width: 100%;
+  max-width: 335px;
+  margin: auto;
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+.textbox {
+  font-size: 1.6rem;
+  padding: 2rem;
+  border: 1px solid #AAA;
+  border-top: unset;
+}

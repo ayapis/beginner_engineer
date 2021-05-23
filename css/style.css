@@ -1099,6 +1099,24 @@ input {
   }
 }
 
+.box {
+  width: 100%;
+  max-width: 335px;
+  margin: auto;
+}
+
+.box img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.textbox {
+  font-size: 1.6rem;
+  padding: 2rem;
+  border: 1px solid #AAA;
+  border-top: unset;
+}
+
 .c-navi {
   font-size: 1.4rem;
   width: 90%;
@@ -1416,14 +1434,14 @@ input {
   margin: auto;
 }
 
-.c-wrap-twitter {
+.c-wrap-top {
   width: 90%;
   margin: auto;
   margin-top: 6.5rem;
 }
 
 @media (min-width: 768px) {
-  .c-wrap-twitter {
+  .c-wrap-top {
     max-width: 1140px;
     margin-top: 11rem;
   }
