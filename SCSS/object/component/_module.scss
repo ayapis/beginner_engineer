@@ -1,12 +1,24 @@
 // 分類前のコンポーネントをとりあえず書く場所
-
+.c-portfolio {
+  display: contents;
+}
 .box {
   width: 100%;
   max-width: 335px;
   margin: auto;
+  margin-top: 2rem;
+  @include breakpoint ( pc ) {
+    max-width: none;
+    width: 47%;
+    margin: unset;
+    margin-top: 4rem;
+  }
   img {
     width: 100%;
     max-width: 400px;
+    @include breakpoint ( pc ) {
+      max-width: none;
+    }
   }
 }
 .textbox {

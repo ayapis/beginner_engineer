@@ -1099,15 +1099,35 @@ input {
   }
 }
 
+.c-portfolio {
+  display: contents;
+}
+
 .box {
   width: 100%;
   max-width: 335px;
   margin: auto;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .box {
+    max-width: none;
+    width: 47%;
+    margin: unset;
+    margin-top: 4rem;
+  }
 }
 
 .box img {
   width: 100%;
   max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .box img {
+    max-width: none;
+  }
 }
 
 .textbox {
@@ -1428,6 +1448,16 @@ input {
   }
 }
 
+.c-title-page-portfolio {
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .c-title-page-portfolio {
+    margin-bottom: 4rem;
+  }
+}
+
 .c-wrap {
   width: 90%;
   max-width: 1140px;
@@ -1475,6 +1505,13 @@ input {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-wrap-flexbox-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
