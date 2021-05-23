@@ -1881,6 +1881,10 @@ input {
   .p-narrowdown__item:nth-child(-n+2) {
     border-bottom: 1px solid #000;
   }
+  .p-narrowdown__item:nth-child(n+3) .p-narrowdown__sub:first-of-type {
+    border-top: none;
+    top: 4.9rem;
+  }
 }
 
 .p-narrowdown__item__link {
@@ -1938,6 +1942,12 @@ input {
   font-weight: normal;
   text-align: right;
   padding: 0.5rem 0.5rem 0.5rem 3rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 982px) {
+  .p-narrowdown__sub__item {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  }
 }
 
 .p-narrowdown__sub__item:first-of-type {
