@@ -1099,26 +1099,19 @@ input {
   }
 }
 
-.link {
-  display: block;
+.c-portfolio {
+  display: contents;
+}
+
+.box {
   width: 100%;
   max-width: 335px;
   margin: auto;
   margin-top: 2rem;
-  -webkit-transition: .3s;
-  transition: .3s;
-  border: 1px solid #AAA;
-}
-
-.link:hover {
-  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
 }
 
 @media (min-width: 768px) {
-  .link {
+  .box {
     max-width: none;
     width: 47%;
     margin: unset;
@@ -1126,17 +1119,9 @@ input {
   }
 }
 
-.box {
-  width: 100%;
-  height: 100%;
-}
-
 .box img {
   width: 100%;
   max-width: 400px;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media (min-width: 768px) {
@@ -1147,21 +1132,9 @@ input {
 
 .textbox {
   font-size: 1.6rem;
-  height: 50%;
   padding: 2rem;
-}
-
-.textbox p {
-  margin-top: 1rem;
-}
-
-.textbox span {
-  display: inline-block;
-  background: #848484;
-  padding: 0.5rem 1.5rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  color: #fff;
+  border: 1px solid #AAA;
+  border-top: unset;
 }
 
 .c-navi {
@@ -2042,12 +2015,11 @@ input {
 .p-pager {
   max-width: 34rem;
   margin: auto;
-  margin-top: 4.5rem;
+  margin-top: 3rem;
 }
 
 @media (min-width: 768px) {
   .p-pager {
-    margin-top: 6rem;
     max-width: unset;
   }
 }
