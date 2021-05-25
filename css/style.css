@@ -2164,6 +2164,53 @@ input {
   }
 }
 
+.p-portfolio__details {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .p-portfolio__details {
+    margin-top: 8rem;
+  }
+}
+
+.p-portfolio__details .c-image {
+  height: auto;
+}
+
+.p-portfolio__details__check {
+  margin-top: 2.5rem;
+}
+
+.p-portfolio__details__check .c-button {
+  margin: 0 auto;
+}
+
+.p-portfolio__details__check .c-button:first-of-type a {
+  background: #AAAAAA;
+}
+
+.p-portfolio__details__check .c-button:nth-of-type(2) {
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .p-portfolio__details__check {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .p-portfolio__details__check .c-button:first-of-type {
+    margin-right: 6rem;
+  }
+  .p-portfolio__details__check .c-button:nth-of-type(2) {
+    margin-top: 0;
+  }
+}
+
 .p-ranking {
   margin-top: 2.5rem;
 }
