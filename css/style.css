@@ -2164,6 +2164,20 @@ input {
   }
 }
 
+.p-portfolio__details {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .p-portfolio__details {
+    margin-top: 8rem;
+  }
+}
+
+.p-portfolio__details .c-image {
+  height: auto;
+}
+
 .p-ranking {
   margin-top: 2.5rem;
 }
