@@ -1,8 +1,9 @@
 .p-pager {
   max-width: 34rem;
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 4.5rem;
   @include breakpoint ( pc ) {
+    margin-top: 6rem;
     max-width: unset;
   }
 }
