@@ -49,7 +49,7 @@ devlopブランチをターゲットにpull requestsを出す。 画面右側「
 | OS | Linux |
 | フロントエンド | JavaScript/React/TypeScript |
 | バックエンド | Ruby/Ruby on Rails |
-| DB | 未定 |
+| DB | MySQL |
 | 仮想環境 | Docker |
 | サーバー | AWS（VPC、EC2、CloudWatch） |
 | バージョン管理 | Git/Github |
