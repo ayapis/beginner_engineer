@@ -1160,9 +1160,9 @@ input {
 
 .c-textbox span {
   display: inline-block;
-  background: #848484;
+  background: #999999;
   padding: 0.5rem 1.5rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   margin-bottom: 1rem;
   color: #fff;
 }
