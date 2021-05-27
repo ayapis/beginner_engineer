@@ -15,11 +15,11 @@
 .c-title-page {
   font-size: 2.4rem;
   letter-spacing: 0.03em;
-  margin-top: 3.5rem;
+  margin-top: 4rem;
   text-align: center;
   @include breakpoint ( pc ) {
     font-size: 3rem;
-    margin-top: 5.5rem;
+    margin-top: 6rem;
   }
 }
 
@@ -62,4 +62,8 @@
   @include breakpoint ( pc ) {
     margin-bottom: 4rem;
   }
+}
+
+.c-title__sub {
+  text-align: center;
 }
