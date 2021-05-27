@@ -36,14 +36,33 @@
   font-size: 1.6rem;
   height: 50%;
   padding: 2rem;
+  @include breakpoint ( pc ) {
+    font-size: 2rem;
+  }
   p {
-    margin-top: 1rem;
+    &:nth-of-type(2) {
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
+      font-weight: normal;
+      // lh固定
+      line-height: 1.5;
+      @include breakpoint ( pc ) {
+        margin-top: 2rem;
+      }
+  }
+  &:nth-of-type(3) {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    @include breakpoint ( pc ) {
+      margin-top: 2rem;
+    }
+    }
   }
   span {
     display: inline-block;
-    background: #848484;
+    background: #999999;
     padding: 0.5rem 1.5rem;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     margin-bottom: 1rem;
     color: #fff;
   }
