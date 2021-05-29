@@ -32,15 +32,17 @@
     }
   }
 }
+
+// ポートフォリオ一覧ページで使用
 .c-textbox {
   font-size: 1.6rem;
   height: 50%;
-  @include breakpoint ( pc ) {
-    padding: 4rem 3rem 0;
-    padding: 2rem;
-  }
+  padding: 2rem;
   p {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    &:first-of-type {
+      margin-top: 0;
+    }
     &:nth-of-type(2) {
       font-weight: normal;
       // lh固定
@@ -57,15 +59,19 @@
   }
 }
 
+// ポートフォリオ詳細、PF投稿内容確認ページで使用（ポートフォリオ一覧のバージョン違い）
 .c-textbox-confirm {
+  padding: 0;
   @include breakpoint ( pc ) {
-    padding-bottom: 0;
+    padding: 4rem 3rem 0;
   }
   p {
     margin-top: 0;
   }
 }
 
+
+// ポートフォリオ詳細、PF投稿内容確認ページで使用
 .c-textbox__item {
   display: flex;
   align-items: center;
@@ -79,6 +85,7 @@
     }
   }
   p {
+    margin-top: 0;
     &:first-of-type {
       font-size: 2rem;
       width: 9rem;
