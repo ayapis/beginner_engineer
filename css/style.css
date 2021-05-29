@@ -1172,8 +1172,11 @@ input {
   .c-textbox {
     padding: 4rem 3rem 0;
     padding: 2rem;
-    padding-bottom: 0;
   }
+}
+
+.c-textbox p {
+  margin-top: 1rem;
 }
 
 .c-textbox span {
@@ -1183,6 +1186,16 @@ input {
   margin-right: 1rem;
   margin-bottom: 1rem;
   color: #fff;
+}
+
+@media (min-width: 768px) {
+  .c-textbox-confirm {
+    padding-bottom: 0;
+  }
+}
+
+.c-textbox-confirm p {
+  margin-top: 0;
 }
 
 .c-textbox__item {

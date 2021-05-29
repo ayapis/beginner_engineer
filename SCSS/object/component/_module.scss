@@ -38,7 +38,10 @@
   @include breakpoint ( pc ) {
     padding: 4rem 3rem 0;
     padding: 2rem;
-    padding-bottom: 0;
+    // padding-bottom: 0;
+  }
+  p {
+    margin-top: 1rem;
   }
   span {
     display: inline-block;
@@ -47,6 +50,15 @@
     margin-right: 1rem;
     margin-bottom: 1rem;
     color: #fff;
+  }
+}
+
+.c-textbox-confirm {
+  @include breakpoint ( pc ) {
+    padding-bottom: 0;
+  }
+  p {
+    margin-top: 0;
   }
 }
 
