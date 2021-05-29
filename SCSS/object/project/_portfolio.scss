@@ -41,22 +41,6 @@
   .c-button {
     width: 12rem;
     display: block;
-    &:first-of-type {
-      // margin: 0;
-      // margin-right: 4rem;
-      // @include breakpoint ( pc ) {
-      //   margin-right: 6rem;
-      // }
-      // a {
-      //   background: #AAAAAA;
-      //   &:hover {
-      //     background: #7A7A7A;
-      //   }
-      // }
-    }
-    &:nth-of-type(2) {
-      // margin: 0;
-    }
     @include breakpoint ( pc ) {
       width: 18rem;
     }

@@ -38,10 +38,14 @@
   @include breakpoint ( pc ) {
     padding: 4rem 3rem 0;
     padding: 2rem;
-    // padding-bottom: 0;
   }
   p {
     margin-top: 1rem;
+    &:nth-of-type(2) {
+      font-weight: normal;
+      // lh固定
+      line-height: 1.5;
+    }
   }
   span {
     display: inline-block;

@@ -1179,6 +1179,11 @@ input {
   margin-top: 1rem;
 }
 
+.c-textbox p:nth-of-type(2) {
+  font-weight: normal;
+  line-height: 1.5;
+}
+
 .c-textbox span {
   display: inline-block;
   background: #848484;
