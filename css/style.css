@@ -816,6 +816,24 @@ input {
   }
 }
 
+.c-comment-link-twitter {
+  font-size: 1.6rem;
+  margin-top: 0;
+  display: inline-block;
+}
+
+.c-comment-link-url {
+  font-size: 1.6rem;
+  margin-top: 0;
+  display: inline-block;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.c-comment-link-url:hover {
+  text-decoration: underline;
+}
+
 .c-divider {
   color: #AAA;
   display: -webkit-box;
@@ -1148,21 +1166,21 @@ input {
 .c-textbox {
   font-size: 1.6rem;
   height: 50%;
-  padding: 2rem;
-  padding-bottom: 0;
 }
 
 @media (min-width: 768px) {
   .c-textbox {
     padding: 4rem 3rem 0;
+    padding: 2rem;
+    padding-bottom: 0;
   }
 }
 
 .c-textbox span {
   display: inline-block;
-  background: #999999;
+  background: #848484;
   padding: 0.5rem 1.5rem;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
   color: #fff;
 }
@@ -1171,9 +1189,9 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 3rem;
 }
 
@@ -1183,8 +1201,10 @@ input {
   }
 }
 
-.c-textbox__item:first-of-type {
-  margin-top: 0;
+@media (min-width: 768px) {
+  .c-textbox__item:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .c-textbox__item p:first-of-type {

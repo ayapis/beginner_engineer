@@ -35,10 +35,10 @@
 .c-textbox {
   font-size: 1.6rem;
   height: 50%;
-  padding: 2rem;
-  padding-bottom: 0;
   @include breakpoint ( pc ) {
     padding: 4rem 3rem 0;
+    padding: 2rem;
+    padding-bottom: 0;
   }
   span {
     display: inline-block;
@@ -52,13 +52,15 @@
 
 .c-textbox__item {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-top: 3rem;
   @include breakpoint ( pc ) {
     margin-top: 4rem;
   }
   &:first-of-type {
-    margin-top: 0;
+    @include breakpoint ( pc ) {
+      margin-top: 0;
+    }
   }
   p {
     &:first-of-type {
