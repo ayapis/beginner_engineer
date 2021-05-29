@@ -1166,17 +1166,15 @@ input {
 .c-textbox {
   font-size: 1.6rem;
   height: 50%;
-}
-
-@media (min-width: 768px) {
-  .c-textbox {
-    padding: 4rem 3rem 0;
-    padding: 2rem;
-  }
+  padding: 2rem;
 }
 
 .c-textbox p {
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+
+.c-textbox p:first-of-type {
+  margin-top: 0;
 }
 
 .c-textbox p:nth-of-type(2) {
@@ -1193,9 +1191,13 @@ input {
   color: #fff;
 }
 
+.c-textbox-confirm {
+  padding: 0;
+}
+
 @media (min-width: 768px) {
   .c-textbox-confirm {
-    padding-bottom: 0;
+    padding: 4rem 3rem 0;
   }
 }
 
@@ -1223,6 +1225,10 @@ input {
   .c-textbox__item:first-of-type {
     margin-top: 0;
   }
+}
+
+.c-textbox__item p {
+  margin-top: 0;
 }
 
 .c-textbox__item p:first-of-type {
