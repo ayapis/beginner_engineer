@@ -1261,6 +1261,68 @@ input {
   }
 }
 
+.user-icon-dnd-wrapper {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+@media (min-width: 768px) {
+  .user-icon-dnd-wrapper {
+    height: 250px;
+  }
+}
+
+#preview_field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+#preview_field img {
+  width: 90%;
+}
+
+#drop_area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: normal;
+  line-height: 1.5;
+  width: 100%;
+  height: 100%;
+  background: #F9F9FB;
+  border: 1px dashed #B4B7BB;
+  cursor: pointer;
+}
+
+.drop_area__text {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#icon_clear_button {
+  display: none;
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  cursor: pointer;
+}
+
+#input_file {
+  width: 100%;
+  height: 100px;
+  opacity: 0;
+}
+
+#input_file:focus {
+  opacity: 1;
+}
+
 .c-navi {
   font-size: 1.4rem;
   width: 90%;
