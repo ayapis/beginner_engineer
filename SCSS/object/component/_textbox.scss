@@ -1,0 +1,80 @@
+// ポートフォリオ一覧ページで使用
+.c-textbox {
+  font-size: 1.6rem;
+  height: 50%;
+  padding: 2rem;
+  p {
+    margin-top: 2rem;
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:nth-of-type(2) {
+      font-weight: normal;
+      // lh固定
+      line-height: 1.5;
+    }
+  }
+  span {
+    display: inline-block;
+    background: #848484;
+    padding: 0.5rem 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+}
+
+// ポートフォリオ詳細、PF投稿内容確認ページで使用（ポートフォリオ一覧のバージョン違い）
+.c-textbox-confirm {
+  padding: 0;
+  @include breakpoint ( pc ) {
+    padding: 4rem 3rem 0;
+  }
+  p {
+    margin-top: 0;
+  }
+}
+
+
+// ポートフォリオ詳細、PF投稿内容確認ページで使用
+.c-textbox__item {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  @include breakpoint ( pc ) {
+    margin-top: 4rem;
+  }
+  &:first-of-type {
+    @include breakpoint ( pc ) {
+      margin-top: 0;
+    }
+  }
+  p {
+    margin-top: 0;
+    &:first-of-type {
+      font-size: 2rem;
+      width: 9rem;
+    }
+    &:nth-of-type(2) {
+      font-weight: normal;
+      // lh固定
+      line-height: 1.5;
+      width: calc(100% - 9rem);
+    }
+  }
+  &:last-of-type {
+    display: block;
+    p {
+      &:first-of-type {
+        width: auto;
+      }
+      &:nth-of-type(2) {
+        width: auto;
+        margin-top: 1.5rem;
+        @include breakpoint ( pc ) {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

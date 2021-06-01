@@ -1,115 +1,59 @@
-// 分類前のコンポーネントをとりあえず書く場所
-.link {
-  display: block;
+// 投稿ページのcss
+
+.user-icon-dnd-wrapper {
+  position: relative;
   width: 100%;
-  max-width: 335px;
-  margin: auto;
-  margin-top: 2rem;
-  transition: .3s;
-  border: 1px solid #AAA;
-  &:hover {
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-    transform: translateY(-5px);
-  }
-  
+  height: 200px;
   @include breakpoint ( pc ) {
-    max-width: none;
-    width: 47%;
-    margin: unset;
-    margin-top: 4rem;
+    height: 250px;
   }
 }
-.box {
+
+#preview_field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  img {
+    width: 90%;
+  }
+}
+
+#drop_area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: normal;
+  // lh固定
+  line-height: 1.5;
   width: 100%;
   height: 100%;
-  img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    object-fit: cover;
-    @include breakpoint ( pc ) {
-      max-width: none;
-    }
-  }
+  background: #F9F9FB;
+  border: 1px dashed #B4B7BB;
+  cursor: pointer;
 }
 
-// ポートフォリオ一覧ページで使用
-.c-textbox {
-  font-size: 1.6rem;
-  height: 50%;
-  padding: 2rem;
-  p {
-    margin-top: 2rem;
-    &:first-of-type {
-      margin-top: 0;
-    }
-    &:nth-of-type(2) {
-      font-weight: normal;
-      // lh固定
-      line-height: 1.5;
-    }
-  }
-  span {
-    display: inline-block;
-    background: #848484;
-    padding: 0.5rem 1.5rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    color: #fff;
-  }
+.drop_area__text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-// ポートフォリオ詳細、PF投稿内容確認ページで使用（ポートフォリオ一覧のバージョン違い）
-.c-textbox-confirm {
-  padding: 0;
-  @include breakpoint ( pc ) {
-    padding: 4rem 3rem 0;
-  }
-  p {
-    margin-top: 0;
-  }
+#icon_clear_button {
+  display: none;
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  cursor: pointer;
 }
 
+#input_file {
+  width: 100%;
+  height: 100px;
+  opacity: 0;
+}
 
-// ポートフォリオ詳細、PF投稿内容確認ページで使用
-.c-textbox__item {
-  display: flex;
-  align-items: center;
-  margin-top: 3rem;
-  @include breakpoint ( pc ) {
-    margin-top: 4rem;
-  }
-  &:first-of-type {
-    @include breakpoint ( pc ) {
-      margin-top: 0;
-    }
-  }
-  p {
-    margin-top: 0;
-    &:first-of-type {
-      font-size: 2rem;
-      width: 9rem;
-    }
-    &:nth-of-type(2) {
-      font-weight: normal;
-      // lh固定
-      line-height: 1.5;
-      width: calc(100% - 9rem);
-    }
-  }
-  &:last-of-type {
-    display: block;
-    p {
-      &:first-of-type {
-        width: auto;
-      }
-      &:nth-of-type(2) {
-        width: auto;
-        margin-top: 1.5rem;
-        @include breakpoint ( pc ) {
-          margin-top: 2rem;
-        }
-      }
-    }
-  }
+#input_file:focus {
+  opacity: 1;
 }
