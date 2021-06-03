@@ -82,3 +82,10 @@
 .c-frame-select-prefectures {
   width: 14.6rem;
 }
+
+.c-frame-text-wide {
+  height: 10rem;
+  @include breakpoint ( pc ) {
+    height: 12rem;
+  }
+}

@@ -31,7 +31,7 @@
   <main class="c-wrap-top c-wrap-flexbox">
     <div class="p-main">
       <h1 class="c-title-page c-title-page-portfolio">ポートフォリオ投稿</h1>
-      <label for="icon" class="label-name">サムネイル画像選択</label>
+      <p class="label-name">サムネイル画像選択</p>
       <div class="user-icon-dnd-wrapper">
         <input type="file" name="icon" id="input_file" accept="image/*">
         <div id="preview_field"></div>
@@ -43,6 +43,111 @@
           </div><!-- /.drop_area__text -->
         </div>
         <div id="icon_clear_button">X</div>
+      </div>
+      <div class="c-wrap-post">
+        <!-- <div class="p-form-registration"> -->
+        <div class="Form-Item p-form-registration__item p-form-registration__item-post">
+          <div class="c-itemlabel">
+            <p class="c-itemlabel__posttitle">タイトル</p>
+          </div>
+          <input type="text" class="c-frame c-frame-text c-frame-text-registration" placeholder="">
+        </div>
+        <div class="p-form-registration__item">
+          <div class="c-itemlabel">
+            <p>作成日</p>
+          </div>
+          <div class="p-selectbox">
+            <div class="c-frame c-frame-text c-frame-text-registration c-frame-select">
+              <select required>
+                <option value="" hidden>-</option>
+                <option value="1">2018</option>
+                <option value="2">2019</option>
+                <option value="3">2020</option>
+                <option value="4">2021</option>
+              </select>
+            </div>
+            <span>年</span>
+            <div class="c-frame c-frame-text c-frame-text-registration c-frame-select c-frame-select-month">
+              <select required>
+                <option value="" hidden>-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">10</option>
+                <option value="4">12</option>
+              </select>
+            </div>
+            <span>月</span>
+            <div class="c-frame c-frame-text c-frame-text-registration c-frame-select c-frame-select-day">
+              <select required>
+                <option value="" hidden>-</option>
+                <option value="1">1</option>
+                <option value="2">10</option>
+                <option value="3">25</option>
+                <option value="4">30</option>
+              </select>
+            </div>
+            <span>日</span>
+          </div>
+        </div>
+        <div class="p-form-registration__item">
+          <div class="c-itemlabel">
+            <p>使用言語</p>
+          </div>
+          <ul class="multicheck multicheck-inline">
+            <li class="multicheck-item">
+              <input type="checkbox" name="CheckboxGroup1" value="チェックボックス" id="check2-0" class="multicheck-input">
+              <label for="check2-0" class="multicheck-label">Ruby</label>
+            </li>
+            <li class="multicheck-item">
+              <input type="checkbox" name="CheckboxGroup1" value="チェックボックス" id="check2-1" class="multicheck-input">
+              <label for="check2-1" class="multicheck-label">PHP</label>
+            </li>
+            <li class="multicheck-item">
+              <input type="checkbox" name="CheckboxGroup1" value="チェックボックス" id="check2-2" class="multicheck-input">
+              <label for="check2-2" class="multicheck-label">JavaScript</label>
+            </li>
+            <li class="multicheck-item">
+              <input type="checkbox" name="CheckboxGroup1" value="チェックボックス" id="check2-3" class="multicheck-input">
+              <label for="check2-3" class="multicheck-label">Java</label>
+            </li>
+            <li class="multicheck-item">
+              <input type="checkbox" name="CheckboxGroup1" value="チェックボックス" id="check2-4" class="multicheck-input">
+              <label for="check2-4" class="multicheck-label">C++</label>
+            </li>
+            <li class="multicheck-item">
+              <input type="checkbox" name="CheckboxGroup1" value="チェックボックス" id="check2-5" class="multicheck-input">
+              <label for="check2-5" class="multicheck-label">Python</label>
+            </li>
+          </ul>
+        </div>
+        <div class="Form-Item p-form-registration__item">
+          <div class="c-itemlabel">
+            <p>TwitterURL</p>
+          </div>
+          <input type="text" class="c-frame c-frame-text c-frame-text-registration" placeholder="https://・・・">
+        </div>
+        <div class="Form-Item p-form-registration__item">
+          <div class="c-itemlabel">
+            <p>URL</p>
+          </div>
+          <input type="text" class="c-frame c-frame-text c-frame-text-registration" placeholder="https://・・・">
+        </div>
+        <div class="Form-Item p-form-registration__item">
+          <div class="c-itemlabel">
+            <p>特徴・ポイント</p>
+            <span class="c-itemlabel__required">※100字以内</span>
+          </div>
+          <textarea class="c-frame c-frame-text c-frame-text-wide c-frame-text-registration"
+            placeholder="アピールポイントや苦労した点など"></textarea>
+        </div>
+        <div class="p-terms">
+          <button class="c-button c-button__submit c-button-post" onclick="location.href='portfolioconfirm.html'">
+            <div class="c-button-registration__text">
+              <p class="state">確認する</p>
+            </div>
+          </button>
+        </div>
+        <!-- </div> -->
       </div>
     </div><!-- .p-main -->
     <div class="p-side">

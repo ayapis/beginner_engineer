@@ -85,3 +85,38 @@
     color: #fff;
   }
 }
+
+.c-button__submit {
+  margin: 0;
+  color: #fff;
+  font-size: 1.8rem;
+  display: inline-block;
+  text-align: center;
+  background: #0054EE;
+  &:hover {
+    background: #001D60;
+  }
+}
+
+.c-button-post {
+  width: 15rem;
+  height: 5rem;
+  line-height: inherit;
+  background: #0054EE;
+  margin: auto;
+  margin-top: 3rem;
+  &:hover {
+    background: #001D60;
+  }
+  @include breakpoint ( pc ) {
+    width: 20rem;
+    height: 6rem;
+    text-align: center;
+  }
+  p {
+    line-height: 5rem;
+    @include breakpoint ( pc ) {
+      line-height: 6rem;
+    }
+  }
+}
