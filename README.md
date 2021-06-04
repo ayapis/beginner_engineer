@@ -1,4 +1,5 @@
 # 検証環境
+デザインからhtmlコーディングするための検証環境です<br>
 devlopブランチのデータをアップロードしてます <br>
 http://board.beginner-engineer.ga/<br>
 <br>
