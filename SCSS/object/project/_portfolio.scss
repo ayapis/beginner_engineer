@@ -49,27 +49,36 @@
     margin: 0;
     margin-right: 4rem;
     @include breakpoint ( pc ) {
+      font-size: 2rem;
       margin-right: 6rem;
     }
     a {
+      font-size: 1.6rem;
       background: #AAAAAA;
       &:hover {
         background: #7A7A7A;
       }
+      @include breakpoint ( pc ) {
+        font-size: 2rem;
+      }
     }
   }
   .c-button__submit {
+    font-size: 1.6rem;
     margin: 0;
     color: #fff;
-    font-size: 1.8rem;
     display: inline-block;
     text-align: center;
     background: #0054EE;
     &:hover {
       background: #001D60;
     }
+    @include breakpoint ( pc ) {
+      font-size: 2rem;
+    }
   }
   @include breakpoint ( pc ) {
+    font-size: 2rem;
     margin-top: 6rem;
   }
 }
