@@ -43,3 +43,10 @@
     flex-wrap: wrap;
   }
 }
+
+.c-wrap-post {
+  @include breakpoint ( pc ) {
+    width: 56rem;
+    margin: auto;
+  }
+}

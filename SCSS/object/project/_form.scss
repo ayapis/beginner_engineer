@@ -54,5 +54,17 @@
         margin-top: 0;
       }
     }
+    .c-itemlabel__posttitle {
+      margin-top: 5rem;
+      @include breakpoint ( pc ) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.p-form-registration__item-post {
+  @include breakpoint ( pc ) {
+    margin-top: 8rem;
   }
 }
