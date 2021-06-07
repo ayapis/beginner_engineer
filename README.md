@@ -1,5 +1,9 @@
-# 検証環境
+#概要
 デザインからhtmlコーディングするための検証環境です<br><br>
+Railsのリポジトリはこちらです<br>
+https://github.com/wyasu/job_engineer
+
+# 検証環境
 devlopブランチのデータをアップロードしてます <br>
 http://board.beginner-engineer.ga/<br>
 <br>
