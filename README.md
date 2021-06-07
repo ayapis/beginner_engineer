@@ -46,17 +46,3 @@ devlopブランチをターゲットにpull requestsを出す。 画面右側「
 # コーディング規約
 未定<br>
 <br>
-
-
-# 技術選定
-|  | 技術 |
-| --- | --- |
-| OS | Linux |
-| フロントエンド | JavaScript/React/TypeScript |
-| バックエンド | Ruby/Ruby on Rails |
-| DB | MySQL |
-| 仮想環境 | Docker |
-| サーバー | AWS（VPC、EC2、CloudWatch） |
-| バージョン管理 | Git/Github |
-| CI/CD | Github Actions |
-| タスク管理 | Backlog |
