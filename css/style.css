@@ -1218,7 +1218,7 @@ input {
 
 @media (min-width: 768px) {
   #drop_area {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
 }
 
@@ -1250,6 +1250,7 @@ input {
   padding: 1rem 1.5rem;
   margin-top: 2rem;
   border: 1px solid #AAA;
+  background: #DFDFDF;
 }
 
 .drop_area__text {

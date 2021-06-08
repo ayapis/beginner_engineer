@@ -35,7 +35,7 @@
   margin-top: 1.5rem;
   text-align: center;
   @include breakpoint ( pc ) {
-    margin-top: 3rem;
+    margin-top: 2rem;
   }
   p {
     &:first-of-type {
@@ -58,6 +58,7 @@
       padding: 1rem 1.5rem;
       margin-top: 2rem;
       border: 1px solid #AAA;
+      background: #DFDFDF;
     }
   }
 }
