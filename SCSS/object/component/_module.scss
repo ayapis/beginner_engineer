@@ -117,7 +117,6 @@
 .multicheck input[type="checkbox"].multicheck-input:checked + label {
   background: #0054EE;
   color: #fff;
-  border: 1px solid #AAA;
 }
 .multicheck .multicheck-label {
   display: block;
@@ -128,7 +127,6 @@
   padding: 0 2rem;
   cursor: pointer;
   color: #fff;
-  border: 1px solid #AAA;
   background: #848484;
   transition: 0.2s;
   @include breakpoint ( pc ) {
@@ -140,7 +138,6 @@
 .multicheck .multicheck-label:hover {
   color: #000;
   background-color: #EFF5FF;
-  border: 1px solid #AAA;
 }
 
 // インラインブロックにする場合の追加クラス
