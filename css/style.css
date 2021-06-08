@@ -1837,9 +1837,14 @@ input {
   }
 }
 
+.c-wrap-post {
+  max-width: 50rem;
+}
+
 @media (min-width: 768px) {
   .c-wrap-post {
-    width: 56rem;
+    width: 100%;
+    max-width: 70rem;
     margin: auto;
   }
 }
