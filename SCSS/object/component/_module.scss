@@ -108,8 +108,12 @@
   }
 }
 .multicheck .multicheck-item {
-  margin: 5px 0;
+  margin: 0.5rem 1rem 0.5rem 0;
   padding: 0; 
+  @include breakpoint ( pc ) {
+    margin: 0.5rem 0;
+    padding: 0; 
+  }
 } 
 .multicheck input[type="checkbox"] {
   display: none; 
@@ -121,19 +125,14 @@
 .multicheck .multicheck-label {
   display: block;
   // width: 100%;
-  height: 4.5rem;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.5rem;
   text-align: center;
-  line-height: 4.5rem;
-  padding: 0 2rem;
   cursor: pointer;
   color: #fff;
   background: #ACACAC;
   transition: 0.2s;
-  @include breakpoint ( pc ) {
-    height: 3rem;
-    line-height: 3rem;
-    padding: 0 1.5rem;
-  }
 }
 .multicheck .multicheck-label:hover {
   color: #000;
