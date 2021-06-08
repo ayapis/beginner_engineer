@@ -45,8 +45,10 @@
 }
 
 .c-wrap-post {
+  max-width: 50rem;
   @include breakpoint ( pc ) {
-    width: 56rem;
+    width: 100%;
+    max-width: 70rem;
     margin: auto;
   }
 }
