@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <!-- サイトタイトル（適宜変更） -->
+  <title>未経験者向けポータルサイト</title>
+  <!-- サイト説明（適宜変更） -->
+  <meta name="description" content="未経験者向けポータルサイトです。">
+  <!-- ファビコン（適宜変更） -->
+  <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+  <!-- viewportの指定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- FontAwesomeの読み込み -->
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- CSSの読み込み（slickは不要な場合もある） -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- jQueryの読み込み（不要な場合もある） -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- 共通パーツとハンバーガーメニューの読み込み -->
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <header id="header"></header>
+  <main>
+    <div class="c-wrap c-wrap-registration">
+      <h1 class="c-title-page-border">プロフィール編集</h1>
+      <div class="p-form-registration">
+        <div class="Form-Item p-form-registration__item">
+          <!-- <div> -->
+          <div class="c-itemlabel">
+            <p>ユーザー名</p>
+            <span class="c-itemlabel__required">※必須</span>
+          </div>
+          <input type="text" class="c-frame c-frame-text c-frame-text-registration" placeholder="">
+        </div>
+        <div class="p-form-registration__item">
+          <div class="c-itemlabel">
+            <p>メールアドレス</p>
+            <span class="c-itemlabel__private">（非公開）</span>
+          </div>
+          <input type="text" class="c-frame c-frame-text c-frame-text-registration" placeholder="ユーザー名">
+        </div>
+        <p class="c-comment-annotation">※メールアドレスでログイン認証されている方は必須です。</p>
+        <div class="p-form-registration__item">
+          <div class="c-itemlabel">
+            <p>TwitterID</p>
+          </div>
+          <input type="text" class="c-frame c-frame-text c-frame-text-registration" placeholder="パスワード">
+        </div>
+        <p class="c-comment-annotation">※Twitterでログイン認証されている方は必須です。</p>
+        <div class="p-form-registration__item">
+          <div class="c-itemlabel">
+            <p>プロフィール画像</p>
+          </div>
+          <!-- <input type="text" class="c-frame c-frame-text c-frame-text-registration" placeholder="パスワード"> -->
+          <div class="user-icon-dnd-wrapper">
+            <input type="file" name="icon" id="input_file" accept="image/*">
+            <div id="preview_field"></div>
+            <div id="drop_area">
+              <div class="drop_area__text">
+                <p>ここにファイルをドロップ</p>
+                <p>または</p>
+                <p>ファイルを選択</p>
+              </div><!-- /.drop_area__text -->
+            </div>
+            <div id="icon_clear_button">X</div>
+          </div>
+        </div>
+        <div class="p-form-registration__item">
+          <div class="c-itemlabel">
+            <p>生年月日</p>
+            <span class="c-itemlabel__required">※必須</span>
+          </div>
+          <div class="p-selectbox">
+            <div class="c-frame c-frame-text c-frame-text-registration c-frame-select">
+              <select required>
+                <option value="" hidden>-</option>
+                <option value="1">1990</option>
+                <option value="2">1991</option>
+                <option value="3">1992</option>
+                <option value="4">1993</option>
+              </select>
+            </div>
+            <span>年</span>
+            <div class="c-frame c-frame-text c-frame-text-registration c-frame-select c-frame-select-month">
+              <select required>
+                <option value="" hidden>-</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">10</option>
+                <option value="4">12</option>
+              </select>
+            </div>
+            <span>月</span>
+            <div class="c-frame c-frame-text c-frame-text-registration c-frame-select c-frame-select-day">
+              <select required>
+                <option value="" hidden>-</option>
+                <option value="1">1</option>
+                <option value="2">10</option>
+                <option value="3">25</option>
+                <option value="4">30</option>
+              </select>
+            </div>
+            <span>日</span>
+          </div>
+        </div>
+        <div class="p-form-registration__item Form-Item-radio">
+          <div class="c-itemlabel c-itemlabel-radio">
+            <p>性別</p>
+            <span class="c-itemlabel__required">※必須</span>
+          </div>
+          <div class="c-item-radio">
+            <input type="radio" id="01-D" name="radio01">
+            <label for="01-D" class="radio01">男性</label>
+            <input type="radio" id="01-E" name="radio01">
+            <label for="01-E" class="radio01">女性</label>
+          </div>
+        </div>
+        <div class="p-form-registration__item">
+          <div class="c-itemlabel">
+            <p>都道府県</p>
+            <span class="c-itemlabel__required">※必須</span>
+          </div>
+          <div class="c-frame c-frame-text c-frame-text-registration c-frame-select c-frame-select-prefectures">
+            <select required>
+              <option value="" hidden>選択してください</option>
+              <option value="1">東京都</option>
+              <option value="2">大阪府</option>
+              <option value="3">鹿児島県</option>
+              <option value="4">北海道</option>
+            </select>
+          </div>
+        </div>
+        <div class="p-form-registration__item">
+          <div class="c-itemlabel">
+            <p>利用目的</p>
+            <span class="c-itemlabel__required">※必須</span><span class="c-itemlabel__private">（非公開）</span>
+          </div>
+          <div class="c-frame c-frame-text c-frame-text-registration c-frame-select c-frame-select-prefectures">
+            <select required>
+              <option value="" hidden>選択してください</option>
+              <option value="1">案件検索</option>
+              <option value="2">案件募集</option>
+              <option value="3">その他</option>
+              <option value="4">その他</option>
+            </select>
+          </div>
+        </div>
+        <div class="p-terms">
+          <button class="c-button c-button-registration" onclick="location.href='profileeditcomplete.html'">
+            <div class="c-button-registration__text">
+              <p class="state">変更を保存する</p>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="footer"></footer>
+</body>
+
+</html>
