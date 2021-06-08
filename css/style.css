@@ -941,6 +941,10 @@ input {
   letter-spacing: -0.01rem;
 }
 
+.c-frame-sharp {
+  border-radius: unset;
+}
+
 .c-frame-text {
   padding: 1.5rem 1rem;
   height: 4.6rem;
