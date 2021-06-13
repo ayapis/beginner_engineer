@@ -1310,7 +1310,7 @@ input {
   }
 }
 
-.multicheck {
+.c-multicheck {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1319,33 +1319,29 @@ input {
 }
 
 @media (min-width: 768px) {
-  .multicheck {
+  .c-multicheck {
     width: 62.5%;
   }
 }
 
-.multicheck .multicheck-item {
+.c-multicheck input[type="checkbox"] {
+  display: none;
+}
+
+.c-multicheck__item {
+  display: inline-block;
   margin: 0.5rem 1rem 0.5rem 0;
   padding: 0;
 }
 
 @media (min-width: 768px) {
-  .multicheck .multicheck-item {
+  .c-multicheck__item {
     margin: 0.5rem 0;
     padding: 0;
   }
 }
 
-.multicheck input[type="checkbox"] {
-  display: none;
-}
-
-.multicheck input[type="checkbox"].multicheck-input:checked + label {
-  background: #0054EE;
-  color: #fff;
-}
-
-.multicheck .multicheck-label {
+.c-multicheck__label {
   display: block;
   height: 3rem;
   line-height: 3rem;
@@ -1358,17 +1354,14 @@ input {
   transition: 0.2s;
 }
 
-.multicheck .multicheck-label:hover {
+.c-multicheck__label:hover {
   color: #000;
   background-color: #EFF5FF;
 }
 
-.multicheck.multicheck-inline .multicheck-item {
-  display: inline-block;
-}
-
-.multicheck.multicheck-inline .multicheck-label {
-  display: inline-block;
+.c-multicheck__input:checked + .c-multicheck__label {
+  background: #0054EE;
+  color: #fff;
 }
 
 .c-myportfoliolist {
