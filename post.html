@@ -31,18 +31,18 @@
   <main class="c-wrap-top c-wrap-flexbox">
     <div class="p-main">
       <h1 class="c-title-page c-title-page-portfolio">ポートフォリオ投稿</h1>
-      <p class="label-name">サムネイル画像選択</p>
-      <div class="user-icon-dnd-wrapper">
-        <input type="file" name="icon" id="input_file" accept="image/*">
-        <div id="preview_field"></div>
-        <div id="drop_area">
-          <div class="drop_area__text">
+      <h2 class="label-name">サムネイル画像選択</h2>
+      <div class="c-wrap-drop">
+        <input type="file" name="icon" id="input_file" class="u-input" accept="image/*">
+        <div id="preview_field" class="c-preview"></div>
+        <div id="drop_area" class="c-droparea">
+          <div class="c-droparea__text">
             <p>ここにファイルをドロップ</p>
             <p>または</p>
-            <p>ファイルを選択</p>
+            <p class="c-droparea__text__file">ファイルを選択</p>
           </div><!-- /.drop_area__text -->
         </div>
-        <div id="icon_clear_button">X</div>
+        <div id="icon_clear_button" class="c-button-clear">X</div>
       </div>
       <div class="c-wrap-post">
         <!-- <div class="p-form-registration"> -->

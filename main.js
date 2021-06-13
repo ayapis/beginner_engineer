@@ -43,13 +43,13 @@ $(function () {
   $('#drop_area').on('dragenter dragover', function (event) {
     event.stopPropagation();
     event.preventDefault();
-    $('#drop_area').css('border', '1px solid #333');  // 枠を実線にする
+    $('.c-wrap-drop').css('border', 'none');  // 枠を消す
   });
   // ドラッグしている要素がドロップ領域から外れたとき
   $('#drop_area').on('dragleave', function (event) {
     event.stopPropagation();
     event.preventDefault();
-    $('#drop_area').css('border', '1px dashed #aaa');  // 枠を点線に戻す
+    $('.c-wrap-drop').css('border', '1px dashed #aaa');  // 枠を点線に戻す
   });
   // ドラッグしている要素がドロップされたとき
   $('#drop_area').on('drop', function (event) {
@@ -95,7 +95,7 @@ $(function () {
     $('#input_file').val('');  // inputの中身を消去
     $('#drop_area').show();  // drop_areaをいちばん前面に表示
     $('#icon_clear_button').hide();  // icon_clear_buttonを非表示
-    $('#drop_area').css('border', '1px dashed #aaa');  // 枠を点線に変更
+    $('.c-wrap-drop').css('border', '1px dashed #aaa');  // 枠を点線に変更
   })
   // drop_area以外でファイルがドロップされた場合、ファイルが開いてしまうのを防ぐ
   $(document).on('dragenter', function (event) {

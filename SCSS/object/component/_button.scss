@@ -120,3 +120,11 @@
     }
   }
 }
+// アップロードファイルの削除
+.c-button-clear {
+  display: none;
+  position: absolute;
+  top: -4px;
+  right: -8px;
+  cursor: pointer;
+}
