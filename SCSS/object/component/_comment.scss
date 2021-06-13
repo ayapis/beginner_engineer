@@ -41,8 +41,11 @@
 }
 .c-comment-link-totop {
   font-size: 1.4rem;
+  margin: auto;
   margin-top: 4.5rem;
+  width: 7rem;
   @include breakpoint ( pc ) {
+    width: 10rem;
     font-size: 1.6rem;
     margin-top: 6rem;
   }

@@ -824,11 +824,14 @@ input {
 
 .c-comment-link-totop {
   font-size: 1.4rem;
+  margin: auto;
   margin-top: 4.5rem;
+  width: 7rem;
 }
 
 @media (min-width: 768px) {
   .c-comment-link-totop {
+    width: 10rem;
     font-size: 1.6rem;
     margin-top: 6rem;
   }
@@ -1350,6 +1353,10 @@ input {
   display: inline-block;
 }
 
+.c-myportfoliolist {
+  margin-top: -4rem;
+}
+
 .c-navi {
   font-size: 1.4rem;
   width: 90%;
@@ -1695,6 +1702,16 @@ input {
   }
 }
 
+.c-textbox__portfoliotitle {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .c-textbox__portfoliotitle {
+    font-size: 1.8rem;
+  }
+}
+
 .c-title {
   font-size: 2.4rem;
   letter-spacing: 0.05rem;
@@ -2024,13 +2041,14 @@ input {
 .p-main h2 {
   margin-top: 6rem;
   margin-bottom: 2rem;
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 @media (min-width: 768px) {
   .p-main h2 {
     font-size: 2.4rem;
     margin-top: 8rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -2646,10 +2664,6 @@ input {
   }
 }
 
-.p-profile {
-  text-align: center;
-}
-
 @media (min-width: 768px) {
   .p-profile {
     display: -webkit-box;
@@ -2660,6 +2674,7 @@ input {
 
 .p-profile img {
   width: 50%;
+  max-width: 15rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2675,7 +2690,7 @@ input {
 }
 
 .p-profile__text {
-  text-align: left;
+  font-size: 1.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2688,8 +2703,14 @@ input {
           justify-content: center;
 }
 
+@media (min-width: 768px) {
+  .p-profile__text {
+    font-size: 1.8rem;
+  }
+}
+
 .p-profile__text p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .p-profile__text p:last-of-type {

@@ -82,3 +82,10 @@
     }
   }
 }
+
+.c-textbox__portfoliotitle {
+  font-size: 1.6rem;
+  @include breakpoint ( pc ) {
+    font-size: 1.8rem;
+  }
+}
