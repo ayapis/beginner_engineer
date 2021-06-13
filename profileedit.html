@@ -56,17 +56,15 @@
             <p>プロフィール画像</p>
           </div>
           <!-- <input type="text" class="c-frame c-frame-text c-frame-text-registration" placeholder="パスワード"> -->
-          <div class="user-icon-dnd-wrapper">
-            <input type="file" name="icon" id="input_file" accept="image/*">
-            <div id="preview_field"></div>
+          <div class="c-wrap-drop-small">
+            <input type="file" name="icon" id="input_file" class="u-input" accept="image/*">
+            <div id="preview_field" class="c-preview"></div>
             <div id="drop_area">
-              <div class="drop_area__text">
-                <p>ここにファイルをドロップ</p>
-                <p>または</p>
+              <div class="c-droparea__text__file">
                 <p>ファイルを選択</p>
-              </div><!-- /.drop_area__text -->
+              </div>
             </div>
-            <div id="icon_clear_button">X</div>
+            <div id="icon_clear_button" class="c-button-clear">X</div>
           </div>
         </div>
         <div class="p-form-registration__item">
