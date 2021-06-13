@@ -1,10 +1,10 @@
 .p-profile {
-  text-align: center;
   @include breakpoint ( pc ) {
     display: flex;
   }
   img {
     width: 50%;
+    max-width: 15rem;
     align-self: center;
     margin-bottom: 2rem;
     @include breakpoint ( pc ) {
@@ -16,12 +16,15 @@
 }
 
 .p-profile__text {
-  text-align: left;
+  font-size: 1.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include breakpoint ( pc ) {
+    font-size: 1.8rem;
+  }
   p {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     &:last-of-type {
       margin-bottom: 0;
     }
