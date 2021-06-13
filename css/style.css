@@ -1161,6 +1161,22 @@ input {
   }
 }
 
+@media (min-width: 768px) {
+  .c-itemlabel-post {
+    width: 15rem;
+  }
+}
+
+.c-itemlabel-post p {
+  font-size: 1.6rem;
+}
+
+@media (min-width: 768px) {
+  .c-itemlabel-post p {
+    font-size: 2rem;
+  }
+}
+
 .c-itemlabel__private {
   font-size: 1.1rem;
   font-weight: normal;
@@ -1283,11 +1299,13 @@ input {
 }
 
 .label-name {
+  font-size: 2rem;
   margin-top: 2.5rem;
 }
 
 @media (min-width: 768px) {
   .label-name {
+    font-size: 2.5rem;
     margin-top: 8rem;
   }
 }

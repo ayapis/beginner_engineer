@@ -33,6 +33,18 @@
   }
 }
 
+.c-itemlabel-post {
+  @include breakpoint ( pc ) {
+    width: 15rem;
+  }
+  p{
+    font-size: 1.6rem;
+    @include breakpoint ( pc ) {
+      font-size: 2rem;
+    }
+  }
+}
+
 .c-itemlabel__private {
   font-size: 1.1rem;
   font-weight: normal;
