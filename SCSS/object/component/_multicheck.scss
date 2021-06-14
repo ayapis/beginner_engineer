@@ -1,0 +1,47 @@
+// 複数選択のボックスのデザイン
+
+.c-multicheck {
+  list-style: none;
+  // width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-weight: normal;
+  @include breakpoint ( pc ) {
+    width: 62.5%;
+  }
+  input[type="checkbox"] {
+    display: none; 
+  }
+}
+.c-multicheck__item {
+  display: inline-block;
+  margin: 0.5rem 1rem 0.5rem 0;
+  padding: 0; 
+  @include breakpoint ( pc ) {
+    margin: 0.5rem 0;
+    padding: 0; 
+  }
+} 
+// 通常時のラベルのデザイン
+.c-multicheck__label {
+  display: block;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+  background: #ACACAC;
+  transition: 0.2s;
+}
+// ホバー時のラベルのデザイン
+.c-multicheck__label:hover {
+  color: #000;
+  background-color: #EFF5FF;
+}
+// 選択時のラベルのデザイン
+.c-multicheck__input:checked + .c-multicheck__label {
+  background: #0054EE;
+  color: #fff;
+}
