@@ -1313,7 +1313,13 @@ input {
 }
 
 .c-myportfoliolist {
-  margin-top: -4rem;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .c-myportfoliolist {
+    margin-top: -4rem;
+  }
 }
 
 .c-navi {
@@ -2735,6 +2741,10 @@ input {
 
 .p-profile__text p:last-of-type {
   margin-bottom: 0;
+}
+
+.p-profile__text__email {
+  font-weight: normal;
 }
 
 .p-ranking {
