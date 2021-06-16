@@ -834,12 +834,11 @@ input {
   font-size: 1.4rem;
   margin: auto;
   margin-top: 4.5rem;
-  width: 7rem;
+  width: 10rem;
 }
 
 @media (min-width: 768px) {
   .c-comment-link-totop {
-    width: 10rem;
     font-size: 1.6rem;
     margin-top: 6rem;
   }
