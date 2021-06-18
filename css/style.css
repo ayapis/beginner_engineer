@@ -1722,6 +1722,10 @@ input {
   }
 }
 
+.c-title-page-left {
+  text-align: left;
+}
+
 .c-title-page-border {
   font-size: 2.4rem;
   border-bottom: 1px solid #AAA;
@@ -1812,6 +1816,12 @@ input {
 @media (min-width: 768px) {
   .c-wrap-registration {
     width: 56rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .c-wrap-paragraph {
+    max-width: 96rem;
   }
 }
 
@@ -2251,6 +2261,62 @@ input {
   }
 }
 
+.p-message-long {
+  font-size: 1.2rem;
+  font-weight: normal;
+  width: 100%;
+  margin-top: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 768px) {
+  .p-message-long {
+    margin-top: 3rem;
+  }
+}
+
+.p-message-long h2, .p-message-long h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  line-height: 2.1rem;
+}
+
+@media (min-width: 768px) {
+  .p-message-long h2, .p-message-long h3 {
+    margin-top: 2rem;
+  }
+}
+
+.p-message-long h3 {
+  margin-top: 1rem;
+}
+
+.p-message-long p:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.p-message-long ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+@media (min-width: 768px) {
+  .p-message-long ul li {
+    margin-top: 1rem;
+  }
+}
+
+.p-message-advertising {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .p-message-advertising {
+    font-size: 1.6rem;
+  }
+}
+
 .p-message__thanks {
   color: #F00;
   font-size: 2rem;
@@ -2285,6 +2351,86 @@ input {
   font-size: 1.6rem;
   letter-spacing: 0.03em;
   display: inline;
+}
+
+.p-message__contact {
+  font-weight: bold;
+  margin-top: 2.5rem;
+}
+
+.p-message__contact p {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .p-message__contact p {
+    font-size: 1.6rem;
+  }
+}
+
+.p-message__contact a {
+  color: #40a8e2;
+}
+
+.p-message__contact a:hover {
+  opacity: 0.7;
+}
+
+.p-message-terms {
+  font-size: 1.2rem;
+  font-weight: normal;
+  width: 100%;
+  margin-top: 3rem;
+  line-height: 2rem;
+}
+
+.p-message-terms h2, .p-message-terms h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.p-message-terms h2 {
+  border-left: solid 2px #0054ee;
+  padding-left: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .p-message-terms h2 {
+    border-left: solid 5px #0054ee;
+    padding-left: 0.5rem;
+  }
+}
+
+.p-message-terms h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  line-height: 2.1rem;
+}
+
+.p-message-terms ol {
+  list-style-type: auto;
+  list-style-position: inside;
+}
+
+@media (min-width: 768px) {
+  .p-message-terms ol li {
+    margin-top: 1rem;
+  }
+}
+
+.p-message-terms ol li ol {
+  list-style-type: none;
+}
+
+.p-message-terms ol li ol li {
+  margin-top: 0;
+  margin-left: 1rem;
+  counter-increment: cnt;
+}
+
+.p-message-terms ol li ol li::before {
+  content: "(" counter(cnt) ") ";
 }
 
 .p-narrowdown {
