@@ -141,3 +141,49 @@
     }
   }
 }
+
+.p-message-terms {
+  font-size: 1.2rem;
+  font-weight: normal;
+  width: 100%;
+  margin-top: 3rem;
+  line-height: 2rem;
+  h2, h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 3rem;
+  }
+  h2 {
+    border-left: solid 2px #0054ee;
+    padding-left: 0.7rem;
+    @include breakpoint ( pc ) {
+      border-left: solid 5px #0054ee;
+      padding-left: 0.5rem;
+    }
+  }
+  h3 {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    line-height: 2.1rem;
+  }
+  ol {
+    list-style-type: auto;
+    list-style-position: inside;
+    li {
+      @include breakpoint ( pc ) {
+        margin-top: 1rem;
+      }
+      ol {
+        list-style-type: none;
+        li {
+          margin-top: 0;
+          margin-left: 1rem;
+          counter-increment: cnt;
+          &::before {
+            content: "(" counter(cnt) ") ";
+          }
+        }
+      }
+    }
+  }
+}
