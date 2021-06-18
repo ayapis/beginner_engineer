@@ -32,6 +32,12 @@
   }
 }
 
+.c-wrap-paragraph {
+  @include breakpoint ( pc ) {
+    max-width: 96rem;
+  }
+}
+
 .c-wrap-flexbox {
   @include breakpoint ( pc ) {
     display: flex;
