@@ -46,7 +46,7 @@
         <p class="c-comment-annotation">※メールアドレスでログイン認証されている方は必須です。</p>
         <div class="p-form-registration__item">
           <div class="c-itemlabel">
-            <p>TwitterID</p>
+            <p>Twitter</p>
           </div>
           <input type="text" class="c-frame c-frame-text c-frame-text-registration">
         </div>
@@ -55,17 +55,14 @@
           <div class="c-itemlabel">
             <p>プロフィール画像</p>
           </div>
-          <div class="c-wrap-drop-small">
-            <input type="file" name="icon" id="input_file" class="u-input" accept="image/*">
-            <div id="preview_field" class="c-preview"></div>
-            <div id="drop_area">
-              <div class="c-droparea__text__file">
-                <p>ファイルを選択</p>
-              </div>
-            </div>
-            <div id="icon_clear_button" class="c-button-clear">X</div>
+          <div class="c-file">
+            <label class="file">
+              <input type="file" name="file" accept=".jpg, .jpeg, .png">ファイルを選択
+            </label>
+            <p class="filename">選択されていません</p>
           </div>
         </div>
+        <p class="c-comment-annotation">※アップロードできるファイルの拡張子：jpg, jpeg, png<br>ファイルサイズは 3MB まで</p>
         <div class="p-form-registration__item">
           <div class="c-itemlabel">
             <p>生年月日</p>
@@ -147,7 +144,7 @@
           </div>
         </div>
         <div class="p-terms">
-          <button class="c-button c-button-registration" onclick="location.href='profileeditcomplete.html'">
+          <button class="c-button c-button__submit c-button-post" onclick="location.href='profileeditcomplete.html'">
             <div class="c-button-registration__text">
               <p class="state">変更を保存する</p>
             </div>

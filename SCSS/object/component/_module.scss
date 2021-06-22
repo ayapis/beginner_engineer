@@ -1,0 +1,37 @@
+.c-file {
+  font-weight: normal;
+  @include breakpoint ( pc ) {
+    display: flex;
+  }
+}
+
+.file {
+  display: block;
+  color: #000;
+  font-size: 1.4rem;
+  text-align: center;
+  // padding: 10px 15px;
+  width: 13rem;
+  height: 4rem;
+  line-height: 4rem;
+  margin-top: 1rem;
+  background-color: #DFDFDF;
+  border: 1px solid #AAAAAA;
+  cursor: pointer;
+  @include breakpoint ( pc ) {
+    margin-top: 0;
+  }
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.filename {
+  font-size: 1.2rem;
+  // width: calc(100% - 13rem);
+  @include breakpoint ( pc ) {
+    line-height: 4rem;
+    margin-left: 1rem;
+  }
+}

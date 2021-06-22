@@ -99,8 +99,8 @@
 }
 
 .c-button-post {
-  width: 15rem;
-  height: 5rem;
+  width: 20rem;
+  height: 6rem;
   line-height: inherit;
   background: #0054EE;
   margin: auto;
@@ -109,15 +109,10 @@
     background: #001D60;
   }
   @include breakpoint ( pc ) {
-    width: 20rem;
-    height: 6rem;
     text-align: center;
   }
   p {
-    line-height: 5rem;
-    @include breakpoint ( pc ) {
-      line-height: 6rem;
-    }
+    line-height: 6rem;
   }
 }
 // アップロードファイルの削除
