@@ -54,7 +54,6 @@
     margin-top: 3rem;
   }
   h2, h3 {
-    font-size: 1.4rem;
     font-weight: bold;
     margin-top: 3rem;
     line-height: 2.1rem;
@@ -62,8 +61,12 @@
       margin-top: 2rem;
     }
   }
+  h2 {
+    font-size: 1.6rem;
+  }
   h3 {
-    margin-top: 1rem;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
   }
   p {
     &:not(:first-of-type) {
