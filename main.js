@@ -27,15 +27,15 @@ $(function () {
 // ファイル名を表示
 $(function () {
   $('input').on('change', function () {
-    let file = $(this).prop('files')[0];
-    let file = file.name
-    let length = file.length;
+    var file = $(this).prop('files')[0];
+    var file = file.name
+    var length = file.length;
     if (length < 22) {
       $('.filename').text(file);
     } else {
-      let filefirst = file.slice(0, 15);
-      let filelast = file.slice(-7);
-      let file = (filefirst + '...' + filelast);
+      var filefirst = file.slice(0, 15);
+      var filelast = file.slice(-7);
+      var file = (filefirst + '...' + filelast);
       $('.filename').text(file);
     }
   });
