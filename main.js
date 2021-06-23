@@ -24,18 +24,22 @@ $(function () {
 });
 
 
-// ファイル名を表示
+// ファイル名が長い場合に表示を短縮する
 $(function () {
   $('input').on('change', function () {
-    var file = $(this).prop('files')[0];
-    var file = file.name
-    var length = file.length;
-    if (length < 22) {
+    let file = $(this).prop('files')[0];
+    file = file.name;
+    let length = file.length;
+    const maxlength = 22; // 最長文字数
+    const startletter = 0; // 1番目から抜き出し
+    const finishletter = 15; // 15文字抜き出し
+    const lastletter = -7; // 最後から7文字抜き出し
+    if (length < maxlength) {
       $('.filename').text(file);
     } else {
-      var filefirst = file.slice(0, 15);
-      var filelast = file.slice(-7);
-      var file = (filefirst + '...' + filelast);
+      let filefirst = file.slice(startletter, finishletter);
+      let filelast = file.slice(lastletter);
+      file = (filefirst + '...' + filelast);
       $('.filename').text(file);
     }
   });
