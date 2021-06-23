@@ -68,6 +68,12 @@
   }
 }
 
+.c-title-page-post {
+  @include breakpoint ( pc ) {
+    margin-bottom: 5.5rem;
+  }
+}
+
 .c-title__sub {
   text-align: center;
 }

@@ -68,6 +68,11 @@
   @include breakpoint ( pc ) {
     margin-left: 13.8rem;
   }
+  &-post {
+    @include breakpoint ( pc ) {
+      margin-left: 15rem;
+    }
+  }
 }
 
 .c-comment-link-twitter {
