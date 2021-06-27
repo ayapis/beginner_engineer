@@ -2122,7 +2122,7 @@ input[type="file"] {
 }
 
 .p-main h2 {
-  margin-top: 6rem;
+  margin-top: 4.5rem;
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -2130,7 +2130,7 @@ input[type="file"] {
 @media (min-width: 768px) {
   .p-main h2 {
     font-size: 2.4rem;
-    margin-top: 8rem;
+    margin-top: 6rem;
     margin-bottom: 2rem;
   }
 }
