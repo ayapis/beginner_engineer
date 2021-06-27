@@ -70,7 +70,10 @@
   }
   p {
     &:not(:first-of-type) {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
+      @include breakpoint ( pc ) {
+        margin-top: 2rem;
+      }
     }
   }
   ul {

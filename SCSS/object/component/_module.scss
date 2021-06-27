@@ -1,12 +1,13 @@
 .c-file {
   font-weight: normal;
+  // display: flex;
+  // align-items: flex-end;
   @include breakpoint ( pc ) {
-    display: flex;
   }
 }
 
 .file {
-  display: block;
+  display: inline-block;
   color: #000;
   font-size: 1.4rem;
   text-align: center;
@@ -28,10 +29,12 @@ input[type="file"] {
 }
 
 .filename {
+  display: inline;
   font-size: 1.2rem;
-  // width: calc(100% - 13rem);
+  align-self: flex-end;
+  width: calc(100% - 15rem);
   @include breakpoint ( pc ) {
-    line-height: 4rem;
+    width: auto;
     margin-left: 1rem;
   }
 }

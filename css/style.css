@@ -864,7 +864,7 @@ input {
 
 @media (min-width: 768px) {
   .c-comment-annotation-post {
-    margin-left: 15rem;
+    margin-left: 0;
   }
 }
 
@@ -1222,7 +1222,7 @@ input {
 
 @media (min-width: 768px) {
   .c-itemlabel-post {
-    width: 15rem;
+    width: 20rem;
   }
 }
 
@@ -1259,16 +1259,8 @@ input {
   font-weight: normal;
 }
 
-@media (min-width: 768px) {
-  .c-file {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 .file {
-  display: block;
+  display: inline-block;
   color: #000;
   font-size: 1.4rem;
   text-align: center;
@@ -1292,12 +1284,16 @@ input[type="file"] {
 }
 
 .filename {
+  display: inline;
   font-size: 1.2rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: calc(100% - 15rem);
 }
 
 @media (min-width: 768px) {
   .filename {
-    line-height: 4rem;
+    width: auto;
     margin-left: 1rem;
   }
 }
@@ -1887,6 +1883,23 @@ input[type="file"] {
   }
 }
 
+.c-wrap-flexbox-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .c-wrap-flexbox-all {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+}
+
 @media (min-width: 768px) {
   .c-wrap-flexbox-wrap {
     -ms-flex-wrap: wrap;
@@ -2311,7 +2324,6 @@ input[type="file"] {
 }
 
 .p-message-long h2, .p-message-long h3 {
-  font-size: 1.4rem;
   font-weight: bold;
   margin-top: 3rem;
   line-height: 2.1rem;
@@ -2323,12 +2335,23 @@ input[type="file"] {
   }
 }
 
+.p-message-long h2 {
+  font-size: 1.6rem;
+}
+
 .p-message-long h3 {
-  margin-top: 1rem;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
 }
 
 .p-message-long p:not(:first-of-type) {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .p-message-long p:not(:first-of-type) {
+    margin-top: 2rem;
+  }
 }
 
 .p-message-long ul {

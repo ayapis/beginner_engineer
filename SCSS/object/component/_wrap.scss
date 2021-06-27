@@ -44,6 +44,13 @@
     justify-content: space-between;
   }
 }
+.c-wrap-flexbox-all {
+  display: flex;
+  justify-content: space-between;
+  @include breakpoint ( pc ) {
+    justify-content: unset;
+  }
+}
 .c-wrap-flexbox-wrap {
   @include breakpoint ( pc ) {
     flex-wrap: wrap;
