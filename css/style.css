@@ -616,6 +616,34 @@ input {
   }
 }
 
+.c-box {
+  width: 100%;
+  max-width: 335px;
+  margin: auto;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.c-box a {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .c-box {
+    max-width: none;
+    width: 47%;
+    margin: unset;
+    margin-top: 4rem;
+  }
+}
+
 .c-button {
   text-align: center;
   width: 15rem;
@@ -759,6 +787,22 @@ input {
   cursor: pointer;
 }
 
+.c-button-switch {
+  font-size: 1.4rem;
+  color: #40A8E2;
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: block;
+  text-align: right;
+}
+
+.c-button-switch-portfolio {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
 .c-check {
   text-align: center;
   font-weight: bold;
@@ -886,6 +930,19 @@ input {
 
 .c-comment-link-url:hover {
   text-decoration: underline;
+}
+
+.c-comment-box {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #40A8E2;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.c-comment-box button {
+  margin-right: 6rem;
 }
 
 .c-divider {
@@ -1777,7 +1834,7 @@ input[type="file"] {
 @media (min-width: 768px) {
   .c-title-page-border {
     font-size: 3rem;
-    margin-top: 5.5rem;
+    margin-top: 6rem;
   }
 }
 
@@ -2000,10 +2057,6 @@ input[type="file"] {
 
 .p-card {
   display: block;
-  width: 100%;
-  max-width: 335px;
-  margin: auto;
-  margin-top: 2rem;
   -webkit-transition: .3s;
   transition: .3s;
   border: 1px solid #AAA;
@@ -2014,15 +2067,6 @@ input[type="file"] {
           box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-}
-
-@media (min-width: 768px) {
-  .p-card {
-    max-width: none;
-    width: 47%;
-    margin: unset;
-    margin-top: 4rem;
-  }
 }
 
 .p-card__box {
@@ -2122,7 +2166,7 @@ input[type="file"] {
 }
 
 .p-main h2 {
-  margin-top: 6rem;
+  margin-top: 4.5rem;
   margin-bottom: 2rem;
   font-size: 2rem;
 }
@@ -2130,7 +2174,7 @@ input[type="file"] {
 @media (min-width: 768px) {
   .p-main h2 {
     font-size: 2.4rem;
-    margin-top: 8rem;
+    margin-top: 6rem;
     margin-bottom: 2rem;
   }
 }
@@ -2816,7 +2860,16 @@ input[type="file"] {
 }
 
 .p-portfolio__details .c-image {
+  display: block;
+  margin: auto;
   height: auto;
+  max-width: 50rem;
+}
+
+@media (min-width: 768px) {
+  .p-portfolio__details .c-image {
+    max-width: 60rem;
+  }
 }
 
 .p-portfolio__details__check {
@@ -3006,7 +3059,7 @@ input[type="file"] {
     position: sticky;
     top: 15rem;
     width: 21%;
-    margin-top: 5.5rem;
+    margin-top: 6rem;
   }
 }
 
@@ -3050,13 +3103,7 @@ input[type="file"] {
 }
 
 .p-tweet .twitter-tweet iframe {
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 768px) {
-  .p-tweet .twitter-tweet iframe {
-    margin-bottom: 3rem;
-  }
+  width: 100%;
 }
 
 .p-tweet .c-button {

@@ -1,21 +1,10 @@
 .p-card {
   display: block;
-  width: 100%;
-  max-width: 335px;
-  margin: auto;
-  margin-top: 2rem;
   transition: .3s;
   border: 1px solid #AAA;
   &:hover {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
     transform: translateY(-5px);
-  }
-  
-  @include breakpoint ( pc ) {
-    max-width: none;
-    width: 47%;
-    margin: unset;
-    margin-top: 4rem;
   }
 }
 

@@ -1,9 +1,10 @@
 .p-tweet {
   .twitter-tweet {
     iframe {
-    margin-bottom: 2rem;
+      width: 100%;
+    // margin-bottom: 2rem;
     @include breakpoint ( pc ) {
-      margin-bottom: 3rem;
+      // margin-bottom: 3rem;
     }
     }
   }

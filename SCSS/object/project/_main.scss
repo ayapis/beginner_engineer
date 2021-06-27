@@ -6,12 +6,12 @@
     min-width: 460px;
   }
   h2 {
-  margin-top: 6rem;
+  margin-top: 4.5rem;
   margin-bottom: 2rem;
   font-size: 2rem;
     @include breakpoint ( pc ) {
       font-size: 2.4rem;
-      margin-top: 8rem;
+      margin-top: 6rem;
       margin-bottom: 2rem;
     }
     &.c-title-narrowdown {

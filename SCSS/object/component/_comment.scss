@@ -92,3 +92,17 @@
     text-decoration: underline;
   }
 }
+.c-comment-box {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #40A8E2;
+  text-align: center;
+  margin-top: 6rem;
+  @include breakpoint ( pc ) {
+    // margin-top: 1.5rem;
+  }
+  button {
+    margin-right: 6rem;
+  }
+}
