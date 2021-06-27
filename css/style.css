@@ -2332,7 +2332,13 @@ input[type="file"] {
 }
 
 .p-message-long p:not(:first-of-type) {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .p-message-long p:not(:first-of-type) {
+    margin-top: 2rem;
+  }
 }
 
 .p-message-long ul {
