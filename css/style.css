@@ -759,6 +759,17 @@ input {
   cursor: pointer;
 }
 
+.c-button-switch {
+  font-size: 1.4rem;
+  color: #40A8E2;
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: block;
+  text-align: right;
+}
+
 .c-check {
   text-align: center;
   font-weight: bold;
@@ -1296,6 +1307,10 @@ input[type="file"] {
     width: auto;
     margin-left: 1rem;
   }
+}
+
+.p-card-wrap {
+  width: 47%;
 }
 
 .c-multicheck {
@@ -3050,13 +3065,7 @@ input[type="file"] {
 }
 
 .p-tweet .twitter-tweet iframe {
-  margin-bottom: 2rem;
-}
-
-@media (min-width: 768px) {
-  .p-tweet .twitter-tweet iframe {
-    margin-bottom: 3rem;
-  }
+  width: 100%;
 }
 
 .p-tweet .c-button {

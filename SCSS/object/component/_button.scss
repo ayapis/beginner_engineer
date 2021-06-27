@@ -123,3 +123,15 @@
   right: -8px;
   cursor: pointer;
 }
+
+// ツイートやポートフォリオの保存切り替えボタン
+.c-button-switch {
+  font-size: 1.4rem;
+  color: #40A8E2;
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: block;
+  text-align: right;
+}
