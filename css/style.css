@@ -899,6 +899,19 @@ input {
   text-decoration: underline;
 }
 
+.c-comment-box {
+  display: block;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #40A8E2;
+  text-align: center;
+  margin-top: 6rem;
+}
+
+.c-comment-box button {
+  margin-right: 6rem;
+}
+
 .c-divider {
   color: #AAA;
   display: -webkit-box;
