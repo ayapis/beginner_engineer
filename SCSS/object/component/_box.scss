@@ -1,0 +1,20 @@
+// ポートフォリオ一覧の外枠に使用
+.c-box {
+  // width: 47%;
+  width: 100%;
+  max-width: 335px;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  a{
+    width: 100%;
+    height: 100%;
+  }
+  @include breakpoint ( pc ) {
+    max-width: none;
+    width: 47%;
+    margin: unset;
+    margin-top: 4rem;
+  }
+}
