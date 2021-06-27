@@ -2311,7 +2311,6 @@ input[type="file"] {
 }
 
 .p-message-long h2, .p-message-long h3 {
-  font-size: 1.4rem;
   font-weight: bold;
   margin-top: 3rem;
   line-height: 2.1rem;
@@ -2323,8 +2322,13 @@ input[type="file"] {
   }
 }
 
+.p-message-long h2 {
+  font-size: 1.6rem;
+}
+
 .p-message-long h3 {
-  margin-top: 1rem;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
 }
 
 .p-message-long p:not(:first-of-type) {
