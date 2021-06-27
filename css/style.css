@@ -2844,7 +2844,16 @@ input[type="file"] {
 }
 
 .p-portfolio__details .c-image {
+  display: block;
+  margin: auto;
   height: auto;
+  max-width: 50rem;
+}
+
+@media (min-width: 768px) {
+  .p-portfolio__details .c-image {
+    max-width: 60rem;
+  }
 }
 
 .p-portfolio__details__check {

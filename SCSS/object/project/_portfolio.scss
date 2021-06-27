@@ -30,7 +30,13 @@
     margin-top: 3rem;
   }
   .c-image {
+    display: block;
+    margin: auto;
     height: auto;
+    max-width: 50rem;
+    @include breakpoint ( pc ) {
+      max-width: 60rem;
+    }
   }
 }
 
