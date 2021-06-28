@@ -515,7 +515,7 @@ input {
   text-align: center;
   background: #001D60;
   padding: 3rem 0 2rem;
-  margin-top: 10rem;
+  margin-top: 8rem;
 }
 
 @media (min-width: 768px) {
@@ -2193,7 +2193,7 @@ input[type="file"] {
 @media (min-width: 768px) {
   .p-main h2.c-title__sub {
     font-size: 2.4rem;
-    margin-top: 8rem;
+    margin-top: 6rem;
   }
 }
 
@@ -2506,7 +2506,7 @@ input[type="file"] {
 
 .p-message-terms h3 {
   font-size: 1.4rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   line-height: 2.1rem;
 }
 
@@ -3037,7 +3037,7 @@ input[type="file"] {
 }
 
 .p-side {
-  margin-top: 6rem;
+  margin-top: 10rem;
 }
 
 @media (min-width: 768px) {
