@@ -30,16 +30,16 @@ $(function () {
     let file = $(this).prop('files')[0];
     file = file.name;
     let length = file.length;
-    const maxlength = 22; // 最長文字数
-    const startletter = 0; // 1番目から抜き出し
-    const finishletter = 15; // 15文字抜き出し
-    const lastletter = -7; // 最後から7文字抜き出し
-    if (length < maxlength) {
+    const MAX_LENGTH = 22; // 最長文字数
+    const START_LETTER = 0; // 1番目から抜き出し
+    const FINISH_LETTER = 15; // 15文字抜き出し
+    const LAST_LETTER = -7; // 最後から7文字抜き出し
+    if (length < MAX_LENGTH) {
       $('.filename').text(file);
     } else {
-      let filefirst = file.slice(startletter, finishletter);
-      let filelast = file.slice(lastletter);
-      file = (filefirst + '...' + filelast);
+      let fileFirst = file.slice(START_LETTER, FINISH_LETTER);
+      let fileLast = file.slice(LAST_LETTER);
+      file = (fileFirst + '...' + fileLast);
       $('.filename').text(file);
     }
   });
