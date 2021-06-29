@@ -35,12 +35,12 @@ $(function () {
     const FINISH_LETTER = 15; // 15文字抜き出し
     const LAST_LETTER = -7; // 最後から7文字抜き出し
     if (length < MAX_LENGTH) {
-      $('.filename').text(file);
+      $('.c-file__name').text(file);
     } else {
       let fileFirst = file.slice(START_LETTER, FINISH_LETTER);
       let fileLast = file.slice(LAST_LETTER);
       file = (fileFirst + '...' + fileLast);
-      $('.filename').text(file);
+      $('.c-file__name').text(file);
     }
   });
 });

@@ -1041,6 +1041,53 @@ input {
   background: #DFDFDF;
 }
 
+.c-file {
+  font-weight: normal;
+}
+
+.c-file .c-wrap-flexbox-all {
+  margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .c-file .c-wrap-flexbox-all {
+    margin-top: 0;
+  }
+}
+
+.c-file__select {
+  display: inline-block;
+  color: #000;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 13rem;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #DFDFDF;
+  border: 1px solid #AAAAAA;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.c-file__name {
+  display: inline;
+  font-size: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: calc(100% - 15rem);
+}
+
+@media (min-width: 768px) {
+  .c-file__name {
+    width: auto;
+    margin-left: 1rem;
+  }
+}
+
 .c-frame {
   font-size: 1.4rem;
   line-height: 2.2rem;
@@ -1309,49 +1356,6 @@ input {
   .c-itemlabel__required {
     margin-left: 0;
     margin-top: 0.5rem;
-  }
-}
-
-.c-file {
-  font-weight: normal;
-}
-
-.file {
-  display: inline-block;
-  color: #000;
-  font-size: 1.4rem;
-  text-align: center;
-  width: 13rem;
-  height: 4rem;
-  line-height: 4rem;
-  margin-top: 1rem;
-  background-color: #DFDFDF;
-  border: 1px solid #AAAAAA;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .file {
-    margin-top: 0;
-  }
-}
-
-input[type="file"] {
-  display: none;
-}
-
-.filename {
-  display: inline;
-  font-size: 1.2rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  width: calc(100% - 15rem);
-}
-
-@media (min-width: 768px) {
-  .filename {
-    width: auto;
-    margin-left: 1rem;
   }
 }
 

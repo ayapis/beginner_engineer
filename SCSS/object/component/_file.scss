@@ -1,0 +1,41 @@
+.c-file {
+  font-weight: normal;
+  // display: flex;
+  // align-items: flex-end;
+  @include breakpoint ( pc ) {
+  }
+  .c-wrap-flexbox-all {
+    margin-top: 1rem;
+    @include breakpoint ( pc ) {
+      margin-top: 0;
+    }
+  }
+}
+
+.c-file__select {
+  display: inline-block;
+  color: #000;
+  font-size: 1.4rem;
+  text-align: center;
+  width: 13rem;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #DFDFDF;
+  border: 1px solid #AAAAAA;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.c-file__name {
+  display: inline;
+  font-size: 1.2rem;
+  align-self: center;
+  width: calc(100% - 15rem);
+  @include breakpoint ( pc ) {
+    width: auto;
+    margin-left: 1rem;
+  }
+}
