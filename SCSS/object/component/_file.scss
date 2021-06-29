@@ -25,10 +25,6 @@
   cursor: pointer;
 }
 
-input[type="file"] {
-  display: none;
-}
-
 .c-file__name {
   display: inline;
   font-size: 1.2rem;
@@ -38,4 +34,9 @@ input[type="file"] {
     width: auto;
     margin-left: 1rem;
   }
+}
+
+// ファイル選択のデフォルトデザインを無効にするための指定
+input[type="file"] {
+  display: none;
 }
