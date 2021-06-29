@@ -987,58 +987,51 @@ input {
   margin-left: 0;
 }
 
-.c-droparea {
-  position: absolute;
-  top: 0;
-  left: 0;
+.c-file {
   font-weight: normal;
-  line-height: 1.5;
-  width: 100%;
-  height: 100%;
-  background: #F9F9FB;
-  border: 1px dashed #B4B7BB;
-  cursor: pointer;
-  text-align: center;
 }
 
-.c-droparea__text {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.c-droparea__text p:first-of-type {
-  font-size: 2rem;
+.c-file .c-wrap-flexbox-all {
+  margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
-  .c-droparea__text p:first-of-type {
-    font-size: 2.4rem;
+  .c-file .c-wrap-flexbox-all {
+    margin-top: 0;
   }
 }
 
-.c-droparea__text p:nth-of-type(2) {
-  font-size: 1.4rem;
-  margin-top: 2rem;
-}
-
-@media (min-width: 768px) {
-  .c-droparea__text p:nth-of-type(2) {
-    font-size: 1.6rem;
-    margin-top: 1.5rem;
-  }
-}
-
-.c-droparea__text__file {
+.c-file__select {
   display: inline-block;
+  color: #000;
   font-size: 1.4rem;
-  font-weight: normal;
-  padding: 1rem 1.5rem;
-  margin-top: 2rem;
-  border: 1px solid #AAA;
-  background: #DFDFDF;
+  text-align: center;
+  width: 13rem;
+  height: 4rem;
+  line-height: 4rem;
+  background-color: #DFDFDF;
+  border: 1px solid #AAAAAA;
+  cursor: pointer;
+}
+
+.c-file__name {
+  display: inline;
+  font-size: 1.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: calc(100% - 15rem);
+}
+
+@media (min-width: 768px) {
+  .c-file__name {
+    width: auto;
+    margin-left: 1rem;
+  }
+}
+
+input[type="file"] {
+  display: none;
 }
 
 .c-frame {
@@ -1309,49 +1302,6 @@ input {
   .c-itemlabel__required {
     margin-left: 0;
     margin-top: 0.5rem;
-  }
-}
-
-.c-file {
-  font-weight: normal;
-}
-
-.file {
-  display: inline-block;
-  color: #000;
-  font-size: 1.4rem;
-  text-align: center;
-  width: 13rem;
-  height: 4rem;
-  line-height: 4rem;
-  margin-top: 1rem;
-  background-color: #DFDFDF;
-  border: 1px solid #AAAAAA;
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .file {
-    margin-top: 0;
-  }
-}
-
-input[type="file"] {
-  display: none;
-}
-
-.filename {
-  display: inline;
-  font-size: 1.2rem;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  width: calc(100% - 15rem);
-}
-
-@media (min-width: 768px) {
-  .filename {
-    width: auto;
-    margin-left: 1rem;
   }
 }
 
@@ -3194,10 +3144,6 @@ input[type="file"] {
   right: 5%;
   top: 0;
   z-index: 30;
-}
-
-.u-input {
-  opacity: 0;
 }
 
 .twitter-tweet.twitter-tweet-rendered {
