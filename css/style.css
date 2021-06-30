@@ -787,7 +787,8 @@ input {
   cursor: pointer;
 }
 
-.c-button-switch {
+.c-button-switch,
+.c-button-switch-add {
   font-size: 1.2rem;
   color: #40A8E2;
   width: 100%;
@@ -798,13 +799,15 @@ input {
   text-align: right;
 }
 
-.c-button-switch:hover {
+.c-button-switch:hover,
+.c-button-switch-add:hover {
   opacity: .7;
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
-  .c-button-switch {
+  .c-button-switch,
+  .c-button-switch-add {
     font-size: 1.4rem;
   }
 }
@@ -952,11 +955,15 @@ input {
   margin-top: 6rem;
 }
 
-.c-comment-box button {
+.c-comment-box .c-button-switch {
+  display: inline;
+  width: auto;
+  margin: 0;
+  font-size: 1.2rem;
   margin-right: 6rem;
 }
 
-.c-comment-box button:hover {
+.c-comment-box .c-button-switch:hover {
   opacity: 0.7;
 }
 
