@@ -44,3 +44,17 @@ $(function () {
     }
   });
 });
+
+// アラートを表示させる
+$(function () {
+  // 削除ボタンのとき
+  let message = "削除しました。";
+  $(".c-button-switch").on("click", function () {
+    alert(message);
+  });
+  // 追加ボタンのとき
+  message = "保存しました。"
+  $(".c-button-switch-add").on("click", function () {
+    alert(message);
+  });
+});

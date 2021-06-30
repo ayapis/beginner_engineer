@@ -787,8 +787,9 @@ input {
   cursor: pointer;
 }
 
-.c-button-switch {
-  font-size: 1.4rem;
+.c-button-switch,
+.c-button-switch-add {
+  font-size: 1.2rem;
   color: #40A8E2;
   width: 100%;
   max-width: 550px;
@@ -796,6 +797,19 @@ input {
   margin-bottom: 2rem;
   display: block;
   text-align: right;
+}
+
+.c-button-switch:hover,
+.c-button-switch-add:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .c-button-switch,
+  .c-button-switch-add {
+    font-size: 1.4rem;
+  }
 }
 
 .c-button-switch-portfolio {
@@ -941,8 +955,20 @@ input {
   margin-top: 6rem;
 }
 
-.c-comment-box button {
+.c-comment-box .c-button-switch {
+  display: inline;
+  width: auto;
+  margin: 0;
+  font-size: 1.2rem;
   margin-right: 6rem;
+}
+
+.c-comment-box .c-button-switch:hover {
+  opacity: 0.7;
+}
+
+.c-comment-box a:hover {
+  opacity: 0.7;
 }
 
 .c-divider {
