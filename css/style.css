@@ -956,6 +956,14 @@ input {
   margin-right: 6rem;
 }
 
+.c-comment-box button:hover {
+  opacity: 0.7;
+}
+
+.c-comment-box a:hover {
+  opacity: 0.7;
+}
+
 .c-divider {
   color: #AAA;
   display: -webkit-box;

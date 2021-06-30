@@ -104,5 +104,13 @@
   }
   button {
     margin-right: 6rem;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  a {
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }
