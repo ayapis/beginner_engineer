@@ -788,7 +788,7 @@ input {
 }
 
 .c-button-switch {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #40A8E2;
   width: 100%;
   max-width: 550px;
@@ -796,6 +796,17 @@ input {
   margin-bottom: 2rem;
   display: block;
   text-align: right;
+}
+
+.c-button-switch:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .c-button-switch {
+    font-size: 1.4rem;
+  }
 }
 
 .c-button-switch-portfolio {
