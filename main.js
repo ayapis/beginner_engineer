@@ -48,13 +48,13 @@ $(function () {
 // アラートを表示させる
 $(function () {
   // 削除ボタンのとき
-  let message = "削除しました。";
+  const DELETE_MESSAGE = "削除しました。";
   $(".c-button-switch").on("click", function () {
-    alert(message);
+    alert(DELETE_MESSAGE);
   });
   // 追加ボタンのとき
-  message = "保存しました。"
+  const ADD_MESSAGE = "保存しました。"
   $(".c-button-switch-add").on("click", function () {
-    alert(message);
+    alert(ADD_MESSAGE);
   });
 });
