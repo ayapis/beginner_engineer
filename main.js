@@ -47,10 +47,17 @@ $(function () {
 
 // アラートを表示させる
 $(function () {
-  // 削除ボタンのとき
-  const DELETE_MESSAGE = "削除しました。";
+  // 削除ボタンのとき確認メッセージを出す
   $(".c-button-switch").on("click", function () {
-    alert(DELETE_MESSAGE);
+    //   alert(DELETE_MESSAGE);
+    if (!confirm('削除しますか？')) {
+      /*　キャンセルの時の処理 */
+      console.log('削除をとりやめました');
+      return false;
+    } else {
+      /*　OKの時の処理 */
+      console.log('削除しました');
+    }
   });
   // 追加ボタンのとき
   const ADD_MESSAGE = "保存しました。"
