@@ -143,6 +143,12 @@
     font-size: 1.4rem;
   }
 }
+.c-button-switch {
+  font-size: 1.4rem;
+  @include breakpoint ( pc ) {
+    font-size: 1.6rem;
+  }
+}
 
 .c-button-switch-portfolio {
   margin-top: 1rem;

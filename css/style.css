@@ -812,6 +812,16 @@ input {
   }
 }
 
+.c-button-switch {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .c-button-switch {
+    font-size: 1.6rem;
+  }
+}
+
 .c-button-switch-portfolio {
   margin-top: 1rem;
   margin-bottom: 0;
