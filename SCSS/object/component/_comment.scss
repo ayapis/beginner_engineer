@@ -95,19 +95,23 @@
 .c-comment-box {
   display: block;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #40A8E2;
   text-align: center;
   margin-top: 6rem;
   @include breakpoint ( pc ) {
-    // margin-top: 1.5rem;
+    font-size: 1.6rem;
   }
   .c-button-switch {
     display: inline;
+    font-size: 1.4rem;
     width: auto;
     margin: 0;
-    font-size: 1.2rem;
-    margin-right: 6rem;
+    margin-right: 4rem;
+    @include breakpoint ( pc ) {
+      font-size: 1.6rem;
+      margin-right: 6rem;
+    }
     &:hover {
       opacity: 0.7;
     }
