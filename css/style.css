@@ -812,16 +812,6 @@ input {
   }
 }
 
-.c-button-switch {
-  font-size: 1.4rem;
-}
-
-@media (min-width: 768px) {
-  .c-button-switch {
-    font-size: 1.6rem;
-  }
-}
-
 .c-button-switch-portfolio {
   margin-top: 1rem;
   margin-bottom: 0;
@@ -959,18 +949,31 @@ input {
 .c-comment-box {
   display: block;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #40A8E2;
   text-align: center;
   margin-top: 6rem;
 }
 
+@media (min-width: 768px) {
+  .c-comment-box {
+    font-size: 1.6rem;
+  }
+}
+
 .c-comment-box .c-button-switch {
   display: inline;
+  font-size: 1.4rem;
   width: auto;
   margin: 0;
-  font-size: 1.2rem;
-  margin-right: 6rem;
+  margin-right: 4rem;
+}
+
+@media (min-width: 768px) {
+  .c-comment-box .c-button-switch {
+    font-size: 1.6rem;
+    margin-right: 6rem;
+  }
 }
 
 .c-comment-box .c-button-switch:hover {
