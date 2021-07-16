@@ -962,7 +962,6 @@ input {
 }
 
 .c-comment-box .c-button-switch {
-  display: inline;
   font-size: 1.4rem;
   width: auto;
   margin: 0;
@@ -982,6 +981,15 @@ input {
 
 .c-comment-box a:hover {
   opacity: 0.7;
+}
+
+.c-comment-box-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .c-divider {
